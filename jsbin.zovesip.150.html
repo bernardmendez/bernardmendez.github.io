@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by bernardmendez (http://jsbin.com/zovesip/150/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.colb-2 {width: 16.66%;}
+.colb-9 {width: 75%}
+.colb-3 {width: 25%}
+.colb-4 {width: 33.33%}
+
+[class*="col-"] {
+  float: left;
+  border: 2px solid #888888;
+}
+[class*='colb'] {
+  float: left;
+}
+
+
+
+/* --------------------------------------------- */
+
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+html {
+  
+}
+body {
+  font-family: Gill Sans;
+}
+a {
+  text-decoration: none;
+  color: black;
+} a:hover {
+  color: #BEBEBE;
+}
+
+/* --------------------------------------------- */
+
+.topbarc {
+  padding-bottom: 3px;
+}
+
+.topbar {
+  border-bottom: 1px solid #888888;
+  border-top: 1px solid #888888;
+  background-color: #65909A;
+}
+
+
+
+
+.init {
+}
+
+
+/* --------------------------------------------- */
+
+#header {
+  float: left;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #C1F0F6;
+}
+
+.displaydate {
+  width: 100%;
+  font-size: 13px;
+  color: #888888;
+  padding: 2px;
+  text-align: center;
+} .logo img {
+  background-color: white;
+  border: 2px solid #888888;
+} .contact {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+} .contact a {
+  color: #888888
+} .contact :hover {
+  color: #BEBEBE;
+}
+
+
+
+/* --------------------------------------------- */
+
+.links {
+  display: inline-block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  #background-color: blue;
+} .list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+  overflow-y: hidden;
+  margin-right: 5%;
+  margin-left: 5%
+} .list li { 
+  padding: 10px;
+} .list li a {
+  color: black;
+  padding: 20px;
+} .button :hover {
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: #BEBEBE;
+} .dropdown :hover {
+  text-decoration: none;
+  color: #BEBEBE;
+} .in {
+  padding: 5px
+} .dropdowncontent {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid grey;
+} .dropdown:hover .dropdowncontent{
+  display: block;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+
+.selectmedia {
+  display: inline-block;
+  padding-bottom: 300px;
+  border-top: 1px solid #888888;
+  #@background-color: blue;
+}
+
+.top {
+  margin-top: 15px;
+}
+
+figure {
+  margin: 1%;
+  float: left;
+  text-align: center;
+  font-size: smaller;
+  border: 1px solid #bebebe;
+} figure img {
+  margin: 0;
+  border-bottom: 1px solid #bebebe;
+} figure:hover {
+  border: 1px solid darkgrey;
+  color: #bebebe;
+  background-color: #f0f0f0;
+}
+
+.figcap {
+  padding: 0px;
+  margin: 0px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.pubdate {
+  float: left;
+} .author {
+  float: right;
+} .title {
+  float: center;
+}
+
+.fig_big {
+  width: 98%;
+} .fig_big img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+} .fig_med {
+  width: 48%;
+} .fig_med img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;  
+} .fig_small {
+  width: 30.66%
+} .fig_small img {
+  width: 100%:
+  height: 150px;
+  object-fit: cover;
+}
+
+
+/* --------------------------------------------- */
+
+.sub {
+  margin: 2%;
+  border: 1px solid #888888;
+  padding: 2%;
+  font-size: 75%
+}
+.it {
+  font-size: 72%
+}
+#about {
+  line-height: .99;
+}
+
+#newsletter {
+  overflow: hidden;
+}
+#submit {
+  float: right;
+  margin-left: 10%;
+}
+#what {
+  width: 100%
+}
+#ml {
+  text-align: justify;
+}
+
+
+
+/* --------------------------------------------- */
+
+#foot {
+  display: block;
+  padding-top: 50px;
+  width: 100%
+}
+#footer {
+  border-top: 2px solid #888888;
+  background-color: #65909A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------- */
+
+@media only screen and (max-width: 10000px) {
+  .init {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  [class*='col'] {
+    width: 100%;
+  } .init {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .date {
+    font-size: 9px;
+  } .contact {
+    font-size: 9px;
+    float: right;
+  } .logo img {
+    width: 180px;
+  }
+  [class*='col'] {
+    width: 100%;
+  }
+  .init {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  
+}
+
+/* --------------------------------------------- */
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+  
+  
+  
+  <div class='topbarc'>
+    <div class='topbar'>
+      <br>
+    </div>
+   
+  </div>
+  
+  <div class='init'>
+  <div id='header' class='col-12'>
+    
+    <div class='colb-2'>
+      <div class='displaydate'>
+        <span id='day'></span>   
+        <span id='month'></span>
+        <span id='date'></span>
+      </div>
+        </div>
+    
+    <div class='colb-4'>
+      <div class='logo'><img src='https://svgshare.com/i/Fm2.svg' class='image1'></div>
+         </div>
+    
+    <div class='colb-2'>
+      <div class='contact'><a href=''>Contact</a></div>
+        </div>
+    
+  </div>
+  
+
+  <div class='links'>
+      
+    <div class='col-12'>
+      <ul class='list'>
+        <li>
+          <div class='button'>
+            <a href=''>
+              About
+            </a>
+          </div>
+        </li>
+        
+        <li>
+          <div class='button'>
+            <a href='' class='button'>
+              Media
+            </a>
+          </div>
+        </li>
+        
+        <li>
+        
+          <div class='dropdown'>
+            <div class='button'>
+            Publications
+            </div>
+            <div class='dropdowncontent'>
+              <div class='in'> <a href='' class='dropdown'>
+                All
+              </a></div>
+              <div class='in'> <a href='' class='dropdown'>
+                Blog
+              </a> </div>
+              <div class='in'> <a href='' class='bjutton'>
+                Daily Bruin
+              </a> </div>
+          
+            </div>
+            
+          </div>
+          
+        </li>
+        
+        <li>
+          <div class='button'>      
+            <a href=''>
+              Projects
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div></div>
+          
+    <div class='selectmedia'>
+    <div class='colb-9'>
+      
+      <div class='top'>
+      <figure class='fig_med'>
+        <a href='https://dailybruin.com/2019/10/16/luskin-center-for-innovation-receives-3m-grant-to-assess-californias-water-needs/'>
+          <img class='medium_img' 
+               alt='Luskin Center receives $3M'
+               src='https://dailybruin.com/images/2019/10/web.ns_.waterUC.MK_-640x422.jpg'>
+          <figurecaption>
+            Luskin Center for Innovation Receives $3M grant
+          </figurecaption>
+        </a>
+      </figure>
+      </div>
+        
+      
+      <div class='top'>
+      <figure class='fig_med'>
+        <a href='https://dailybruin.com/2019/02/24/virtual-reality-testing-on-rats-to-reveal-insights-into-human-brain/'>
+        <img class'medium_img'
+             alt='Virtual reality testing on rats'
+             src='https://dailybruin.com/images/2019/02/web.ns_.ratvr_.DB_-566x640.jpg'>
+        <figurecaption>
+          <div class='figcap'>  
+            Virtual reality Testing on Rats to Reveal Insights on Brain
+          </div>
+        </figurecaption>
+        </a>
+      </figure>
+      </div>
+      
+      <figure class='fig_big'>
+        <a href='https://www.hodinkee.com/articles/patek-philippe-henry-graves-jr-minute-repeater-hands-on#&gid=1&pid=1'>
+          <img class='large_img'
+               alt='Henry Graves Minute Repeater'
+               src='https://hodinkee.imgix.net/uploads/images/1571758796131-nwvh0dikn5d-707c5a1e3082c7cce144009aa2477034/Graves_Hero_1.jpg?ixlib=rails-1.1.0&fit=crop&ch=Width%2CDPR%2CSave-Data&alt=&fm=jpg&q=55&auto=format&usm=12&s=344aff2da8231e6e1367ea146455e5e0'>
+          <figurecaption>
+            <div class='figcap'>  
+              The Patek Philippe Henry Graves Jr. Minute Repeater
+            </div>
+          </figurecaption>
+        </a>
+      </figure>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+    
+    <div class='top'>
+    <div class='colb-3'>
+      <div class='sub' id='about'>
+        About YamletYamlet:
+        <br><br>
+        <i class='it'>--- YamletYamlet is a site of curated materials from around the web. 
+            It is a personal interest site developed by Bernard Mendez. ---
+        </i>
+        <br><br>
+      </div>
+    </div>
+    </div>
+      
+    <div class='colb-3'>  
+      <div class='sub' id='newsletter'>
+        Newsletter:
+        <form action=''>
+          <input type='text' placeholder='Enter E-mail Here' id='what'>
+          <input type='submit' id='submit'>
+        </form>
+        <div id='ml'>
+        Be the first to hear about new selections by joining our mailing list! 
+        </div>
+      </div>
+    </div>
+      
+      
+      
+    </div>
+  </div>
+  
+  <div id='foot'>
+    <div id='footer'>
+
+      <br><br><br><br><br>
+    </div>
+  </div>
+    
+    
+    
+  <script id="jsbin-javascript">
+var d = new Date();
+
+ady = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var dy = ady[d.getDay()];
+document.getElementById("day").innerHTML = dy;
+
+amt = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+var mt = amt[d.getMonth()];
+document.getElementById("month").innerHTML = mt;
+
+var dt = d.getDate();
+document.getElementById("date").innerHTML = dt;
+
+</script>
+</body>
+</html>
+
+
+
+
+
