@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2019 by bernardmendez (http://jsbin.com/zovesip/150/edit)
+Copyright (c) 2019 by bernardmendez (http://jsbin.com/naviwal/166/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -12,9 +12,8 @@ Released under the MIT license: http://jsbin.mit-license.org
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Y&Y</title>
 <style id="jsbin-css">
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.667%;}
 .col-3 {width: 25%;}
@@ -32,310 +31,328 @@ Released under the MIT license: http://jsbin.mit-license.org
 .colb-3 {width: 25%}
 .colb-4 {width: 33.33%}
 
-[class*="col-"] {
-  float: left;
-  border: 2px solid #888888;
+
+html {
+  font-family: ;
+  background-color: #f3f3f3;
+  color: #666666;
 }
-[class*='colb'] {
-  float: left;
-}
-
-
-
-/* --------------------------------------------- */
-
-
 * {
   box-sizing: border-box;
 }
-html, body {
-  padding: 0px;
-  margin: 0px;
+
+ul {
+  list-style-type: none;
 }
 
-
-html {
-  
-}
-body {
-  font-family: Gill Sans;
-}
 a {
   text-decoration: none;
-  color: black;
-} a:hover {
-  color: #BEBEBE;
-}
+  color: #666666;
+} 
 
-/* --------------------------------------------- */
-
-.topbarc {
-  padding-bottom: 3px;
-}
-
-.topbar {
-  border-bottom: 1px solid #888888;
-  border-top: 1px solid #888888;
-  background-color: #65909A;
-}
-
-
-
-
-.init {
-}
-
-
-/* --------------------------------------------- */
-
-#header {
-  float: left;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: block;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #C1F0F6;
-}
-
-.displaydate {
-  width: 100%;
-  font-size: 13px;
-  color: #888888;
-  padding: 2px;
-  text-align: center;
-} .logo img {
-  background-color: white;
-  border: 2px solid #888888;
-} .contact {
-  width: 100%;
-  float: left;
-  font-size: 13px;
-  display: flex;
-  justify-content: space-around;
-  padding: 2px;
-} .contact a {
-  color: #888888
-} .contact :hover {
-  color: #BEBEBE;
-}
-
-
-
-/* --------------------------------------------- */
-
-.links {
-  display: inline-block;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  #background-color: blue;
-} .list {
-  list-style-type: none;
+h4 {
   padding: 0;
-  display: flex;
-  justify-content: space-around;
-  overflow: auto;
-  overflow-y: hidden;
-  margin-right: 5%;
-  margin-left: 5%
-} .list li { 
-  padding: 10px;
-} .list li a {
-  color: black;
-  padding: 20px;
-} .button :hover {
-  text-decoration: none;
-  background-color: #f0f0f0;
-  color: #BEBEBE;
-} .dropdown :hover {
-  text-decoration: none;
-  color: #BEBEBE;
-} .in {
-  padding: 5px
-} .dropdowncontent {
-  display: none;
-  position: absolute;
-  padding: 5px;
-  background-color: white;
-  border: 1px solid grey;
-} .dropdown:hover .dropdowncontent{
-  display: block;
-}
-
-
-
-
-
-
-
-/* --------------------------------------------- */
-
-
-.selectmedia {
-  display: inline-block;
-  padding-bottom: 300px;
-  border-top: 1px solid #888888;
-  #@background-color: blue;
-}
-
-.top {
-  margin-top: 15px;
-}
-
-figure {
-  margin: 1%;
-  float: left;
-  text-align: center;
-  font-size: smaller;
-  border: 1px solid #bebebe;
-} figure img {
-  margin: 0;
-  border-bottom: 1px solid #bebebe;
-} figure:hover {
-  border: 1px solid darkgrey;
-  color: #bebebe;
-  background-color: #f0f0f0;
-}
-
-.figcap {
-  padding: 0px;
-  margin: 0px;
-  margin-right: 6px;
-  margin-left: 6px;
-}
-
-.pubdate {
-  float: left;
-} .author {
-  float: right;
-} .title {
-  float: center;
-}
-
-.fig_big {
-  width: 98%;
-} .fig_big img{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-} .fig_med {
-  width: 48%;
-} .fig_med img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;  
-} .fig_small {
-  width: 30.66%
-} .fig_small img {
-  width: 100%:
-  height: 150px;
-  object-fit: cover;
-}
-
-
-/* --------------------------------------------- */
-
-.sub {
   margin: 2%;
-  border: 1px solid #888888;
+}
+
+
+#mnu1 {
+  #border: 1px solid red;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 70%;
+  background-color: #efefef;
+  color: #888888;
+  #background-color: grey;
+}
+
+.list1 {
+  #border: 1px solid red;
+} .list1 ul {
+  #border: 1px solid red;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+} .list1 ul li {
+  #border: 1px solid red;
+  padding: 5px;
+  color: red;
+} .list1 ul li a {
+  color: #888888;
+  #font-weight: bold;
+} .list1 ul li :hover {
+  color: #666666;
+} .list1 ul li :focus {
+  color: red;
+}
+
+
+.bodie {
+  #border: 1px solid blue;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+}
+
+.int_bodie {
+  #border: 1px solid blue;
+  display: flex;
+}
+
+#bart {
+  #border: 1px solid red;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.log1 {
+  #border: 1px solid red;
+  padding: 1%;
+  padding-bottom: 4%;
+}
+
+#mnu {
+  #border: 1px solid red;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 90%;
+}
+
+#list {
+  #border: 1px solid red;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: left;
   padding: 2%;
-  font-size: 75%
-}
-.it {
-  font-size: 72%
-}
-#about {
-  line-height: .99;
-}
-
-#newsletter {
+  padding-left: 5%;
+  padding-right: 5%;
   overflow: hidden;
-}
-#submit {
-  float: right;
-  margin-left: 10%;
-}
-#what {
-  width: 100%
-}
-#ml {
-  text-align: justify;
-}
-
-
-
-/* --------------------------------------------- */
-
-#foot {
-  display: block;
-  padding-top: 50px;
-  width: 100%
-}
-#footer {
-  border-top: 2px solid #888888;
-  background-color: #65909A;
+} #list ul {
+  background-color: #efefef;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin: 0%;
+  padding-left: 2%;
+  #border: 1px solid red;
+} #list ul li {
+  #border: 1px solid red;
+  padding: 4px;
+} #list ul li a {
+  color: #888888;
+  #font-weight: bold;
+} #list ul li :hover {
+  color: #666666;
+} #list ul li :focus {
+  color: red;
 }
 
 
 
+#mn_content {
+  #border: 1px solid red;
+  width: 70%;
+  padding: 1%;
+}
+
+#selread {
+  display: flex;
+  justify-content: center;
+  #font-style: italic;
+}
+
+#mnu2 {
+  #border: 1px solid red;
+  padding-top: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 3%;
+}
+
+#list2 {
+  #border: 1px solid red;
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  padding: 1%;
+  background-color: #efefef;
+}
 
 
+#mn_big {
+  #border: 1px solid red;
+  width: 46%;
+  padding: 0%;
+} #mn_small {
+  #border: 1px solid red;
+  width: 26%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.author {
+  border-top: 2px solid #bebebe;
+  font-size: 55%;
+  font-style: italic;
+  font-weight: normal;
+  padding: 2%;
+  padding-top: 0%;
+} .description {
+  font-size: 65%;
+  padding: 2%;
+  padding-top: 0%;
+  font-weight: normal;
+}
 
 
+.big {
+  #border: 1px solid red;
+  width: 100%;
+  margin-bottom: 0%;
+  font-weight: bold;
+} .big a:hover{
+  color: #888888;
+} .big a:focus {
+  color: red;
+} .small {
+  #border: 1px solid red;
+  width: 100%;
+  margin-bottom: 0%;
+} #mn_small img {
+  width: 100%;
+} .small a {
+  font-size: 70%;
+  font-weight: bold;
+} .small a:hover {
+  color: #888888;
+} .small a:focus {
+  color: red;
+}
 
+#mn_big img {
+  width: 100%;
+} 
 
-
-
-
-
+.ad {
+  #border: 1px solid red;
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  background-color: #efefef;
+  padding: 5%;
+}
 
 
 
 /* --------------------------------------------- */
 
 @media only screen and (max-width: 10000px) {
-  .init {
-    padding-right: 10%;
+  
+  .bodie {
     padding-left: 10%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  [class*='col'] {
-    width: 100%;
-  } .init {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .date {
-    font-size: 9px;
-  } .contact {
-    font-size: 9px;
-    float: right;
-  } .logo img {
-    width: 180px;
-  }
-  [class*='col'] {
-    width: 100%;
-  }
-  .init {
-    padding-right: 3%;
-    padding-left: 3%;
+    padding-right: 10%;
   }
   
+  .log1 {
+    width: 70%;
+  }
+  
+  .mn_content_int {
+  #border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: wrap;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  
+  .bodie {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  .int_bodie {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #bart {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .log1 {
+    width: 35%;
+  }
+
+  #list {
+    display: flex;
+    flex-direction: column;
+  } #list ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #mn_content {
+    width: 100%;
+  }
+  
+  .mn_content_int {
+  display: block;
+  }
+  #mn_big {
+    width: 100%;
+  } #mn_small {
+    #border: 1px solid red;
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  } .small {
+    padding: 1%;
+    padding-top: 0%;
+  }
+  
+#mnu {
+  #border: 1px solid red;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 80%;
+}
+
+#list {
+  #border: 1px solid red;
+  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  overflow: hidden;
+} #list ul {
+  padding-left: 0%;
+  #border: 1px solid red;
+} #list ul li {
+  font-size: 90%
 }
 
 /* --------------------------------------------- */
+
+
+
 
 
 
@@ -348,178 +365,245 @@ figure {
 <body>
   
   
-  
-  <div class='topbarc'>
-    <div class='topbar'>
-      <br>
-    </div>
-   
-  </div>
-  
-  <div class='init'>
-  <div id='header' class='col-12'>
+  <div id='mnu1' class='col-12'> <!-- start menu -->
     
-    <div class='colb-2'>
-      <div class='displaydate'>
-        <span id='day'></span>   
-        <span id='month'></span>
-        <span id='date'></span>
-      </div>
-        </div>
-    
-    <div class='colb-4'>
-      <div class='logo'><img src='https://svgshare.com/i/Fm2.svg' class='image1'></div>
-         </div>
-    
-    <div class='colb-2'>
-      <div class='contact'><a href=''>Contact</a></div>
-        </div>
-    
-  </div>
-  
-
-  <div class='links'>
-      
-    <div class='col-12'>
-      <ul class='list'>
+    <div class='list1'> <!-- list -->
+      <ul>
         <li>
           <div class='button'>
-            <a href=''>
-              About
-            </a>
-          </div>
-        </li>
-        
-        <li>
-          <div class='button'>
-            <a href='' class='button'>
-              Media
-            </a>
-          </div>
-        </li>
-        
-        <li>
-        
-          <div class='dropdown'>
-            <div class='button'>
-            Publications
-            </div>
-            <div class='dropdowncontent'>
-              <div class='in'> <a href='' class='dropdown'>
-                All
-              </a></div>
-              <div class='in'> <a href='' class='dropdown'>
-                Blog
-              </a> </div>
-              <div class='in'> <a href='' class='bjutton'>
-                Daily Bruin
-              </a> </div>
-          
-            </div>
+            
+            <a alt=''
+               href=''>
+            Contact
+            </a>  
             
           </div>
-          
         </li>
+          
+      <div class='displaydate'>
+       <span id='day'></span>   
+       <span id='month'></span>
+       <span id='date'></span>
+      </div>
         
         <li>
-          <div class='button'>      
-            <a href=''>
-              Projects
-            </a>
+          <div class='button'>
+            
+            <a alt=''
+               href=''>
+            Employer Page
+            </a>  
           </div>
         </li>
       </ul>
-    </div></div>
-          
-    <div class='selectmedia'>
-    <div class='colb-9'>
-      
-      <div class='top'>
-      <figure class='fig_med'>
-        <a href='https://dailybruin.com/2019/10/16/luskin-center-for-innovation-receives-3m-grant-to-assess-californias-water-needs/'>
-          <img class='medium_img' 
-               alt='Luskin Center receives $3M'
-               src='https://dailybruin.com/images/2019/10/web.ns_.waterUC.MK_-640x422.jpg'>
-          <figurecaption>
-            Luskin Center for Innovation Receives $3M grant
-          </figurecaption>
-        </a>
-      </figure>
-      </div>
-        
-      
-      <div class='top'>
-      <figure class='fig_med'>
-        <a href='https://dailybruin.com/2019/02/24/virtual-reality-testing-on-rats-to-reveal-insights-into-human-brain/'>
-        <img class'medium_img'
-             alt='Virtual reality testing on rats'
-             src='https://dailybruin.com/images/2019/02/web.ns_.ratvr_.DB_-566x640.jpg'>
-        <figurecaption>
-          <div class='figcap'>  
-            Virtual reality Testing on Rats to Reveal Insights on Brain
-          </div>
-        </figurecaption>
-        </a>
-      </figure>
-      </div>
-      
-      <figure class='fig_big'>
-        <a href='https://www.hodinkee.com/articles/patek-philippe-henry-graves-jr-minute-repeater-hands-on#&gid=1&pid=1'>
-          <img class='large_img'
-               alt='Henry Graves Minute Repeater'
-               src='https://hodinkee.imgix.net/uploads/images/1571758796131-nwvh0dikn5d-707c5a1e3082c7cce144009aa2477034/Graves_Hero_1.jpg?ixlib=rails-1.1.0&fit=crop&ch=Width%2CDPR%2CSave-Data&alt=&fm=jpg&q=55&auto=format&usm=12&s=344aff2da8231e6e1367ea146455e5e0'>
-          <figurecaption>
-            <div class='figcap'>  
-              The Patek Philippe Henry Graves Jr. Minute Repeater
-            </div>
-          </figurecaption>
-        </a>
-      </figure>
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
+    </div>     <!-- list -->
     
-    <div class='top'>
-    <div class='colb-3'>
-      <div class='sub' id='about'>
-        About YamletYamlet:
-        <br><br>
-        <i class='it'>--- YamletYamlet is a site of curated materials from around the web. 
-            It is a personal interest site developed by Bernard Mendez. ---
-        </i>
-        <br><br>
-      </div>
-    </div>
-    </div>
-      
-    <div class='colb-3'>  
-      <div class='sub' id='newsletter'>
-        Newsletter:
-        <form action=''>
-          <input type='text' placeholder='Enter E-mail Here' id='what'>
-          <input type='submit' id='submit'>
-        </form>
-        <div id='ml'>
-        Be the first to hear about new selections by joining our mailing list! 
-        </div>
-      </div>
-    </div>
-      
-      
-      
-    </div>
-  </div>
+  </div> <!-- menu -->
   
-  <div id='foot'>
-    <div id='footer'>
-
-      <br><br><br><br><br>
+  
+  
+  
+  
+  <div class='bodie'>  
+  
+  <div class='int_bodie'>
+    
+  <div id='bart'>  
+  
+    <img alt='Y&Y_logo_official'
+           src='https://svgshare.com/i/FvN.svg'
+           class='log1'>
+        
+  <div id='mnu' class='col-12'> <!-- start menu -->
+  
+    <div id='list' class='col-12'> <!-- list -->
+      <h4>Menu</h4>
+      <ul>
+        
+        <li>
+          <div class='button'>
+            
+            <a alt=''
+               href=''>
+            About
+            </a>  
+            
+          </div>
+        </li>
+        
+        <li>
+          <div class='button'>
+            
+            <a alt=''
+               href=''>
+            Y&Y Original
+            </a>  
+            
+          </div>
+        </li>
+        
+        <li>
+          <div class='button'>
+            
+            <a alt=''
+               href=''>
+            Around the Web
+            </a>  
+            
+          </div>
+        </li>
+     </ul>
+      <h4>Sections</h4> 
+     <ul>
+        <li>
+            <a alt=''
+               href=''>
+            Science & Tech
+            </a>  
+        </li>
+        
+       
+        <li>
+            <a alt=''
+               href=''>
+            Entertainment
+            </a>  
+        </li>
+        
+       
+        <li>
+            <a alt=''
+               href=''>
+            Columns
+            </a>  
+        </li>
+      </ul>
+      
+        </div>  <!-- list -->
+  </div> <!-- menu -->
+  
+    
     </div>
-  </div>
+  
+  
+  
+  <div id='mn_content'> <!-- main content -->
+  
+    <div id='selread' class='col-12'>
+      <h2>Top Readings</h2>
+    </div>
+    
+  <div id='mnu2' class='col-12'> <!-- start menu -->
+    
+    <div id='list2' class='col-12'> <!-- list -->
+      
+        
+    </div>  <!-- list -->
+    
+  </div> <!-- menu -->
     
     
+    <div class='mn_content_int'>
     
-  <script id="jsbin-javascript">
+    <div id='mn_small'>
+      
+      <div class='small'>
+      <a href='https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/'>
+         <img src='https://dailybruin.com/images/2019/11/2.DLB_-640x434.jpg'>
+      Students, Thunberg demand action at LA youth climate strike
+      </a>
+      <div class='author'>
+        Author: B. Mendez
+      </div>
+      </div>
+      
+      <div class='small'>
+        <a alt=''
+           href='https://www.hodinkee.com/articles/patek-philippe-henry-graves-jr-minute-repeater-hands-on'>
+        <img alt=''
+             src='https://hodinkee.imgix.net/uploads/images/1571758796131-nwvh0dikn5d-707c5a1e3082c7cce144009aa2477034/Graves_Hero_1.jpg?ixlib=rails-1.1.0&fit=crop&ch=Width%2CDPR%2CSave-Data&alt=&fm=jpg&q=55&auto=format&usm=12&s=344aff2da8231e6e1367ea146455e5e0'>
+        Hands-On: The Patek Philippe Henry Graves Jr. Minute Repeater
+        </a>
+      <div class='author'>
+        Author: S. Pulvirent
+      </div>
+      </div>
+      
+    </div>
+      
+    
+      
+    <div id='mn_big'>
+      
+      <div class='big'>
+      <a alt='Internet 50 celebration'
+         href='https://dailybruin.com/2019/10/30/school-of-engineering-hosts-a-daylong-event-celebrating-internets-50th-birthday/'>
+        <img src='https://dailybruin.com/images/2019/10/web.ns_.internetbirthday.AL_-640x441.jpg'>
+            UCLA hosts daylong event celebrating internet’s 50th birthday
+      </a>
+      <div class='author'>
+        Author: S. Pant, B. Le, B. Mendez, E. Macinnis, S. Iyer
+      </div> 
+        <div class='description'>
+        <br>
+      The UCLA Samueli School of Engineering hosted a daylong event which celebrated the 50th anniversary of the internet.
+      Mark Cuban, Peter Thiel and Ashton Kutcher were among the  speakers that....<i>(cont)</i>
+        </div>
+      </div>      
+    </div>
+    
+      
+      
+    <div id='mn_small'>
+      <div class='small'>
+       <a alt=''
+          href='https://dailybruin.com/2019/10/16/luskin-center-for-innovation-receives-3m-grant-to-assess-californias-water-needs/'>
+         <img src='https://dailybruin.com/images/2019/10/web.ns_.waterUC.MK_-640x422.jpg'>
+          Luskin Center for Innovation receives $3M grant to assess water needs
+      </a>
+        <div class='author'>
+        Author: B. Mendez
+      </div>
+      </div>
+      
+            
+      <div class='small'>
+       <a alt=''
+          href='https://dailybruin.com/2019/11/01/ucla-researchers-develop-new-method-of-detecting-habitable-planets'>
+         <img src='https://dailybruin.com/images/2019/11/A5FCB0CA-3995-4F3E-8B54-2C847B6C8447-640x480.jpeg'>
+          UCLA researchers detect new habitable planets
+      </a>
+      <div class='author'>
+        Author: B. Mendez
+      </div>
+      </div>
+      
+    </div>
+  
+      
+    </div>
+    </div>
+    </div> <!-- end -->
+    </div>
+  
+    <div class='ad'>
+    
+      
+    
+
+    </div>
+  
+  <br><br><br><br><br><br><br><br>
+
+
+  
+  <div class='ads1'> <!-- footer -->
+  
+  dddd
+  
+  </div> <!-- footer -->
+  
+<script id="jsbin-javascript">
 var d = new Date();
 
 ady = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -537,8 +621,3 @@ document.getElementById("date").innerHTML = dt;
 </script>
 </body>
 </html>
-
-
-
-
-
