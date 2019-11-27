@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2019 by bernardmendez (http://jsbin.com/nenedol/119/edit)
+Copyright (c) 2019 by bernardmendez (http://jsbin.com/nenedol/139/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -37,15 +37,6 @@ color: black;
 color: grey;
 }
 
-
-.img {
-width: 100%;
-display: flex;
-} .img {
-}
-.inimg {
-width: 100%;
-}
 
 .date {
 border-bottom: 1px solid #888888;
@@ -122,10 +113,18 @@ margin-top: 1%;
 margin-bottom: 1%;
 } .article img{
 width: 100%;
-} .article:hover {
-background-color: lightgrey;
-opacity: .5;
+object-fit: scale-down;
 color: black;
+} .article:hover {
+opacity: .5;
+background-color: lightgrey;
+color: black;
+}
+
+.resize {
+border: 1px solid red;
+max-height: 50%;
+max-width: 100%;
 }
 
 .star:hover {
@@ -133,7 +132,7 @@ background-color: lightblue;
 }
 
 .pubdate {
-font-size: 75%;
+font-size: 67%;
 font-style: italic;
 }
 
@@ -141,15 +140,9 @@ font-style: italic;
 
 .footer {
 padding: 5%;
-border-radius: 2px;
 background-color: #f3f3f3;
 margin-top: 15%;
-margin-right: 2%;
-margin-left: 2%;
 border-top: 1px solid grey;
-border-right: 1px solid grey;
-border-left: 1px solid grey;
-
 }
 
 
@@ -266,7 +259,7 @@ Description</a>
 <div class='meat'>
 <a href='https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/'
    alt='' class='article'>
-<img src='https://dailybruin.com/images/2019/11/2.DLB_-640x434.jpg'
+<img src='https://dailybruin.com/images/2019/11/web.ns_.sharkevent.AD_-512x640.jpg'
      alt=''>
 <div class='pubdate'>November 22, 2019</div>
 Documentary screening event takes deep dive into shark conservation and advocacy
@@ -281,7 +274,7 @@ Biden visits Downtown LA, condemns gun violence in wake of Santa Clarita shootin
 <a href='https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/'
    alt='' class='article'>
 <img src='https://dailybruin.com/images/2019/11/2.DLB_-640x434.jpg'
-     alt=''>
+alt=''>
 <div class='pubdate'>November 2, 2019</div>
 Students demand action, reduced fossil fuel use at LA youth climate strike
 </a>
@@ -326,7 +319,7 @@ _<br><i>Publications</i>
 <div class='meat'>
 <a href='https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/'
    alt='' class='article star'>
-<img src='https://dailybruin.com/images/2019/11/2.DLB_-640x434.jpg'
+<img src='https://dailybruin.com/images/2019/11/web.ns_.sharkevent.AD_-512x640.jpg'
      alt=''>
 <div class='pubdate'>November 22, 2019</div>
 Documentary screening event takes deep dive into shark conservation and advocacy
