@@ -5,25 +5,35 @@
 <head>
 <title>Bernard Mendez</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style id="jsbin-css">
+<style>
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
 
+
 body {
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+font-size: 13px;
+margin: 0%;
+border: 1px solid #666666;
+}
+
+
+.outer {
 border-left: 1px solid #666666;
 border-right: 1px solid #666666;
 margin-right: 16%;
 margin-left: 16%;
-text-align: center;
-font-family: 'Open Sans', sans-serif;
-font-size: 13px;
-height: 100%;
-padding: 0px;
+box-shadow: 2px 0px 5px lightgrey, -2px 0px 5px lightgrey;
 }
 
 .all {
-margin-right: 12%;
-margin-left: 12%;
+margin-right: 14%;
+margin-left: 14%;
+}
+
+.text {
+text-align: left
 }
 
 a {
@@ -51,23 +61,19 @@ margin-top: 15%;
 margin-bottom: 1%;
 }
 
-.email {
-font-family: 'Merriweather', serif;
-text-decoration: underline;
-} 
-
-
-
 .about {
 font-size: 11px;
 display: flex;
 justify-content: center;
 } .about a {
-#border: 1px solid red;
 padding-right: 1%;
 padding-left: 1%;
 }
 
+.email {
+font-family: 'Merriweather', serif;
+font-style: underline;
+}
 
 .tab {
 #border: 1px solid blue;
@@ -82,26 +88,71 @@ border-bottom: 1px solid grey;
 font-size: 12px;
 width: 100%;
 } .tab a:hover {
+border-bottom: 2px solid lightgrey;
+} .tab .active {
 border-bottom: 2px solid grey;
 }
 
-.text {
-text-align: left;
+.seymour {
+text-align: right;
+font-size: 8px;
+font-style: italic;
+}
+
+.meat {
+#border: 1px solid lightblue;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.expl {
+font-weight: normal;
+font-family: 'Merriweather', serif;
+
+}
+
+.article {
+border: 1px solid lightgrey;
+border-radius: 5px;
+overflow: hidden;
+background-color: #f3f3f3;
+width: 30%;
+margin-top: 1%;
+margin-bottom: 1%;
+box-shadow: 1px 0px 5px lightgrey, -1px 0px 5px lightgrey;
+} .article img{
+width: 100%;
+color: black;
+} .article:hover {
+opacity: .5;
+background-color: lightgrey;
+color: black;
+}
+
+.resize {
+border: 1px solid red;
+max-height: 50%;
+max-width: 100%;
+}
+
+.pubdate {
+font-size: 67%;
+font-style: italic;
 }
 
 .footer {
 padding: 5%;
-border-radius: 2px;
 background-color: #f3f3f3;
-margin-top: 15%;
-margin-right: 2%;
-margin-left: 2%;
+color: grey;
+margin-top: 10%;
 border-top: 1px solid grey;
-border-right: 1px solid grey;
-border-left: 1px solid grey;
-
+font-size: 80%;
+} .footer a {
+color: grey;
+} .footer a:hover {
+color: lightgrey;
 }
-
 
 @media only screen and (max-width: 800px) {
 body{
@@ -113,12 +164,17 @@ margin-right: 4%;
 margin-right: 5%;
 margin-left: 5%;
 }
+.article {
+width: 100%;
 }
-
+}
 
 </style>
 </head>
 <body>
+    
+<div class='outer'>
+    
 <div class='all'>
 
 <div class='date'>
@@ -141,28 +197,22 @@ Contact
 <br><br>
 
 <div class='text'>
-<h2>Contact Information</h2>
+<h2>Contact Bernard</h2>
 <h3>General</h3>
 You can contact <span class='email'>contact@bernardmendez.com</span>
 for general inquiries.
 
 <h3>Media Requests</h3>
-You can contact <span class='email'>media@bernardmendez.com</span> 
+You can contact <span class='email'>media@bernardmendez.com</span>
 for media requests.
 
 <h3>Recruiting Requests</h3>
-You can contact 
+You can contact
 <span class='email'>recruiting@bernardmendez.com</span>
 for recruiting purposes.
 
 <h3>Request a Resume</h3>
 To request a resume, contact <span class='email'>resume@bernardmendez.com</span>
-
-<h2>Contact Bernard</h2>
-To contact Bernard personally, email 
-<span class='email'>bernard.h.mendez@gmail.com</span>
-or call
-<span class='email'>(562)-277-4954</span>
 
 </div>
 
@@ -170,7 +220,9 @@ or call
 
 </div>
 <div class='footer'>
+Copyright © 2019-2019 Bernard H. Mendez All Rights Reserved | <a href='https://twitter.com/BernardMendezDB'>Twitter</a> | <a href='https://www.linkedin.com/in/bernardmendez/'>LinkedIn</a> | <a href='https://github.com/bernardmendez'>Github</a> | <a href='https://dailybruin.com/author/bernard-mendez/'>Daily Bruin</a> |
 </div>
+
 <script id="jsbin-javascript">
 var d = new Date();
 
@@ -186,11 +238,39 @@ document.getElementById("month").innerHTML = mt;
 var dt = d.getDate();
 document.getElementById("date").innerHTML = dt;
 
-
-function highlight(input) {
-var sel = document.getElementByClass(input);
-sel.select();
+function open2(evt, type1, type2) {
+var x = document.getElementsByClassName('tabcontent');
+for (var i = 0; i < x.length; i++){
+x[i].style.display = 'none';
 }
+var tablinks = document.getElementsByClassName('tablinks')
+for (var i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(type1).style.display = "block";
+document.getElementById(type2).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+function open3(evt, type1, type2, type3) {
+var x = document.getElementsByClassName('tabcontent');
+for (var i = 0; i < x.length; i++){
+x[i].style.display = 'none';
+}
+var tablinks = document.getElementsByClassName('tablinks')
+for (var i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(type1).style.display = "block";
+document.getElementById(type2).style.display = "block";
+document.getElementById(type3).style.display = "block";
+evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+
+
 
 </script>
 </body>

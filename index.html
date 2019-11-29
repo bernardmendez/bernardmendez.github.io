@@ -5,23 +5,31 @@
 <head>
 <title>Bernard Mendez</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style id="jsbin-css">
+<style>
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
 
+
 body {
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+font-size: 13px;
+margin: 0%;
+border: 1px solid #666666;
+}
+
+
+.outer {
 border-left: 1px solid #666666;
 border-right: 1px solid #666666;
 margin-right: 16%;
 margin-left: 16%;
-text-align: center;
-font-family: 'Open Sans', sans-serif;
-font-size: 13px;
+box-shadow: 2px 0px 5px lightgrey, -2px 0px 5px lightgrey;
 }
 
 .all {
-margin-right: 12%;
-margin-left: 12%;
+margin-right: 14%;
+margin-left: 14%;
 }
 
 a {
@@ -71,6 +79,8 @@ border-bottom: 1px solid grey;
 font-size: 12px;
 width: 100%;
 } .tab a:hover {
+border-bottom: 2px solid lightgrey;
+} .tab .active {
 border-bottom: 2px solid grey;
 }
 
@@ -87,17 +97,23 @@ justify-content: space-between;
 flex-wrap: wrap;
 }
 
+.expl {
+font-weight: normal;
+font-family: 'Merriweather', serif;
+
+}
+
 .article {
-border: 1px solid #efefef;
+border: 1px solid lightgrey;
 border-radius: 5px;
 overflow: hidden;
 background-color: #f3f3f3;
 width: 30%;
 margin-top: 1%;
 margin-bottom: 1%;
+box-shadow: 1px 0px 5px lightgrey, -1px 0px 5px lightgrey;
 } .article img{
 width: 100%;
-object-fit: scale-down;
 color: black;
 } .article:hover {
 opacity: .5;
@@ -111,10 +127,6 @@ max-height: 50%;
 max-width: 100%;
 }
 
-.star:hover {
-background-color: lightblue;
-}
-
 .pubdate {
 font-size: 67%;
 font-style: italic;
@@ -123,8 +135,14 @@ font-style: italic;
 .footer {
 padding: 5%;
 background-color: #f3f3f3;
-margin-top: 15%;
+color: grey;
+margin-top: 10%;
 border-top: 1px solid grey;
+font-size: 80%;
+} .footer a {
+color: grey;
+} .footer a:hover {
+color: lightgrey;
 }
 
 @media only screen and (max-width: 800px) {
@@ -145,6 +163,9 @@ width: 100%;
 </style>
 </head>
 <body>
+    
+<div class='outer'>
+
 <div class='all'>
 
 
@@ -165,32 +186,32 @@ Bernard Mendez
 </div>
 
 <div class='tab'>
-<a href='javascript:void(0)' class='tablinks' onclick='open3("feet", "project", "media")' id='defaultOpen'>All</a>
-<a href='javascript:void(0)' class='tablinks' onclick='open2("feetproject", "project")'>Projects</a>
-<a href='javascript:void(0)' class='tablinks' onclick='open2("feetmedia", "media")'>Media</a>
+<a href='javascript:void(0)' class='tablinks' onclick='open3(event, "feet", "project", "media")' id='defaultOpen'>All</a>
+<a href='javascript:void(0)' class='tablinks' onclick='open2(event, "feetproject", "project")'>Projects</a>
+<a href='javascript:void(0)' class='tablinks' onclick='open2(event, "feetmedia", "media")'>Media</a>
 </div>
 
 
 <div class='tabcontent' id='feet'>
-<i>Featured Content</i>
+<h3 class='expl'>Featured Content</h3>
 <div class='meat'>
     
-<a class='article star'
+<a class='article'
     href='http://www.bernardmendez.com'>
 <img src='website.png'>
-<div class='pubdate'>November 26, 2019</div>
+    <div class='pubdate'>November 26, 2019<br>Author: B. Mendez</div>
 Website bernardmendez.com finishes initial development, goes online
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/'>
+<a class='article' href='https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.joebiden.KH_-640x466.jpg'>
-<div class='pubdate'>November 14, 2019</div>
+<div class='pubdate'>November 14, 2019<br>Author: B. Mendez</div>
 Biden visits Downtown LA, condemns gun violence in wake of Santa Clarita shooting
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/'>
+<a class='article' href='https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.trumpprotest.picA_.JHan_-640x426.jpg'>
-<div class='pubdate'>November 10, 2019</div>
+<div class='pubdate'>November 10, 2019<br>Author: B. Mendez</div>
 Donald Trump Jr.’s book promotion attended by over 400, marked by protests
 </a>
 
@@ -203,13 +224,13 @@ Donald Trump Jr.’s book promotion attended by over 400, marked by protests
 
 
 <div class='tabcontent' id='feetproject'>
-<i>Featured Projects</i>
+<h3 class='expl'>Featured Projects</h3>
 <div class='meat'>
     
 <a class='article'
     href='http://www.bernardmendez.com'>
 <img src='website.png'>
-<div class='pubdate'>November 26, 2019</div>
+<div class='pubdate'>November 26, 2019<br>Author: B. Mendez</div>
 Website bernardmendez.com finishes initial development, goes online
 </a>
 
@@ -223,24 +244,24 @@ Website bernardmendez.com finishes initial development, goes online
 
 
 <div class='tabcontent' id='feetmedia'>
-<i>Featured Publications</i>
+<h3 class='expl'>Featured Publications</h3>
 <div class='meat'>
     
 <a class='article' href='https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.sharkevent.AD_-512x640.jpg'>
-<div class='pubdate'>November 22, 2019</div>
+<div class='pubdate'>November 22, 2019<br>Author: B. Mendez</div>
 Documentary screening event takes deep dive into shark conservation and advocacy
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.joebiden.KH_-640x466.jpg'>
-<div class='pubdate'>November 14, 2019</div>
+<div class='pubdate'>November 14, 2019<br>Author: B. Mendez</div>
 Biden visits Downtown LA, condemns gun violence in wake of Santa Clarita shooting
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/'>
 <img src='https://dailybruin.com/images/2019/11/2.DLB_-640x434.jpg'>
-<div class='pubdate'>November 2, 2019</div>
+<div class='pubdate'>November 2, 2019<br>Author: B. Mendez</div>
 Students demand action, reduced fossil fuel use at LA youth climate strike
 </a>
 
@@ -253,13 +274,13 @@ Students demand action, reduced fossil fuel use at LA youth climate strike
 
 
 <div class='tabcontent' id='project'>
-_<br><i>Projects</i>
+_<h3 class='expl'>Projects</h3>
 <div class='meat'>
     
 <a class='article'
     href='http://www.bernardmendez.com'>
 <img src='website.png'>
-<div class='pubdate'>November 26, 2019</div>
+<div class='pubdate'>November 26, 2019<br>Author: B. Mendez</div>
 Website bernardmendez.com finishes initial development, goes online
 </a>
 
@@ -273,109 +294,109 @@ Website bernardmendez.com finishes initial development, goes online
 
 
 <div class='tabcontent' id='media'>
-_<br><i>Publications</i>
+_<h3 class='expl'>Publications</h3>
 <div class='meat'>
     
-<a class='article star' href='https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/'>
+<a class='article' href='https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.sharkevent.AD_-512x640.jpg'>
-<div class='pubdate'>November 22, 2019</div>
+<div class='pubdate'>November 22, 2019<br>Author: B. Mendez</div>
 Documentary screening event takes deep dive into shark conservation and advocacy
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/'>
+<a class='article' href='https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.joebiden.KH_-640x466.jpg'>
-<div class='pubdate'>November 14, 2019</div>
+<div class='pubdate'>November 14, 2019<br>Author: B. Mendez</div>
 Biden visits Downtown LA, condemns gun violence in wake of Santa Clarita shooting
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/'>
+<a class='article' href='https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.trumpprotest.picA_.JHan_-640x426.jpg'>
-<div class='pubdate'>November 10, 2019</div>
+<div class='pubdate'>November 10, 2019<br>Author: B. Mendez, E. MacInnis, T. Zha, J. Han</div>
 Donald Trump Jr.’s book promotion attended by over 400, marked by protests
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/11/05/student-group-hosts-viennese-delegation-to-discuss-future-of-ai-ethics/'>
+<a class='article' href='https://dailybruin.com/2019/11/05/student-group-hosts-viennese-delegation-to-discuss-future-of-ai-ethics/'>
 <img src='https://dailybruin.com/images/2019/11/web.ns_.ariesevent.DB_-640x426.jpg'>
-<div class='pubdate'>November 5, 2019</div>
+<div class='pubdate'>November 5, 2019<br>Author: B. Mendez</div>
 Student group hosts Viennese delegation to discuss future of AI ethics
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/'>
+<a class='article' href='https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/'>
 <img src='https://dailybruin.com/images/2019/11/2.DLB_-640x434.jpg'>
-<div class='pubdate'>November 2, 2019</div>
+<div class='pubdate'>November 2, 2019<br>Author: B. Mendez</div>
 Students demand action, reduced fossil fuel use at LA youth climate strike
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/11/01/ucla-researchers-develop-new-method-of-detecting-habitable-planets/'>
 <img src='https://dailybruin.com/images/2019/11/A5FCB0CA-3995-4F3E-8B54-2C847B6C8447-640x480.jpeg'>
-<div class='pubdate'>November 1, 2019</div>
+<div class='pubdate'>November 1, 2019<br>Author: B. Mendez</div>
 UCLA researchers develop new method of detecting habitable planets
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/10/30/school-of-engineering-hosts-a-daylong-event-celebrating-internets-50th-birthday/'>
 <img src='https://dailybruin.com/images/2019/10/web.ns_.internetbirthday.AL_-640x441.jpg'>
-<div class='pubdate'>October 30, 2019</div>
+<div class='pubdate'>October 30, 2019<br>Author: S. Pant, B. Le, B. Mendez, E. MacInnis, S. Iyer</div>
 School of engineering hosts a daylong event celebrating internet’s 50th birthday
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/10/16/luskin-center-for-innovation-receives-3m-grant-to-assess-californias-water-needs/'>
 <img src='https://dailybruin.com/images/2019/10/web.ns_.waterUC.MK_-640x422.jpg'>
-<div class='pubdate'>October 16, 2019</div>
+<div class='pubdate'>October 16, 2019<br>Author: B. Mendez</div>
 Luskin Center for Innovation receives $3M grant to assess California’s water needs
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/10/01/new-organic-chemistry-website-hopes-to-be-engaging-interactive-student-resource/'>
 <img src='https://dailybruin.com/images/2019/10/web.news_.ochemweb.ALK_-640x426.jpg'>
-<div class='pubdate'>October 1, 2019</div>
+<div class='pubdate'>October 1, 2019<br>Author: B. Mendez</div>
 New organic chemistry website hopes to be engaging, interactive student resource
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/09/20/crazy-cat-lady-cliche-is-misleading-according-to-new-study-by-ucla-researchers/'>
 <img src='https://dailybruin.com/images/2019/09/regissue.news_.catladies.illo_.CF_.final_-640x640.png'>
-<div class='pubdate'>September 20, 2019</div>
+<div class='pubdate'>September 20, 2019<br>Author: B. Mendez</div>
 Crazy cat lady cliche is misleading, according to new study by UCLA researchers
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/05/20/ucla-usc-researchers-study-role-of-gut-microbiome-in-development-of-autism/'>
 <img src='https://dailybruin.com/images/2019/05/web.ns_.autismgut.file_-640x402.jpg'>
-<div class='pubdate'>May 20, 2019</div>
+<div class='pubdate'>May 20, 2019<br>Author: B. Mendez</div>
 UCLA, USC researchers study role of gut microbiome in development of autism
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/05/07/ashe-center-offers-free-measles-vaccines-to-prevent-further-outbreak/'>
 <img src='https://dailybruin.com/images/2019/05/web.ns_.measlesfair.file_-640x390.jpg'>
-<div class='pubdate'>May 7, 2019</div>
+<div class='pubdate'>May 7, 2019<br>Author: B. Mendez</div>
 Ashe center offers free measles vaccines to prevent further outbreak
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/04/23/ucla-researchers-develop-wearable-device-that-generates-electricity-from-snow/'>
 <img src='https://dailybruin.com/images/2019/04/web.ns_.snowpower.courtesy-640x574.jpg'>
-<div class='pubdate'>April 23, 2019</div>
+<div class='pubdate'>April 23, 2019<br>Author: B. Mendez</div>
 UCLA researchers develop wearable device that generates electricity from snow
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/04/10/ucla-instructor-leads-study-finding-carcinogenic-metals-in-popular-african-alcohol/'>
 <img src='https://dailybruin.com/images/2019/04/news-uganda.jpg'>
-<div class='pubdate'>April 10, 2019</div>
+<div class='pubdate'>April 10, 2019<br>Author: B. Mendez</div>
 UCLA instructor leads study finding carcinogenic metals in popular African alcohol
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/03/31/new-methods-could-make-plants-more-resilient-to-climate-changes-disease/'>
 <img src='https://dailybruin.com/images/2019/03/web.ns_.crops_.file_-640x432.jpg'>
-<div class='pubdate'>May 23, 2019</div>
+<div class='pubdate'>May 23, 2019<br>Author: B. Mendez</div>
 New methods could make plants more resilient to climate changes, disease
 </a>
 
 <a class='article' href='https://dailybruin.com/2019/02/24/virtual-reality-testing-on-rats-to-reveal-insights-into-human-brain/'>
 <img src='https://dailybruin.com/images/2019/02/web.ns_.ratvr_.DB_-566x640.jpg'
      alt=''>
-<div class='pubdate'>February 24, 2019</div>
+<div class='pubdate'>February 24, 2019<br>Author: B. Mendez</div>
 Virtual reality testing on rats to reveal insights into human brain
 </a>
 
-<a class='article star' href='https://dailybruin.com/2019/02/13/rocket-club-refines-safety-protocol-in-response-to-accidents-at-other-universities-2/'>
+<a class='article' href='https://dailybruin.com/2019/02/13/rocket-club-refines-safety-protocol-in-response-to-accidents-at-other-universities-2/'>
 <img src='https://dailybruin.com/images/2019/02/web.ns_.rocketstructure.TS_1-640x406.jpg'>
-<div class='pubdate'>February 13, 2019</div>
+<div class='pubdate'>February 13, 2019<br>Author: B. Mendez</div>
 Rocket club refines safety protocol in response to accidents at other universities
 </a>
 
@@ -388,8 +409,12 @@ Description
 </div>
 </div>
 
+
 </div>
 <div class='footer'>
+Copyright © 2019-2019 Bernard H. Mendez All Rights Reserved | <a href='https://twitter.com/BernardMendezDB'>Twitter</a> | <a href='https://www.linkedin.com/in/bernardmendez/'>LinkedIn</a> | <a href='https://github.com/bernardmendez'>Github</a> | <a href='https://dailybruin.com/author/bernard-mendez/'>Daily Bruin</a> |
+</div>
+
 </div>
 <script id="jsbin-javascript">
 var d = new Date();
@@ -406,33 +431,33 @@ document.getElementById("month").innerHTML = mt;
 var dt = d.getDate();
 document.getElementById("date").innerHTML = dt;
 
-
-function open1(type) {
-  var i;
-  var x = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(type).style.display = "block";
-}
-
-function open2(type1, type2) {
+function open2(evt, type1, type2) {
 var x = document.getElementsByClassName('tabcontent');
 for (var i = 0; i < x.length; i++){
 x[i].style.display = 'none';
+}
+var tablinks = document.getElementsByClassName('tablinks')
+for (var i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
 }
 document.getElementById(type1).style.display = "block";
 document.getElementById(type2).style.display = "block";
+evt.currentTarget.className += " active";
 }
 
-function open3(type1, type2, type3) {
+function open3(evt, type1, type2, type3) {
 var x = document.getElementsByClassName('tabcontent');
 for (var i = 0; i < x.length; i++){
 x[i].style.display = 'none';
+}
+var tablinks = document.getElementsByClassName('tablinks')
+for (var i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
 }
 document.getElementById(type1).style.display = "block";
 document.getElementById(type2).style.display = "block";
 document.getElementById(type3).style.display = "block";
+evt.currentTarget.className += " active";
 }
 
 document.getElementById("defaultOpen").click();
