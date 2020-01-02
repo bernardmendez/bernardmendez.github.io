@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+button {
+background-color: transparent;
+border: none;
+padding: 0px;
+margin: 0px;
+text-align: left;
+font-family: "Times New Roman";
+} button:active {
+color: lightgrey;
+background-color: lightgrey;
+} button:focus {
+outline: 0;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+body {
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 0px;
+margin: 0px;
+width: 100%;
+text-align: left;
+background-color: #f6f6f6;
+font-family: 'Georgia';
+font-size: 90%;
+color: grey;
+}
+
+.line0 {
+border: 1px solid grey;
+width: 80%;
+margin: 5px;
+}
+
+.line {
+border: 1px solid grey;
+width: 100%;
+margin: 1px;
+}
+
+.vertline {
+border: 1px solid lightgrey;
+margin: 1%;
+}
+
+.linefull {
+border: .5px solid lightgrey;
+width: 90%;
+margin: 1%;
+}
+
+.shortline {
+border: .5px solid white;
+margin: .5%;
+width: 10%;
+}
+
+#topcont {
+display: block;
+width: 100%;
+text-align: center;
+background-color: white;
+}
+
+#top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+border-top: 1px solid lightgrey;
+padding-bottom: .5%;
+padding-top: .5%;
+} #name {
+width: 40%;
+font-size: 45px;
+} #date {
+font-family: 'Arial';
+font-size: 80%;
+color: grey;
+padding: .1%;
+} #links {
+width: 30%;
+display: block;
+} #links a {
+background-color: #f3f3f3;
+padding: 2%;
+margin: 1%;
+}
+
+
+#guidecont {
+display: flex;
+justify-content: center;
+border-bottom: 1px solid lightgrey;
+border-top: 1px solid lightgrey;
+width: 100%;
+background-color: white;
+margin-bottom: 2%;
+}
+
+#guide {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+color: grey;
+background-color: white;
+width: 70%;
+height: 4vh;
+} #guide a {
+height: 100%;
+width: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: grey;
+} #guide a:hover {
+background-color: lightgrey;
+color: white;
+}
+
+
+#footer {
+height: 25vh;
+width: 100%;
+margin-top: 10%;
+background-color: #efefef;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: row;
+} #footer .footercagtegories {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+margin: 2%;
+width: 30vh;
+height: 60%;
+padding: .5%;
+} .footertitle {
+width: 100%;
+font-weight: bold;
+}

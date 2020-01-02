@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1px) {
+    #main {
+    width: 90%;
+    } #one {
+    width: 66%;
+    } #two {
+    width: 33%;
+    } #zero {
+    display: none;
+    } .firstlinegetridof {
+    display: none;
+    }
+}
+
