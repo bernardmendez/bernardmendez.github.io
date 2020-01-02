@@ -4,7 +4,6 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/temporaryall.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
     
@@ -18,30 +17,7 @@
 
 <body>
 
-<div id='header'>
-
-<div id='date'></div>
-
-<div id='topbar'>
-<div id='home'>
-<div id='name'>
-Bernard<br>Mendez
-</div>
-<div id='links'>
-<a href='about.html'>About</a>
-<a href='contact.html'>Contact</a>
-<a href='employers.html'>Employers</a>
-</div>
-</div>
-
-</div>
-<div id='extras'>
-<a href='favourites.html'>favourites</a>
-<a href='projects.html'>projects</a>
-<a href='publications.html'>publications</a>
-</div>
-
-</div>
+<div id='header'></div>
 
 
 
@@ -221,9 +197,8 @@ var preview = document.getElementById('previewed');
 
 
 
-//document.getElementById('topcont').innerHTML = topcont;
+document.getElementById('header').innerHTML = header;
 document.getElementById('date').innerHTML = fulldate;
-//document.getElementById('guidecont').innerHTML = guidecont;
 document.getElementById('footer').innerHTML = footer;
 
 var tar = document.getElementsByClassName('atw');

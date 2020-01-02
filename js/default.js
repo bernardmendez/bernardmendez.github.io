@@ -9,6 +9,8 @@ var month = monthlist[date.getMonth()];
 var year = date.getFullYear();
 var fulldate = dayname + ' ' + month + ' ' + daynumber + ', ' + year;
 
+var header = "<div id='date'></div><div id='topbar'><div id='home'><div id='name'>Bernard<br>Mendez</div><div id='links'><a href='about.html'>About</a><a href='contact.html'>Contact</a><a href='employers.html'>Employers</a></div></div></div><div id='extras'><a href='favourites.html'>favourites</a><a href='projects.html'>projects</a><a href='publications.html'>publications</a></div>";
+
 var entry = "<a class='article' onclick='newtab(this.value)' href='javascript:void(0)'><div class='description'><div class='title'>title</div><div class='line0'></div><div class='author'>author</div><div class='summary'>summary</div></div><div class='img'></div></a>";
 
 var apnews = 'https://apnews.com';
@@ -22,10 +24,6 @@ var footer = "<div id='footerlinks' class='footercagtegories'><div class='footer
 
 var atwentry = "<a class='atw img' onclick='newtab(value)' href='javascript:void(0)'><div class='title'>title</div><div class='shortline'></div><div class='author'>author</div><div class='org'>org</div></a>";
 
-
-function alrt() {
-alert('This website is still very much under construction. Feel free to report any bugs to contact@bernardmendez.com !')
-}
 
 function newtab(link) {
 setTimeout(function() {
