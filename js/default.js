@@ -28,5 +28,5 @@ var atwentry = "<a class='atw img' onclick='newtab(value)' href='javascript:void
 function newtab(link) {
 setTimeout(function() {
 window.open(link, '_blank')
-}, 100);
+}, 10);
 }

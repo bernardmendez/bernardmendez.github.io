@@ -66,12 +66,13 @@ font-size: 21px;
 
 
 
-#latest {
-width: 20%;
+.latest {
+width: 40vh;
 display: flex;
 -webkit-flex-direction: column;
 justify-content: flex-start;
-} #latest .entry {
+border: 1px solid;
+} .latest .entry {
 animation: fadein .5s linear;
 margin-top: 10%;
 margin-bottom: 10%;
@@ -326,11 +327,22 @@ margin-right: 2%;
 display: none;
 }
 
+.mobile2 {
+display: block;
+}
 
 
 @media only screen and (max-width: 1000px) {
 .mobile {
     display: none;
-    width: 0%;
 }
 }
+
+@media only screen and (max-width: 800px) {
+.mobile2 {
+    display: none;
+} #onewrap {
+width: 90%;
+}
+}
+
