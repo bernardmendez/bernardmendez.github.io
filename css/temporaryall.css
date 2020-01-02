@@ -53,8 +53,8 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 height: 75vh;
-background-color: #F9F9F9;
 padding: 1%;
+#border: 1px solid red;
 }
 
 #label {
@@ -67,11 +67,13 @@ font-size: 21px;
 
 
 .latest {
+#border: 1px solid red;
+
 width: 40vh;
 display: flex;
 -webkit-flex-direction: column;
 justify-content: flex-start;
-border: 1px solid;
+#border: 1px solid;
 } .latest .entry {
 animation: fadein .5s linear;
 margin-top: 10%;
@@ -83,8 +85,12 @@ margin-bottom: 10%;
 
 
 #showcase {
+#border: 1px solid red;
+
 width: 70vh;
-height: 100%;
+max-width: 90%;
+max-height: 100%;
+overflow: hidden;
 }
 #showcase .article {
 animation: fadein .3s linear;
@@ -116,9 +122,10 @@ display: none;
 
 
 #preview {
+#border: 1px solid red;
+
 width: 20%;
 height: 100%;
-
 } #preview .entry {
 height: 100%;
 } #preview .article {
@@ -152,6 +159,8 @@ width: 120vh;
 max-width: 100%;
 display: flex;
 flex-direction: column;
+margin-bottom: 5%;
+margin-top: 5%;
 } .half .article {
 display: flex;
 flex-direction: column-reverse;
@@ -233,11 +242,10 @@ width: 100%;
 display: flex;
 -webkit-flex-direction: row;
 justify-content: center;
-
 width: 100%;
 background-color: #F9F9F9;
-padding-top: 3%;
-padding-bottom: 3%;
+padding-top: 5%;
+padding-bottom: 5%;
 } #meat .img {
 background-color: lightblue;
 }
