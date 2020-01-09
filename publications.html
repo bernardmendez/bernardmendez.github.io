@@ -17,16 +17,83 @@
 
 <h1>Publications</h1>
 
+<div id='meat'>
+
+    <div id='meat0'>
+        
+    <div class='entry'></div>
+    <div class='line'></div>
+    <div class='entry'></div>
+    <div class='line'></div>
+    <div class='entry'></div>
+    <div class='line'></div>
+    <div class='entry'></div>
+    
+    </div>
+    
+    <div class='vertline'></div>
+    
+    <div class='beatles mobile'>
+    _
+    </div>
+</div>
+
 bottom text
 
+<div id='footer'></div>
 
 
 <script src="js/default.js"></script>
+<script src="js/posts/db1-10.js"></script>
+<script src="js/posts/db11-20.js"></script>
+
 
 <script>
 
 document.getElementById('header').innerHTML = header;
 document.getElementById('date').innerHTML = fulldate;
+document.getElementById('footer').innerHTML = footer;
+
+
+var publications = [shark, biden, trumpjr, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+
+var entries = document.getElementsByClassName('entry');
+
+var picture = document.getElementsByClassName('img');
+var title = document.getElementsByClassName('title');
+var articles = document.getElementsByClassName('article');
+var author = document.getElementsByClassName('author');
+var summary = document.getElementsByClassName('summary');
+
+
+function setsection(section, sectionentries) {
+for (i=0; i<section.length; i++) {
+title[i].innerHTML = '<span class="highlight">' + sectionentries[i].title + '</span>';
+author[i].innerHTML = 'By ' + sectionentries[i].author;
+articles[i].value = sectionentries[i].link;
+picture[i].style.backgroundImage = sectionentries[i].image;
+summary[i].innerHTML = sectionentries[i].text;
+}
+}
+
+function fillentries() {
+for (i=0; i<entries.length; i++) {
+entries[i].innerHTML = entry;
+}
+}
+
+function createentries() {
+for (i=0; i<publications.length; i++) {
+var entri = document.createElement("div");
+entri.innerHTML = entry;
+}
+}
+
+
+fillentries();
+//createentries();
+
+setsection(entries, publications);
 
 </script>
 

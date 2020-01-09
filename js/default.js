@@ -9,7 +9,7 @@ var month = monthlist[date.getMonth()];
 var year = date.getFullYear();
 var fulldate = dayname + ' ' + month + ' ' + daynumber + ', ' + year;
 
-var header = "<div id='date'></div><div id='topbar'><div id='home'><div id='name'><a href='index.html'>Bernard<br>Mendez</a></div><div id='links'><a href='about.html'>About</a><a href='contact.html'>Contact</a><a href='employers.html'>Employers</a></div></div></div><div id='extras'><a href='favourites.html'>favourites</a><a href='projects.html'>projects</a><a href='publications.html'>publications</a></div>";
+var header = "<div id='date'></div><div id='topbar'><div id='home'><a href='index.html' id='name'>bernard<br>mendez</a><div id='links'><a href='about.html'>About</a><a href='contact.html'>Contact</a><a href='employers.html'>Employers</a></div></div></div><div id='extras'><a href='favourites.html'>favourites</a><a href='projects.html'>projects</a><a href='publications.html'>publications</a></div>";
 
 var entry = "<a class='article' onclick='newtab(this.value)' href='javascript:void(0)'><div class='description'><div class='title'>title</div><div class='line0'></div><div class='author'>author</div><div class='summary'>summary</div></div><div class='img'></div></a>";
 
