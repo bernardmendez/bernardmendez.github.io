@@ -244,7 +244,6 @@ display: flex;
 -webkit-flex-direction: flex-start;
 justify-content: center;
 width: 100%;
-padding-bottom: 4%;
 #border: 1px solid green;
 }
 
@@ -433,7 +432,7 @@ justify-content: space-between;
 width: 100%;
 max-width: 100%;
 } .around3 .atwentry {
-width: 300%;
+width: 400%;
 height: 25vh;
 } .space {
 padding: 1%;
@@ -474,48 +473,10 @@ color: white;
 
 
 
-#meat {
-display: flex;
--webkit-flex-direction: row;
-justify-content: center;
-width: 100%;
-padding-top: 5%;
-padding-bottom: 5%;
-} #meat .img {
-background-color: lightblue;
-}
-
-#meat0 {
-width: 90vh;
-max-width: 90%;
-#border: 1px solid red;
-}
-.beatles {
-width: 45vh;
-#border: 1px solid red;
-}
 
 
 
 
-
-#meat0 .article {
-display: flex;
--webkit-flex-direction: row-reverse;
-} #meat0 .img {
-width: 50vh;
-height: 25vh;
-} #meat0 .description {
-width: 60vh;
-padding: 2%;
-} #meat0 .line {
-margin: 2%;
-width: 95%;
-} #meat0 .line0 {
-display: block;
-border: 1px solid grey;
-width: 70%;
-}
 
 
 #plate {
@@ -525,7 +486,7 @@ height: 25vh;
 margin-top: 20%;
 margin-bottom: 5%;
 }
-#meatloaf {width: 45vh; max-width: 50%;}
+#meatloaf {width: 45vh; max-width: 50%; animation: shudder 4s linear infinite}
 #meatloaf:hover {animation: holograph .05s linear infinite;}
 
 
@@ -535,6 +496,18 @@ margin-bottom: 5%;
 0% {opacity: 1}
 100% {opacity: 0}
 }
+
+@-webkit-keyframes shudder {
+0% {opacity: 0}
+2% {opacity: 1}
+58% {opacity: 1}
+60% {opacity: 0}
+62% {opacity: 1}
+96% {opacity: 1}
+98% {opacity: 0}
+100% {opacity: 1}
+}
+
 
 
 .loading {
@@ -598,8 +571,6 @@ display: none;
 @media only screen and (max-width: 800px) {
 .mobile2 {
     display: none;
-} #meatloaf {
-animation: holograph .05s linear infinite;
 } .mobilecolumn {
 -webkit-flex-direction: column;
 justify-content: space-around;
