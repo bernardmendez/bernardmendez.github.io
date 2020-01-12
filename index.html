@@ -1,5 +1,5 @@
 <head>
-    <title>B. Mendez</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -36,148 +36,83 @@
 
 
     
-<div id='main'>
     <div id='zero'>
+    
     <div class='mobile2 feat'>
     <div class='name'>Latest</div>
-    <div class='entry style0'></div>
+    <div class='line'></div>
+    <div class='entry lft'></div>
     <div class='line'></div>
     <div class='entry style0'></div>
+    <div class='entry style0'></div>
     <div class='line'></div>
-    <div class='entry style0'></div>
+
     </div>
+
     
-    <div class='vertline mobile2'></div>
-    
-    <div id='showcase'>
+    <div class='showcase'>
     <div class='entry'></div>
+    <div class='line'></div>
+    <div class='entry noimage'></div>
     </div>
     
-    <div class='vertline mobile'></div>
-
-    <div id='preview' class='mobile'>
+    
+    <div class='zeroleft mobile'>
+    <div class='name'>Recomended</div>
+    <div class='line'></div>
     <div class='entry'></div>
     <div class='entry'></div>
+    <div class='line'></div>
+
     </div>
     
+
+    
     </div>
     
-    <div style='background-color: #fefefe; width: 170vh; max-width: 95%; padding: 2%; padding-top: 0%;'><div style='border: .5px solid lightgrey; width: 100%;'></div></div>
     
-    
-    <div class='half mobilecolumn'>
+<div class='half mobilecolumn'>
 
-    <div class='mobile halfright'>
-    <div class='entry'></div>
-    </div>
-    
-    <div class='mobile' style='height: 100%; border: 1px solid lightgrey; margin: 2%; margin-top: 0%;'></div>
-
-    <div class='textposts'>
-    <div class='entry style0'></div>
-    <div style='border: .5px solid lightgrey; width: 100%;'></div>
-    <div class='entry style0'></div>
-    <div style='border: .5px solid lightgrey; width: 100%;'></div>
-    <div class='entry style0'></div>
-    </div>
-
-    <div class='mobile2' style='height: 100%; border: 1px solid lightgrey; margin: 2%; margin-top: 0%;'></div>
-
-    
-    <div class='halfleft'>
+<div class='one'>
+    <div>
+    <div class='name'>Science</div>
+    <div class='line'></div>
     <div class='entry'></div>
     <div class='entry'></div>
     </div>
 
-    
-
-
-    
+    <div>
+    <div class='name'>News</div>
+    <div class='line'></div>
+    <div class='entry'></div>
+    <div class='entry'></div>
     </div>
 
-    
-    <div style='background-color: #fefefe; width: 170vh; max-width: 95%; padding: 2%'><div style='border: .5px solid lightgrey; width: 100%;'></div></div>
-
-
+    <div>
+    <div class='name'>Computing</div>
+    <div class='line'></div>
+    <div class='entry'></div>
+    <div class='entry'></div>
+    </div>
 </div>
-    
-    
-    <div class='mobile2 onecont'>
-    <div id='one'>
-
-    <div id='large'>
-    <div class='entry'></div>
-    </div>
-    </div>
-
-</div>
-
-
-
-
-<div class='aroundtheweb'>
-
-<div class='aroundcont'>
-
-    <div class='diagonal'>Around the Web</div>
-
-    <div class='around3'>
-    <div class='atwentry'></div>
-    <div class='space'></div>
-    <div class='atwentry'></div>
-    <div class='space mobile2'></div>
-    <div class='atwentry mobile2'></div>
-    </div>
-    
+    <div class='aroundtheweb'>
+    <div class='name'>Around the Web</div>
+    <div class='line'></div>
     <div class='around'>
     <div class='atwentry'></div>
     </div>
-    
-    <div class='around3'>
+    <div class='around'>
     <div class='atwentry'></div>
-    <div class='space'></div>
-    <div class='atwentry'></div>
-    <div class='space mobile2'></div>
     <div class='atwentry mobile2'></div>
     </div>
-    
-    <div class='around2'>
-    <div class='atwentry'></div>
-    </div>
-    
     <div class='around'>
     <div class='atwentry'></div>
     </div>
-    
-    <div class='around3'>
-    <div class='atwentry'></div>
-    <div class='space'></div>
-    <div class='atwentry'></div>
-    <div class='space mobile2'></div>
-    <div class='atwentry mobile2'></div>
+
     </div>
 
-
-
-
-
-
-
 </div>
 
-<span style='color: red;'>--30--</span>
-
-
-
-
-
-
-
-<div id='plate'>
-<img id='meatloaf'>
-</div>
-
-</div>
 
 
 
@@ -206,9 +141,9 @@ bottom text
 
 
 var projects = [];
-var publications = [shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+var publications = [pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
 
-var publications = [pregnancy, shark, biden, aiethics, rat, trumpjr, rocket, catlady, uganda, autism, snowpower, planet, biden];
+//var publications = [pregnancy, shark, pregnancy, aiethics, rat, trumpjr, rocket, catlady, uganda, autism, snowpower, planet, biden];
 
 //[shark, biden, trumpjr, shark, biden, trumpjr, biden, climatestrike, uganda, internet, catlady, autism, rat, rocket, vaccine, snowpower, garg, planet];
 
@@ -223,7 +158,6 @@ var spotlight = document.getElementById('spotlight');
 
 var number = 0;
 
-var preview = document.getElementById('previewed');
 
 
 document.getElementById('header').innerHTML = header;
@@ -239,7 +173,7 @@ entries[i].innerHTML = entry;
 }
 }
 
-var aroundtheweb = [graves, daytona, crispr, worsttech, quantum, fed, anonymity, emotion, nanotube, leaders, senza, darkstar, nelson, chronograph, bus, accutron, baodai, whales, soviet, explorer, chronometer, wings, orleans];
+var aroundtheweb = [graves, daytona, crispr, worsttech, quantum, anonymity, nanotube, leaders, senza, darkstar, nelson, chronograph, bus, accutron, baodai, whales, soviet, explorer, chronometer, wings, orleans];
 
 var aroundentries = document.getElementsByClassName('atwentry');
 var atwentries = document.getElementsByClassName('atw');
@@ -260,18 +194,11 @@ setatwentry(atwentries[i], aroundshown[i]);
 }
 
 function aroundnew () {
-while (true) {
-if (Math.random() > .6) {
-break;
-
-}
 var x = Math.floor(Math.random() * aroundtheweb.length);
 if (aroundshown.includes(x) === false) {
 var y = Math.floor(Math.random() * aroundshown.length);
 setatwentry(atwentries[y], x);
 aroundshown[y] = x;
-break;
-}
 }
 }
 
@@ -285,7 +212,8 @@ entry.value = aroundtheweb[ind].link;
 
 function setsection(section, sectionentries) {
 for (i=0; i<section.length; i++) {
-title[i].innerHTML = '<span class="highlight">' + sectionentries[i].title + '</span>';
+//title[i].innerHTML = '<span class="highlight">' + sectionentries[i].title + '</span>';
+title[i].innerHTML = sectionentries[i].title;
 author[i].innerHTML = 'By ' + sectionentries[i].author;
 articles[i].value = sectionentries[i].url;
 picture[i].style.backgroundImage = sectionentries[i].image;
@@ -294,23 +222,15 @@ summary[i].innerHTML = sectionentries[i].text;
 }
 
 
-//setInterval(next, 8000);
 
 aroundformat();
 aroundnew();
-setInterval(aroundnew, 1800);
+setInterval(aroundnew, 3000);
 
 
 fillentries();
 
 setsection(entries, publications);
-
-//setaroundtheweb();
-
-showpreview();
-
-//setTimeout(toggle, 3000);
-
 
 </script>
 

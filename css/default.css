@@ -2,7 +2,27 @@
 @import url("https://fonts.googleapis.com/css?family=Gelasio&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ramaraja&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
 
 
 
@@ -12,7 +32,7 @@ border: none;
 padding: 0px;
 margin: 0px;
 text-align: left;
-font-family: "Times New Roman";
+
 } button:active {
 color: lightgrey;
 background-color: lightgrey;
@@ -35,13 +55,42 @@ width: 100%;
 text-align: left;
 background-color: #f6f6f6;
 #background-color: #fefefe;
+background-color: #fbfbfb;
 
 #font-family: 'Georgia';
-font-family: 'Gelasio', serif;
-#font-family: 'Playfair Display', serif;
-#font-family: 'PT Serif', serif;
+#font-family: 'Gelasio', serif;
 #font-family: 'Arial';
 font-size: 90%;
+#font-family: 'Lora', serif;
+#font-family: 'Crete Round', serif;
+#font-family: 'Bree Serif', serif;
+
+#font-family: 'Vidaloka', serif;
+
+#font-family: 'Vollkorn', serif;
+#font-family: 'Domine', serif;
+#font-family: 'Volkhov', serif;
+#font-family: 'Playfair Display SC', serif;
+#font-family: 'Ramaraja', serif;
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+
+font-family: 'Playfair Display', serif;
+
+font-family: 'Inria Serif', serif;
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Abril Fatface', cursive;
+
+font-family: 'Vidaloka', serif;
+font-family: 'Rokkitt', serif;
+font-family: 'Girassol', cursive;
+
+
+font-family: 'PT Serif', serif;
 color: #1e1e1e;
 }
 
@@ -53,65 +102,77 @@ width: 10%;
 }
 
 #header {
-width: 100%;
 display: flex;
 -webkit-flex-direction: column;
 align-items: center;
-border-bottom: 1px solid lightgrey;
-#border-top: 1px solid lightgrey;
 #background-color: #fefefe;
-background-color: #fbfbfb;
+background-color: #fefefe;
 
+position: sticky;
+top: 0;
+z-index: 100;
+width: 100%;
 } #date {
 font-size: 11px;
 } #topbar {
 width: 100%;
-border-bottom: 1px solid lightgrey;
-
 } #home {
 margin-left: auto;
 margin-right: auto;
 width: 120vh;
 max-width: 90%;
-background-color: pink;
 padding: 1%;
-padding-left: 3%;
-padding-right: 3%;
-margin-bottom: 1%;
+#padding-left: 3%;
+#padding-right: 3%;
 display: flex;
 align-items: center;
-} #links a {
+display: flex;
+-webkit-flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+} .links a {
 margin: 1%;
 padding: 1.5%;
-background-color: #fefefe;
-border: 1px solid pink;
 transition: all .15s linear;
-} #links {
-width: 100%;
+font-size: 11px;
+} .links {
+width: 30%;
 text-align: right;
-} #links a:hover {
+#padding: 1.5%;
+#display: none;
+} .links a:hover {
 background-color: pink;
 border: 1px solid #f3f3f3;
 color: #fefefe;
 } #name {
-width: 25%;
+#width: 100%;
 font-size: 32px;
 transition: all .15s linear;
+} #date {
+width: 30%;
 
-} #name:hover {
-color: #fbfbfb;
-background-color: pink;
-} #extras {
-
-width: 110vh;
-max-width: 90%;
-padding-right: 2%;
-padding-left: 2%;
-} #extras a {
-margin: 1%;
 }
 
 
+
+#extras {
+border-top: .5px solid #e9e9e9;
+border-bottom: .5px solid #e9e9e9;
+height: 5vh;
+width: 100%;
+font-size: 90%;
+display: flex;
+align-items: center;
+justify-content: center;
+} #extras a {
+margin: 1%;
+color: #888888;
+}
+#extras a:first-child {
+
+#padding-left: 20%;
+}
 
 #footer {
 height: 25vh;
@@ -143,7 +204,6 @@ color: red;
 
 .author {
 font-size: 12px;
-font-family: 'Arial';
 color: grey;
 }
 
@@ -157,6 +217,34 @@ background-size: cover;
 display: block;
 width: 12vh;
 height: 12vh;
+min-width: 12vh;
+min-height: 12vh;
 background-position: center;
 
+}
+
+
+#name {
+text-decoration: underline
+font-family: 'Georgia';
+font-family: 'Gelasio', serif;
+font-family: 'Lora', serif;
+#font-family: 'PT Serif', serif;
+#font-family: 'Arial';
+
+font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display SC', serif;
+
+}
+
+.about {
+border: 1px solid white;
+width: 60vh;
+font-size: 110%;
+background-color: lightgrey;
+color: black;
+}
+.abt {
+font-family: 'Playfair Display SC', serif;
+font-size: 120%;
 }
