@@ -287,19 +287,26 @@ justify-content: flex-start;
 .one > div {
 width: 100%;
 display: flex;
--webkit-flex-direction: column;
+-webkit-flex-direction: row;
 }
 
 .one .entry {
 margin: 2%;
+width: 100%;
+
 } .row {
 display: flex;
 -webkit-flex-direction: row;
+} .one .summary {
+display: block;
+font-size:  90%;
+} .one .summary p:nth-child(2) {
+#display: block;
 }
 
 .one .article {
 display: flex;
--webkit-flex-direction: row;
+-webkit-flex-direction: column-reverse;
 align-items: center;
 justify-content: center;
 }
@@ -308,11 +315,12 @@ justify-content: center;
 .one .entry .img {
 #background-color: red;
 min-height: 14vh;
-min-width: 18vh;
+min-width: 24vh;
 margin-right: 2%;
 } .one .description {
-width: 60%;
-font-size: 130%;
+width: 100%;
+} .one .title {
+font-size: 140%;
 }
 
 
