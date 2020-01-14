@@ -25,13 +25,12 @@ var atwentry = "<a class='atw img' onclick='newtab(value)' href='javascript:void
 
 
 function newtab(link) {
-//link.getElementsByClassName('highlight')[0];
+window.open(link.value, '_blank')
+temp.style.backgroundPosition = 'right bottom';
+}
+
+function articleshudder() {
 var temp = link.getElementsByClassName('highlight')[0]
 temp.style.backgroundPosition = 'left top';
 temp.style.color = 'black';
-setTimeout(function(){
-window.open(link.value, '_blank')
-temp.style.backgroundPosition = 'right bottom';
-           }, 1000)
 }
-

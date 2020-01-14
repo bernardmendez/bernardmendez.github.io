@@ -213,14 +213,13 @@ position: relative;
 float: left;
 background-position: 50% 50%;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 100%;
 display: block;
 width: 12vh;
 height: 12vh;
 min-width: 12vh;
 min-height: 12vh;
-background-position: center;
-
+transition: all .5s ease;
 }
 
 

@@ -3,7 +3,7 @@
 
 //11 internet
 var internet = {
-title: 'School of engineering hosts a <span class="highlight">daylong event celebrating internet&#39s 50th birthday</span>',
+title: 'School of engineering hosts a <span class="highlight">daylong event</span> celebrating <span class="highlight2">internet&#39s 50th birthday</span>',
 author: 'Sameera Pant, Brittney Le, Bernard Mendez, Emily MacInnis, Shruti Iyer',
 url: 'https://dailybruin.com/2019/10/30/school-of-engineering-hosts-a-daylong-event-celebrating-internets-50th-birthday/',
 image: 'url("images/internet.jpg")',
@@ -12,7 +12,7 @@ text: '<p>Mark Cuban, Jameela Jamil and Ashton Kutcher were among the many noted
 
 //12 planet
 var planet = {
-title: 'UCLA researchers develop <span class="highlight">new method of detecting habitable planets</span>',
+title: 'UCLA researchers develop <span class="highlight">new method</span> of <span class="highlight2">detecting habitable planets</span>',
 author: 'Bernard Mendez',
 url:  'https://dailybruin.com/2019/11/01/ucla-researchers-develop-new-method-of-detecting-habitable-planets/',
 image: 'url("images/planet.jpg")',
@@ -21,7 +21,7 @@ text: '<p>The universe might have more Earth-like planets than previously though
 
 //13 climatestrike
 var climatestrike = {
-title: 'Students <span class="highlight">demand action, reduced fossil fuel use</span> at LA youth climate strike',
+title: 'Students <span class="highlight">demand action</span>, <span class="highlight2">reduced fossil fuel use</span> at LA youth climate strike',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/',
 image: 'url("images/climatestrike.jpg")',
@@ -31,7 +31,7 @@ text: '<p>Climate activist Greta Thunberg encouraged youth to continue protestin
 
 //14 aiethics
 var aiethics = {
-title: 'Student group hosts Viennese delegation to discuss <span class="highlight">future of AI ethics</span>',
+title: 'Student group <span class="highlight">hosts Viennese delegation</span> to discuss <span class="highlight2">future of AI ethics</span>',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/05/student-group-hosts-viennese-delegation-to-discuss-future-of-ai-ethics/',
 image: 'url("images/aiethics.jpg")',
@@ -40,7 +40,7 @@ text: '<p>Ethical questions about artificial intelligence brought together a stu
 
 //15 trumpjr
 var trumpjr = {
-title: 'Donald Trump Jr.&#39s book promotion attended by over 400, <span class="highlight">marked by protests</span>',
+title: 'Donald Trump Jr.&#39s book promotion <span class="highlight">attended by over 400</span>, <span class="highlight2">marked by protests</span>',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/',
 image: 'url("images/trumpjr.jpg")',
@@ -49,7 +49,7 @@ text: '<p>A campus visit from Donald Trump Jr. to promote his new book drew both
 
 //16 biden
 var biden = {
-title: '<span class="highlight">Biden visits Downtown LA, condemns gun violence</span> in wake of Santa Clarita shooting',
+title: '<span class="highlight">Biden visits Downtown LA</span>, <span class="highlight2">condemns gun violence</span> in wake of Santa Clarita shooting',
 url: 'https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/',
 author: 'Bernard Mendez',
 image: 'url("images/biden.jpg")',
@@ -58,7 +58,7 @@ text: '<p>Democratic presidential candidate Joe Biden condemned gun violence dur
 
 //17 shark
 var shark = {
-title: 'Documentary screening event takes <span class="highlight">deep dive into shark conservation and advocacy</span>',
+title: 'Documentary screening event takes <span class="highlight">deep dive</span> into <span class="highlight2">shark conservation and advocacy</span>',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/',
 image: 'url("images/shark.jpg")',
@@ -67,7 +67,7 @@ text: '<p>Maria Korcsmaros was training for a triathlon off the coast of Corona 
 
 //18 pregnancy
 var pregnancy = {
-title: 'UCLA-led study finds <span class="highlight">climate change</span> may cause increase in premature births',
+title: 'UCLA-led study finds <span class="highlight">climate change</span> may cause <span class="highlight2">increase in premature births</span>',
 author: 'Bernard Mendez, Shruti Iyer',
 url: 'https://dailybruin.com/2020/01/10/ucla-led-study-finds-climate-change-may-cause-increase-in-premature-births/',
 image: 'url("images/pregnancy.jpg")',
