@@ -3,7 +3,7 @@
 
 //11 internet
 var internet = {
-title: 'School of engineering hosts a <span class="highlight">daylong event</span> celebrating <span class="highlight2">internet&#39s 50th birthday</span>',
+title: 'School of engineering hosts a <span>daylong event</span> celebrating <span>internet&#39s 50th birthday</span>',
 author: 'Sameera Pant, Brittney Le, Bernard Mendez, Emily MacInnis, Shruti Iyer',
 url: 'https://dailybruin.com/2019/10/30/school-of-engineering-hosts-a-daylong-event-celebrating-internets-50th-birthday/',
 image: 'url("images/internet.jpg")',
@@ -12,7 +12,7 @@ text: '<p>Mark Cuban, Jameela Jamil and Ashton Kutcher were among the many noted
 
 //12 planet
 var planet = {
-title: 'UCLA researchers develop <span class="highlight">new method</span> of <span class="highlight2">detecting habitable planets</span>',
+title: 'UCLA researchers develop <span>new method</span> of <span>detecting habitable planets</span>',
 author: 'Bernard Mendez',
 url:  'https://dailybruin.com/2019/11/01/ucla-researchers-develop-new-method-of-detecting-habitable-planets/',
 image: 'url("images/planet.jpg")',
@@ -21,7 +21,7 @@ text: '<p>The universe might have more Earth-like planets than previously though
 
 //13 climatestrike
 var climatestrike = {
-title: 'Students <span class="highlight">demand action</span>, <span class="highlight2">reduced fossil fuel use</span> at LA youth climate strike',
+title: 'Students <span>demand action</span>, <span>reduced fossil fuel use</span> at LA youth climate strike',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/',
 image: 'url("images/climatestrike.jpg")',
@@ -31,7 +31,7 @@ text: '<p>Climate activist Greta Thunberg encouraged youth to continue protestin
 
 //14 aiethics
 var aiethics = {
-title: 'Student group <span class="highlight">hosts Viennese delegation</span> to discuss <span class="highlight2">future of AI ethics</span>',
+title: 'Student group <span>hosts Viennese delegation</span> to discuss <span>future of AI ethics</span>',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/05/student-group-hosts-viennese-delegation-to-discuss-future-of-ai-ethics/',
 image: 'url("images/aiethics.jpg")',
@@ -40,7 +40,7 @@ text: '<p>Ethical questions about artificial intelligence brought together a stu
 
 //15 trumpjr
 var trumpjr = {
-title: 'Donald Trump Jr.&#39s book promotion <span class="highlight">attended by over 400</span>, <span class="highlight2">marked by protests</span>',
+title: 'Donald Trump Jr.&#39s book promotion <span>attended by over 400</span>, <span>marked by protests</span>',
 author: 'Bernard Mendez, Emily MacInnis, Tiffany Zha, Jintak Han',
 url: 'https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/',
 image: 'url("images/trumpjr.jpg")',
@@ -49,7 +49,7 @@ text: '<p>A campus visit from Donald Trump Jr. to promote his new book drew both
 
 //16 biden
 var biden = {
-title: '<span class="highlight">Biden visits Downtown LA</span>, <span class="highlight2">condemns gun violence</span> in wake of Santa Clarita shooting',
+title: '<span>Biden visits Downtown LA</span>, <span>condemns gun violence</span> in wake of Santa Clarita shooting',
 url: 'https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/',
 author: 'Bernard Mendez',
 image: 'url("images/biden.jpg")',
@@ -58,7 +58,7 @@ text: '<p>Democratic presidential candidate Joe Biden condemned gun violence dur
 
 //17 shark
 var shark = {
-title: 'Documentary screening event takes <span class="highlight">deep dive</span> into <span class="highlight2">shark conservation and advocacy</span>',
+title: 'Documentary screening event takes <span>deep dive</span> into <span>shark conservation and advocacy</span>',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/',
 image: 'url("images/shark.jpg")',
@@ -67,9 +67,17 @@ text: '<p>Maria Korcsmaros was training for a triathlon off the coast of Corona 
 
 //18 pregnancy
 var pregnancy = {
-title: 'UCLA-led study finds <span class="highlight">climate change</span> may cause <span class="highlight2">increase in premature births</span>',
+title: 'UCLA-led study finds <span>climate change</span> may cause <span>increase in premature births</span>',
 author: 'Bernard Mendez, Shruti Iyer',
 url: 'https://dailybruin.com/2020/01/10/ucla-led-study-finds-climate-change-may-cause-increase-in-premature-births/',
 image: 'url("images/pregnancy.jpg")',
 text: '<p>Climate change may cause childbirth to occur up to two weeks earlier than expected, according to a UCLA-led study.</p><p>Researchers analyzed birth and weather records from 1969 to 1988 in counties across the United States. The study, published in Nature Climate Change in December 2019, found that high temperatures cause a spike in birth rates.</p><p>According to the study, a single day with a maximum temperature greater than 90 degrees Fahrenheit causes infants to be born on average 6.1 days early.</p><p>However, in hot counties, hot days don&#39t affect childbirth as drastically as cooler counties, said Jessamyn Schaller, a study co-author and an economics professor at Claremont McKenna College. This may be due to biological adaptation or the increased use of air conditioning, she added.</p><p>The researchers found that from 1969 to 1988, an average of 25,000 births per year came before expected because of heat exposure. It is estimated that by the end of the century, the figure will rise to 42,000 births per year, the study stated.</p><p>Alan Barreca, first author of the study and an associate professor at the Institute of the Environment and Sustainability, said he thinks early births affect a child&#39s physiological development.</p><p>Barreca also said that children who are born early often have worse respiratory health and an increased chance of mortality. He added that children born in extreme heat tend to have lower incomes in adulthood.</p><p>Dr. Leena Nathan, medical director for UCLA Community Obstetrics and Gynecology Practices, said babies that are born in a short pregnancy term can have long-term problems anytime throughout their livee. Some of these complications include problems with respiration and problems with learning, she said.</p><p>“A premature birth can affect everything from the intestines to the eyes (and) brain, so we really like to try to avoid preterm birth as much as possible," she said.</p><p>Nathan said that in extreme heat women have more pregnancy issues and contractions because their blood vessels dilate in order to control increasing body temperature.</p><p>In order to combat this, she said, pregnant women must find the coolest place they can stay and stay well hydrated to have a healthy pregnancy.</p><p>The research paper states that a full-term pregnancy is about 40 weeks, but in practice anything between 37 and 40 weeks is considered a healthy term, Nathan said. Anything below 37 weeks is cause for concern and is classified as a premature birth, Nathan added.</p><p>The research has also caught the attention of lawmakers.</p><p>A group of U.S. senators, including Dianne Feinstein, Elizabeth Warren and Richard Blumenthal, addressed a letter to the Centers for Disease Control and Prevention describing the results and urging the organization to develop solutions to the health impacts caused by climate change.</p><p>“Given that climate change is already contributing to rising temperatures in our country and that babies born too early are more likely to suffer negative health outcomes including death, (the) CDC must confront climate change as a public health imperative to mitigate the lasting consequences it will have on future Americans to come," the letter read.</p><p>The study also found that air conditioning plays an important role in mitigating harmful effects.</p><p>However, the use of air conditioning is problematic, Barreca said. Air conditioning emits greenhouse gasses that contribute to global warming. Additionally, low-income groups often do not have air conditioners, he said.</p><p>“This is another case where climate change is actually an economic justice issue," he said. “The people that are economically capable will be able to adapt, but other people won&#39t."</p><p>Schaller said hot weather might impact pregnant women from disadvantaged groups more because they can&#39t afford air conditioning and lack quality health care. According to the study, black women were more affected by hot days than white women.</p><p>Nathan said in her experience, black women have a higher rate of maternal morbidity and mortality and have a higher risk of preterm delivery. One reason is the lack of access to resources such as an air-conditioned room when it becomes very hot.</p><p>“The increasing temperature can actually increase the disparity and outcomes amongst these patients," Nathan said.</p><p>Barreca said he is unsure why high temperatures and birth rate are related. He said he thinks it may be due to an increase in oxytocin, a hormone found in pregnant women, or insomnia incurred by the heat.</p><p>He also said he is currently researching ways to provide low-income households access to air conditioning.</p><p>“To me, this is where we&#39re at this level of economic development for purpose," Barreca said. “Those of us that are capable need to be really helping the vulnerable children in our country, our neighbors around the world and even other countries that have less income."</p>'
+};
+
+var vicechancellor = {
+title: 'Search committee for EDI vice chancellor <span>seeks student input</span> in hiring process',
+author: 'Bernard Mendez',
+url: 'https://dailybruin.com/2020/01/16/search-committee-for-edi-vice-chancellor-seeks-student-input-in-hiring-process/',
+image: 'url("images/vicechancellor.jpg")',
+text: '<p>Students at a community town hall Wednesday raised concerns about support for underrepresented minorities to a search committee for the next vice chancellor for equity, diversity and inclusion.</p><p>The committee is looking to replace current EDI Vice Chancellor Jerry Kang, who plans to step down in June and return to his position as a professor of law and Asian American studies at UCLA.</p><p>Kang, who took the position in 2015, oversaw the Discrimination Prevention Office and the Title IX Office, and was responsible for investigating cases of discrimination against faculty members.</p><p>Kang also established BruinX, a campus think tank that uses data analytics to help improve fairness and diversity while hiring UCLA faculty.</p><p>The next EDI vice chancellor will be responsible for supervising the Title IX, Discrimination Prevention and BruinX offices, ensuring fair faculty hiring practices and developing new programs promoting undergraduate and graduate diversity.</p><p>Devon Carbado, a law professor and chair of the search committee, said the committee is looking to gather suggestions from the public and hopes to pick a candidate by the end of May.</p><p>“This is a hard job; this is a really important job, but it has enormous opportunities and it has enormous benefits," Carbado said. “It&#39s a job for which it&#39s hard to imagine this person gets a gold standard from everyone."</p><p>Students, including representatives from the Afrikan Student Union, Transgender UCLA Pride and the UCLA Committee on Disability, said they want the next vice chancellor to continue to support black and LGBTQ+ students, as well as students with disabilities.</p><p>A student representative from the UCLA Committee on Disability said the next vice chancellor should look to fund accessibility projects, especially because UCLA will be the Olympic Village for the 2028 Summer Paralympics.</p><p>Alec Norkey, a graduate ethnomusicology student who attended the forum, said he hopes the next EDI vice chancellor pays attention to the economic well-being of students, which he said has a greater effect on underrepresented minorities.</p><p>Norkey added he liked that the committee involved students by holding an open forum, but said it wasn&#39t clear how student input would be utilized.</p><p>Maryann Arceo, a first-year biology student who also attended the meeting, said she would like the new EDI vice chancellor to be receptive to ideas from students.</p><p>Arceo, a first-generation student, said she hopes the next EDI vice chancellor will continue to promote programs for first-generation students, such as the Freshman Summer Program.</p><p>The committee consists of faculty from departments across campus and graduate and undergraduate student representatives, Carbado said. The committee is partnering with the executive search firm Korn Ferry, he added.</p><p>He said the committee previously held an open forum with faculty and staff and plans to hold another public forum with the finalists for the position once they are decided.</p><p>Kang helped make UCLA a more diverse and inclusive campus, said Chancellor Gene Block in a September statement released after Kang announced his plans to step down.</p><p>Carbado said the committee hopes to find a candidate that can handle the issues the EDI vice chancellor faces.</p><p>“It&#39s not as though the (EDI vice chancellor) often opens his email and sees something like, &#39It&#39s a wonderful day in the neighborhood,&#39" Carbado said. “They get emails about problems."</p>',
 };

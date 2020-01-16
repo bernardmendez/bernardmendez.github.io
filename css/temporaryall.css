@@ -41,21 +41,19 @@ width: 100%;
 
 .article:hover > .img {
 background-size: 120%;
+} .entry:hover > .article .title {
+opacity: .65;
 }
-
-.entry:hover > .article .highlight {
+/*
+.entry:hover > .article span {
 background-position: left top;
 -webkit-transition-delay: .3s;
 }
-.entry:hover > .article .highlight2 {
+.entry:hover > .article span {
 background-position: left top;
 -webkit-transition-delay: .8s;
-
 }
-
-
-
-.highlight {
+span {
 background: linear-gradient(to right, #fec771 50%, transparent 50%);
 background-size: 201% 100%;
 background-position: right bottom;
@@ -66,6 +64,7 @@ background-size: 201% 100%;
 background-position: right bottom;
 transition: all 1s ease;
 }
+*/
 
 .name {
 text-align: left;
@@ -74,6 +73,7 @@ color: grey;
 font-family: 'Playfair Display SC', serif;
 padding: 5px;
 width: 100%;
+user-select: none;
 }
 
 .summary {font-size:  90%; color: #888888;}
