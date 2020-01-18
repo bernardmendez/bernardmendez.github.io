@@ -294,23 +294,27 @@ border: 10px solid transparent;
 }
 
 .one {
-width: 80vh;
+width: 170vh;
 max-width: 95%;
+padding: 2%;
+background-color: #fefefe;
 display: flex;
--webkit-flex-direction: column;
+-webkit-flex-direction: row;
 align-items: flex-start;
 justify-content: flex-start;
 }
 
 .one > div {
-width: 100%;
 display: flex;
 -webkit-flex-direction: row;
 }
 
+.oneright {
+width: 80vh;
+border: 1px solid red;
+}
+
 .one .entry {
-margin: 2%;
-width: 100%;
 
 } .row {
 display: flex;
@@ -332,7 +336,7 @@ justify-content: center;
 
 .one .entry .img {
 #background-color: red;
-min-height: 16vh;
+min-height: 44vh;
 min-width: 100%;
 margin-right: 2%;
 } .one .description {
