@@ -37,7 +37,7 @@ color: red;
 text-decoration: underline;
 }
 
-
+.img:hover {opacity: .7;}
 .article:hover {cursor: pointer;}
 .article:hover > .img {
 #background-size: 105%;
@@ -82,7 +82,7 @@ color: #888888;
 } .summary p:first-of-type {
 display: block;
 } .summary p {
-display: none;
+#display: none;
 }
 
 
@@ -104,7 +104,7 @@ align-items: center;
 
 }
 .size0 .img {
-height: 70vh;
+height: 67vh;
 min-width: 45vw;
 max-width: 100%;
 margin: 5%;
@@ -125,48 +125,69 @@ width: 80%;
 
 
 .meat {
-width: 70vh;
+width: 45vh;
 max-width: 95%;
 display: flex;
 -webkit-flex-direction: column;
+#border: .5px solid lightgrey;
 }
 
 .meat > div {
 margin-bottom: 5%;
 }
 
-.big {
-}
-.big .article {
-display: flex;
--webkit-flex-direction: column-reverse;
-
-}
-.big .img {
-width: 85%;
-height: 36vh;
-max-height: 55vw;
-}
-
-.big .title {font-size: 300%;}
 
 .small {
+
 }
 .small .article {
 display: flex;
 -webkit-flex-direction: row;
+justify-content: space-between;
 }
 .small .img {
-min-width: 26vh;
-height: 18vh;
-margin: 5%;
+min-width: 20vh;
+height: 10vh;
+#margin: 5%;
 }
 
-.small .title {font-size: 220%;}
+.small .description {width: 50%;}
 
+.small .title {font-size: 160%;}
 
+.two {
+display: flex;
+-webkit-flex-direction: row;
+justify-content: space-around;
+}
 
+.meattwo {
+width: 90vh;
+#border: 1px solid;
+} .meattwo * div {text-align: center;}
 
+.meattwo .article {
+display: flex;
+-webkit-flex-direction: column-reverse;
+justify-content: space-around;
+align-items: center;
+
+padding: 5%;
+}
+
+.meattwo .img {
+min-width: 100%;
+height: 45vh;
+}
+.meattwo .summary {
+display: none;
+text-align: left;
+} .meattwo .summary p {font-size: 150%;}
+.meattwo .description {
+min-width: 45%;
+}
+
+.meattwo .title {font-size: 250%;}
 
 
 
