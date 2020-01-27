@@ -31,63 +31,44 @@
 
 
 
-
-
-
-
+    <div class='one'>
+    <div class='entry size0'></div>
+    </div>
     
-    <div id='zero'>
-    
-    <div class='mobile2 feat'>
-    <div class='name'>Latest</div>
-    <div class='line'></div>
-    <div class='entry lft'></div>
-    <div class='line'></div>
-    <div class='entry style0'></div>
-    <div class='entry style0'></div>
-    <div class='line'></div>
-
+    <div class='one'>
     </div>
 
     
-    <div class='showcase'>
-    <div class='entry'></div>
-    <div class='line'></div>
-    <div class='entry noimage'></div>
-    </div>
     
+    <div class='one mobilecolumn'>
+
+    <div class='meat'>
     
-    <div class='zeroleft mobile'>
-    <div class='name'>Recomended</div>
+    <div class='name'>News</div>
+
+    <div class='entry big'></div>
     <div class='line'></div>
-    <div class='entry'></div>
+    <div class='entry small'></div>
+    <div class='entry small'></div>
+
+
+    <div class='name'>Science&nbsp&&nbspHealth</div>
+
+    <div class='entry big'></div>
     <div class='line'></div>
-    <div class='entry'></div>
-    <div class='line'></div>
+    <div class='entry small'></div>
+    <div class='entry small'></div>
+
 
     </div>
-    
+
+    </div>
+
 
     
     </div>
     
     
-
-<div class='one'>
-
-    <div class='oneleft'>
-    
-    <div class='entry'></div>
-    <div class='entry'></div>
-
-    </div>
-    
-    <div class='oneright'>
-    <div class='entry'></div>
-    </div>
-    
-</div>
-
 
 
     <div class='aroundtheweb' style='display: none'>
@@ -95,14 +76,21 @@
     <div class='line'></div>
     <div class='around'>
     <div class='atwentry'></div>
-    </div>
-    <div class='around'>
     <div class='atwentry'></div>
     </div>
     <div class='around'>
     <div class='atwentry'></div>
+    <div class='atwentry'></div>
+    <div class='atwentry'></div>
+    </div>
+    <div class='around'>
+    <div class='atwentry'></div>
+    <div class='atwentry'></div>
     </div>
     </div>
+    
+
+    
 
 </div>
 
@@ -120,6 +108,8 @@ bottom text
 
 <script src="js/posts/db1-10.js"></script>
 <script src="js/posts/db11-20.js"></script>
+<script src="js/posts/db21-30.js"></script>
+
 
 <script src="js/posts/aroundtheweb/atw0-9.js"></script>
 <script src="js/posts/aroundtheweb/atw10-19.js"></script>
@@ -127,14 +117,13 @@ bottom text
 
 
 <script src="js/posts/projects.js"></script>
-<script data-ad-client="ca-pub-5545153825000576" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 <script>
 
 
 var projects = [];
-var publications = [walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+var publications = [kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
 
 //var publications = [pregnancy, shark, pregnancy, aiethics, rat, trumpjr, rocket, catlady, uganda, autism, snowpower, planet, biden];
 
@@ -196,9 +185,10 @@ aroundshown[y] = x;
 }
 
 function setatwentry(entry, ind) {
-entry.getElementsByClassName('title')[0].innerHTML = aroundtheweb[ind].title;
+entry.getElementsByClassName('atwtitle')[0].innerHTML = aroundtheweb[ind].title;
 entry.style.backgroundImage = aroundtheweb[ind].image;
-entry.getElementsByClassName('author')[0].innerHTML = aroundtheweb[ind].author;
+
+entry.getElementsByClassName('atwauthor')[0].innerHTML = aroundtheweb[ind].author;
 entry.getElementsByClassName('org')[0].innerHTML = aroundtheweb[ind].org;
 entry.value = aroundtheweb[ind].link;
 }
@@ -222,8 +212,8 @@ setInterval(aroundnew, 3000);
 
 
 fillentries();
-
 setsection(entries, publications);
+
 
 </script>
 

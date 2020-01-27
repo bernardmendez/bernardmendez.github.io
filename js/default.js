@@ -8,9 +8,12 @@ var daynumber = date.getDate();
 var month = monthlist[date.getMonth()];
 var year = date.getFullYear();
 var fulldate = month + ' ' + daynumber + ', ' + year;
-var header = "<div id='topbar'><div id='home'><div id='date'></div><div id='name'><a href='index.html'>Bernard Mendez</a></div><div class='mobile2 links'><a href='about.html'>About</a><a href='contact.html'>Contact</a><a href='employers.html'>Employers</a></div></div></div><div id='extras'><a href='favourites.html'>Favourites</a><a href='projects.html'>Projects</a><a href='publications.html'>Publications</a></div>";
+//var header = "<div id='topbar'><div id='home'><div id='date'></div><div id='name'><a href='index.html'>Bernard Mendez</a></div><div class='mobile2 links'><a href='about.html'>About</a><a href='contact.html'>Contact</a><a href='employers.html'>Employers</a></div></div></div><div id='extras'><a href='favourites.html'>Favourites</a><a href='projects.html'>Projects</a><a href='publications.html'>Publications</a></div>";
 
-var entry = "<a class='article' onclick='newtab(this)' href='javascript:void(0)'><div class='description'><div class='title'>title</div><div class='author'>author</div><div class='summary'>summary</div></div><div class='img'></div></a>";
+var header = "<div id='topbar'><div id='home'><div id='date'></div><div id='name'><a href='index.html'>Bernard Mendez</a></div><div class='mobile2 links'><a href='about.html'>About</a><a href='contact.html'>Contact</a><a href='employers.html' style='display: none'>Employers</a></div></div></div>";
+
+
+var entry = "<button class='article' onclick='newtab(this)'><div class='description'><div class='title'>title</div><div class='author'>author</div><div class='summary'>summary</div></div><div class='img'></div></button>";
 
 var apnews = 'https://apnews.com';
 var hodinkee = 'https://www.hodinkee.com';
@@ -21,12 +24,12 @@ var github = 'https://github.com/bernardmendez';
 var dailybruin = 'https://dailybruin.com/author/bernard-mendez/';
 var footer = "<div id='footerlinks' class='footercagtegories'><div class='footertitle'>Unaffiliated Partners</div><div class='line'></div><a onclick='newtab(apnews)' href='javascript:void(0)'>Associated Press</a><a onclick='newtab(hodinkee)' href='javascript:void(0)'>Hodinkee</a><a onclick='newtab(mit)' href='javascript:void(0)'>Mit Tech Review</a></div><div id='footersocialmedia' class='footercagtegories'><div class='footertitle'>Social Media</div><div class='line'></div><a onclick='newtab(linkedin)' href='javascript:void(0)'>LinkedIn</a><a onclick='newtab(twitter)' href='javascript:void(0)'>Twitter</a><a onclick='newtab(github)' href='javascript:void(0)'>Github</a><a onclick='newtab(dailybruin)' href='javascript:void(0)'>Daily&nbspBruin</a></div><div id='footerdescription' class='footercagtegories'><div class='footertitle'>Contact</div><div class='line'></div><a href='contact.html'>Contact Page</a></div><div id='footerdescription' class='footercagtegories'><div class='footertitle'>Description</div><div class='line'></div>Copyright 2019-2019 Bernard H. Mendez All Rights Reserved</div>";
 
-var atwentry = "<a class='atw img' onclick='newtab(value)' href='javascript:void(0)'><div class='title'>title</div><div class='shortline'></div><div class='author'>author</div><div class='org'>org</div></a>";
+var atwentry = "<a class='atw' onclick='newtab(value)' href='javascript:void(0)'><div class='atwtitle'>title</div><div class='shortline'></div><div class='atwauthor'>author</div><div class='org'>org</div></a>";
 
 
 function newtab(link) {
 window.open(link.value, '_blank')
-temp.style.backgroundPosition = 'right bottom';
+//temp.style.backgroundPosition = 'right bottom';
 }
 
 function articleshudder() {
