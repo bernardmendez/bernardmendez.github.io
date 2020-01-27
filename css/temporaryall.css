@@ -99,14 +99,19 @@ background-color: #fefefe;
 
 .size0 .article {
 display: flex;
--webkit-flex-direction: column-reverse;
-align-items:center;
+-webkit-flex-direction: row-reverse;
+align-items: center;
 
 }
 .size0 .img {
 height: 70vh;
-width: 170vh;
-max-width: 95vw;
+min-width: 45vw;
+max-width: 100%;
+margin: 5%;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+#max-width: 95vw;
 max-height: 60vw;
 }
 .size0 .description {
@@ -278,6 +283,8 @@ display: none;
 .mobile {
     display: none;
 }
+.size0 .article {-webkit-flex-direction: column-reverse;}
+
 }
 
 @media only screen and (max-width: 800px) {
