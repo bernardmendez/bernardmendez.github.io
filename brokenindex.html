@@ -1,0 +1,273 @@
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="css/temporaryall.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
+    
+    <style>
+    
+
+    
+    </style>
+    
+</head>
+
+<body>
+
+    <div id='devtools'>
+    <div>Developer's Tools</div>
+    <div id='buttons'>
+    <button onclick='next()'>next</button>
+    <button onclick='toggle()'>toggle</button>
+
+    </div>
+    </div>
+
+
+<div id='header'></div>
+
+    <div class='content'>
+    
+    <div class='bigname' id='publications'>Publications</div>
+    
+    
+
+    
+    <div class='one'>
+    
+    <div class='meattwo'>
+    <div class='entry'></div>
+    </div>
+    
+    <div class='meat'>
+    <div class='line'></div>
+    <div class='entry small'></div>
+    <div class='entry small'></div>
+    <div class='entry small'></div>
+    <div class='line'></div>
+    
+    </div>
+    
+    
+    </div>
+    
+    <div class='one'>
+    
+    <div class='col'>
+    <div class='name'>Science & Health</div>
+    <div class='two' id='science'>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    </div>
+    </div>
+    
+    <div class='meattwo'>
+    <div class='entry'></div>
+    </div>
+
+    
+    </div>
+
+
+
+    
+    <div class='name'>National News</div>
+    <div class='two' id='national'>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    </div>
+
+
+    <div class='name'>Campus News</div>
+    <div class='two' id='campus'>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    <div class='entry card'></div>
+    </div>
+
+
+
+    
+    
+    
+    
+
+    <div class='bigname' id='about'>About</div>
+    
+    
+    
+    
+    
+    <div class='bigname' id='contact'>Contact</div>
+    
+    
+
+
+
+    
+
+
+
+    </div>
+    
+    
+
+
+    <div class='aroundtheweb' style='display: none'>
+    <div class='name'>Around the Web</div>
+    <div class='line'></div>
+    <div class='around'>
+    <div class='atwentry'></div>
+    <div class='atwentry'></div>
+    </div>
+    <div class='around'>
+    <div class='atwentry'></div>
+    <div class='atwentry'></div>
+    <div class='atwentry'></div>
+    </div>
+    <div class='around'>
+    <div class='atwentry'></div>
+    <div class='atwentry'></div>
+    </div>
+    </div>
+    
+
+    
+
+</div>
+
+
+
+
+
+
+bottom text
+
+<div id='footer'></div>
+
+
+<script src="js/default.js"></script>
+
+<script src="js/posts/db1-10.js"></script>
+<script src="js/posts/db11-20.js"></script>
+<script src="js/posts/db21-30.js"></script>
+
+
+<script src="js/posts/aroundtheweb/atw0-9.js"></script>
+<script src="js/posts/aroundtheweb/atw10-19.js"></script>
+<script src="js/posts/aroundtheweb/atw20-29.js"></script>
+
+
+<script src="js/posts/projects.js"></script>
+
+
+<script>
+
+
+var projects = [];
+var publications = [kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+
+//var publications = [pregnancy, shark, pregnancy, aiethics, rat, trumpjr, rocket, catlady, uganda, autism, snowpower, planet, biden];
+
+//[shark, biden, trumpjr, shark, biden, trumpjr, biden, climatestrike, uganda, internet, catlady, autism, rat, rocket, vaccine, snowpower, garg, planet];
+
+var picture = document.getElementsByClassName('img');
+var title = document.getElementsByClassName('title');
+var articles = document.getElementsByClassName('article');
+var author = document.getElementsByClassName('author');
+var summary = document.getElementsByClassName('summary');
+
+var spotlight = document.getElementById('spotlight');
+
+
+var number = 0;
+
+
+
+document.getElementById('header').innerHTML = header;
+document.getElementById('date').innerHTML = fulldate;
+document.getElementById('footer').innerHTML = footer;
+
+
+var entries = document.getElementsByClassName('entry');
+
+function fillentries() {
+for (i=0; i<entries.length; i++) {
+entries[i].innerHTML = entry;
+}
+}
+
+var aroundtheweb = [graves, daytona, crispr, worsttech, quantum, anonymity, nanotube, leaders, senza, darkstar, nelson, chronograph, bus, accutron, baodai, whales, soviet, explorer, chronometer, wings, orleans];
+
+var aroundentries = document.getElementsByClassName('atwentry');
+var atwentries = document.getElementsByClassName('atw');
+
+var aroundshown = [];
+while (aroundshown.length < aroundentries.length) {
+var x = Math.floor(Math.random() * aroundtheweb.length);
+if (aroundshown.includes(x) === false) {
+aroundshown.push(x);
+}
+}
+
+function aroundformat() {
+for (i=0; i<aroundentries.length; i++) {
+aroundentries[i].innerHTML = atwentry;
+setatwentry(atwentries[i], aroundshown[i]);
+}
+}
+
+function aroundnew () {
+var x = Math.floor(Math.random() * aroundtheweb.length);
+if (aroundshown.includes(x) === false) {
+var y = Math.floor(Math.random() * aroundshown.length);
+setatwentry(atwentries[y], x);
+aroundshown[y] = x;
+}
+}
+
+function setatwentry(entry, ind) {
+entry.getElementsByClassName('atwtitle')[0].innerHTML = aroundtheweb[ind].title;
+entry.style.backgroundImage = aroundtheweb[ind].image;
+
+entry.getElementsByClassName('atwauthor')[0].innerHTML = aroundtheweb[ind].author;
+entry.getElementsByClassName('org')[0].innerHTML = aroundtheweb[ind].org;
+entry.value = aroundtheweb[ind].link;
+}
+
+function setsection(section, sectionentries) {
+for (i=0; i<section.length; i++) {
+//title[i].innerHTML = '<span class="highlight">' + sectionentries[i].title + '</span>';
+title[i].innerHTML = sectionentries[i].title;
+author[i].innerHTML = 'By ' + sectionentries[i].author;
+articles[i].value = sectionentries[i].url;
+picture[i].style.backgroundImage = sectionentries[i].image;
+summary[i].innerHTML = sectionentries[i].text;
+}
+}
+
+
+
+aroundformat();
+aroundnew();
+setInterval(aroundnew, 3000);
+
+
+fillentries();
+setsection(entries, publications);
+
+
+</script>
+
+</body>

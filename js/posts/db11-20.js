@@ -3,7 +3,7 @@
 
 //11 internet
 var internet = {
-title: 'School of engineering hosts a <span>daylong event</span> celebrating <span>internet&#39s 50th birthday</span>',
+title: 'School of engineering hosts a daylong event celebrating internet&#39s 50th birthday',
 author: 'Sameera Pant, Brittney Le, Bernard Mendez, Emily MacInnis, Shruti Iyer',
 url: 'https://dailybruin.com/2019/10/30/school-of-engineering-hosts-a-daylong-event-celebrating-internets-50th-birthday/',
 image: 'url("images/internet.jpg")',
@@ -12,7 +12,7 @@ text: '<p>Mark Cuban, Jameela Jamil and Ashton Kutcher were among the many noted
 
 //12 planet
 var planet = {
-title: 'UCLA researchers develop <span>new method</span> of <span>detecting habitable planets</span>',
+title: 'UCLA researchers develop new method of detecting habitable planets',
 author: 'Bernard Mendez',
 url:  'https://dailybruin.com/2019/11/01/ucla-researchers-develop-new-method-of-detecting-habitable-planets/',
 image: 'url("images/planet.jpg")',
@@ -21,7 +21,7 @@ text: '<p>The universe might have more Earth-like planets than previously though
 
 //13 climatestrike
 var climatestrike = {
-title: 'Students <span>demand action</span>, <span>reduced fossil fuel use</span> at LA youth climate strike',
+title: 'Students demand action, reduced fossil fuel use at LA youth climate strike',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/02/students-demand-action-reduced-fossil-fuel-use-at-la-youth-climate-strike/',
 image: 'url("images/climatestrike.jpg")',
@@ -31,7 +31,7 @@ text: '<p>Climate activist Greta Thunberg encouraged youth to continue protestin
 
 //14 aiethics
 var aiethics = {
-title: 'Student group <span>hosts Viennese delegation</span> to discuss <span>future of AI ethics</span>',
+title: 'Student group hosts Viennese delegation to discuss future of AI ethics',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/05/student-group-hosts-viennese-delegation-to-discuss-future-of-ai-ethics/',
 image: 'url("images/aiethics.jpg")',
@@ -40,7 +40,7 @@ text: '<p>Ethical questions about artificial intelligence brought together a stu
 
 //15 trumpjr
 var trumpjr = {
-title: 'Donald Trump Jr.&#39s book promotion <span>attended by over 400</span>, <span>marked by protests</span>',
+title: 'Donald Trump Jr.&#39s book promotion attended by over 400, marked by protests',
 author: 'Bernard Mendez, Emily MacInnis, Tiffany Zha, Jintak Han',
 url: 'https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/',
 image: 'url("images/trumpjr.jpg")',
@@ -49,7 +49,7 @@ text: '<p>A campus visit from Donald Trump Jr. to promote his new book drew both
 
 //16 biden
 var biden = {
-title: '<span>Biden visits Downtown LA</span>, <span>condemns gun violence</span> in wake of Santa Clarita shooting',
+title: 'Biden visits Downtown LA, condemns gun violence in wake of Santa Clarita shooting',
 url: 'https://dailybruin.com/2019/11/14/biden-visits-downtown-la-condemns-gun-violence-in-wake-of-santa-clarita-shooting/',
 author: 'Bernard Mendez',
 image: 'url("images/biden.jpg")',
@@ -58,7 +58,7 @@ text: '<p>Democratic presidential candidate Joe Biden condemned gun violence dur
 
 //17 shark
 var shark = {
-title: 'Documentary screening event takes <span>deep dive</span> into <span>shark conservation and advocacy</span>',
+title: 'Documentary screening event takes deep dive into shark conservation and advocacy',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/11/22/documentary-screening-event-takes-deep-dive-into-shark-conservation-and-advocacy/',
 image: 'url("images/shark.jpg")',
@@ -67,7 +67,7 @@ text: '<p>Maria Korcsmaros was training for a triathlon off the coast of Corona 
 
 //18 pregnancy
 var pregnancy = {
-title: 'UCLA-led study finds <span>climate change</span> may cause <span>increase in premature births</span>',
+title: 'UCLA-led study finds climate change may cause increase in premature births',
 author: 'Bernard Mendez, Shruti Iyer',
 url: 'https://dailybruin.com/2020/01/10/ucla-led-study-finds-climate-change-may-cause-increase-in-premature-births/',
 image: 'url("images/pregnancy.jpg")',
@@ -76,7 +76,7 @@ text: '<p>Climate change may cause childbirth to occur up to two weeks earlier t
 
 //19
 var vicechancellor = {
-title: 'Search committee for EDI vice chancellor <span>seeks student input</span> in hiring process',
+title: 'Search committee for EDI vice chancellor seeks student input in hiring process',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2020/01/16/search-committee-for-edi-vice-chancellor-seeks-student-input-in-hiring-process/',
 image: 'url("images/vicechancellor.jpg")',

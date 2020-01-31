@@ -2,7 +2,7 @@
 
 //1 rocket
 var rocket = {
-title: 'Rocket club <span class="highlight">refines safety protocol</span> in response to accidents at other universities',
+title: 'Rocket club refines safety protocol in response to accidents at other universities',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/02/13/rocket-club-refines-safety-protocol-in-response-to-accidents-at-other-universities-2/',
 image: 'url("images/rocket.jpg")',
@@ -11,7 +11,7 @@ text: '<p>UCLA faculty will now exercise greater control over a student-run rock
 
 //2 rat
 var rat = {
-title: '<span class="highlight">Virtual reality testing on rats</span> to <span class="highlight2">reveal insights into human brain</span>',
+title: 'Virtual reality testing on rats to reveal insights into human brain',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/02/24/virtual-reality-testing-on-rats-to-reveal-insights-into-human-brain/',
 image: 'url("images/rat.jpg")',
@@ -20,7 +20,7 @@ text: '<p>UCLA researchers are developing virtual reality for rats to better und
 
 //3 geneediting
 var geneediting = {
-title: 'New methods could make plants <span class="highlight">more resilient to climate changes</span>, disease',
+title: 'New methods could make plants more resilient to climate changes, disease',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/03/31/new-methods-could-make-plants-more-resilient-to-climate-changes-disease/',
 image: 'url("images/geneediting.jpg")',
@@ -29,7 +29,7 @@ text: '<p>UCLA researchers developed new methods to manipulate gene expression i
 
 //4 uganda
 var uganda = {
-title: 'UCLA instructor <span class="highlight">leads study</span> finding <span class="highlight2">carcinogenic metals in popular African alcohol</span>',
+title: 'UCLA instructor leads study finding carcinogenic metals in popular African alcohol',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/04/10/ucla-instructor-leads-study-finding-carcinogenic-metals-in-popular-african-alcohol/',
 image: 'url("images/uganda.jpg")',
@@ -39,7 +39,7 @@ text: '<p>A group of researchers led by a UCLA instructor has identified several
 
 //5 snowpower
 var snowpower = {
-title: 'UCLA researchers develop <span class="highlight">wearable device</span> that <span class="highlight2">generates electricity</span> from snow',
+title: 'UCLA researchers develop wearable device that generates electricity from snow',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/04/23/ucla-researchers-develop-wearable-device-that-generates-electricity-from-snow/',
 image: 'url("images/snowpower.jpg")',
@@ -48,7 +48,7 @@ text: '<p>UCLA researchers created a device that can generate electricity from s
 
 //6 vaccine
 var vaccine = {
-title: 'Ashe center offers <span class="highlight">free measles vaccines</span> to <span class="highlight2">prevent further outbreak</span>',
+title: 'Ashe center offers free measles vaccines to prevent further outbreak',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/05/07/ashe-center-offers-free-measles-vaccines-to-prevent-further-outbreak/',
 image: 'url("images/vaccine.jpg")',
@@ -57,7 +57,7 @@ text: '<p>Students were vaccinated against measles at a vaccination fair Tuesday
 
 //7 autism
 var autism = {
-title: 'UCLA, USC researchers <span class="highlight">study role of gut microbiome</span> in <span class="highlight2">development of autism</span>',
+title: 'UCLA, USC researchers study role of gut microbiome in development of autism',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/05/20/ucla-usc-researchers-study-role-of-gut-microbiome-in-development-of-autism/',
 image: 'url("images/autism.jpg")',
@@ -66,7 +66,7 @@ text: '<p>Researchers from UCLA and USC are researching the link between gut mic
 
 //8 catlady
 var catlady = {
-title: '<span class="highlight">Crazy cat lady cliche</span> is <span class="highlight2">misleading</span>, according to new study by UCLA researchers',
+title: 'Crazy cat lady cliche is misleading, according to new study by UCLA researchers',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/09/20/crazy-cat-lady-cliche-is-misleading-according-to-new-study-by-ucla-researchers/',
 image: 'url("images/catlady.png")',
@@ -75,7 +75,7 @@ text: '<p>A study conducted at UCLA found that the <i>crazy cat lady</i> stereot
 
 //9 garg
 var garg = {
-title: '<span class="highlight">New organic chemistry website</span> hopes to be <span class="highlight2">engaging, interactive student resource</span>',
+title: 'New organic chemistry website hopes to be engaging, interactive student resource',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/10/01/new-organic-chemistry-website-hopes-to-be-engaging-interactive-student-resource/',
 image: 'url("images/garg.jpg")',
@@ -84,7 +84,7 @@ text: '<p>A team of UCLA researchers created a website to help teach organic che
 
 //10 luskin
 var luskin = {
-title: 'Luskin Center for Innovation <span class="highlight">receives $3M grant</span> to <span class="highlight2">assess California&#39s water needs</span>',
+title: 'Luskin Center for Innovation receives $3M grant to assess California&#39s water needs',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2019/10/16/luskin-center-for-innovation-receives-3m-grant-to-assess-californias-water-needs/',
 image: 'url("images/luskin.jpg")',
