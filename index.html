@@ -13,6 +13,11 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400i,700,700i,900,900i&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
 font-family: 'Buenard', serif;
 }
@@ -120,7 +125,7 @@ position: sticky;
 top: 20px;
 height: 100%;
 #display: none;
-} #menu button {
+} #menu a {
 display: block;
 font-size: 12px;
 }
@@ -128,7 +133,7 @@ font-size: 12px;
 #meat {
 width: 100vh;
 #max-width: 100%;
-
+margin-bottom: 20%;
 }
 
 .img {
@@ -159,9 +164,7 @@ overflow-x: auto;
 }
 
 .catname {width: 100%; font-family: 'Playfair Display SC', serif; font-size: 200%; font-style: italic; color: black; border-bottom: 1px solid red;padding-left: 5%}
-.catname:hover {
-opacity: .7;
-}
+
 
 .title {font-size: 130%; font-weight: bold; color: grey; font-family: 'Buenard', serif; border-bottom: 2px solid transparent}
 .author {color: darkgrey;font-family: 'Playfair Display SC', serif;padding: .5%;}
@@ -176,6 +179,8 @@ display: flex;
 -webkit-flex-direction: row;
 #overflow-x: scroll;
 flex-wrap: wrap;
+padding-top: 70px;
+margin-top: -70px;
 }
 
 #home .article {
@@ -233,10 +238,22 @@ min-width: 30vh;
 max-width: 30vh;
 } #latest1 .title {font-size: 130%;}
 
+
+
+#meatloaf {width: 30vh; height: 20vh;}
+#meatloaf:hover {animation: holograph .05s linear infinite;}
+
+@-webkit-keyframes holograph {
+0% {opacity: 1}
+100% {opacity: 0}
+}
+
+
+
 </style>
 </head>
 <body>
-<div id='date'>asdfasdkfhaskdljfahlksjdfhs</div>
+<div id='date'></div>
 <div id='header'>
 <a id='logo' href=''>Bernard&nbspMendez</a>
 <div id='typetext'>&nbsp</div>
@@ -245,16 +262,16 @@ max-width: 30vh;
 <div id='body'>
 
 <div id='menu'>
-<button onclick='showall()'>Home</button>
-<button onclick='show(about)'>About</button>
-<button onclick='show(allPublications)'>Publications</button>
+<a href='#date'>Home</a>
+<a href='#about'>About</a>
+<a href='#science'>Publications</a>
     <ul style='display:block'>
-        <li><button onclick='show(science)'>Science&nbsp&&nbspHealth</button></li>
-        <li><button onclick='show(national)'>National&nbspNews</button></li>
-        <li><button onclick='show(campus)'>Campus&nbspNews</button></li>
+        <li><a href='#science'>Science&nbsp&&nbspHealth</a></li>
+        <li><a href='#national'>National&nbspNews</a></li>
+        <li><a href='#campus'>Campus&nbspNews</a></li>
     </ul>
-<button onclick='show(projects)'>Projects</button>
-<button onclick='show(contact)'>Contact</button>
+<a href='#projects'>Projects</a>
+<a href='#contact'>Contact</a>
 </div>
 
 <div id='meat'>
@@ -266,41 +283,43 @@ max-width: 30vh;
 </div>
 
 <div id='science'>
-<button class='catname' onclick='show(science)'>Science&nbsp&&nbspHealth</button>
+<div class='catname'>Science&nbsp&&nbspHealth</div>
 </div>
 
 <div id='national'>
-<button class='catname' onclick='show(national)'>National&nbspNews</button>
+<div class='catname'>National&nbspNews</div>
 </div>
 
 <div id='campus'>
-<button class='catname' onclick='show(campus)'>Campus News</button>
+<div class='catname'>Campus News</div>
 </div>
 
 <div id='projects'>
-<button class='catname' onclick='show(projects)'>Projects</button>
+<div class='catname'>Projects</div>
 </div>
 
 <div id='about'>
-<button class='catname' onclick='show(about)'>About</button>
+<div class='catname'>About</div>
 
 <p>My name is Bernard. I am currently a second-year applied mathematics student at UCLA. I am also pursuing a specialization in computing and a minor in professional writing.</p>
 
-<p>Outside of attending classes, I am a reporter for the <a href="https:/dailybruin.com">Daily Bruin</a> and contributor for the Daily Bruin's <a href="https://stack.dailybruin.com">Stack</a> section. I contribute to several beats within the Daily Bruin, including Science & Health, National News & Higher Education and Campus Politics.</p>
+<p>Outside of attending classes, I am a reporter for the <a href="https:/dailybruin.com">Daily Bruin</a> and contributor for the Daily Bruin's <a href="https://stack.dailybruin.com">Stack</a> section. I contribute to several beats within the Daily Bruin, including Science & Health, National News & Higher Education and Campus Politics, mostly reporting on whatever catches my eye.</p>
 
 <p>I am interested in pursing a career in fields loosely relating to computer programming, data science and journalism.</p>
 
-<p>I enjoy reading and reporting on information technology, sustainability and horology. My favorite publications include (but are not limited to) <a href="https://www.technologyreview.com">MIT Technology Review</button> and <a href="https://hodinkee.com">Hodinkee</a>.</p>
+<p>I enjoy reading about and reporting on information technology, sustainability and horology. My favorite publications include (but are not limited to) <a href="https://www.technologyreview.com">MIT Technology Review</a> and <a href="https://hodinkee.com">Hodinkee</a>.</p>
 
 <p>I previously worked as a Lifeguard at Huntington State Beach.</p>
-<img src='images/bernard.jpg' style='width: 20vh'>
+
+<p>My favorite font is "Buenard", a serif font used throughout the website.</p>
+
+<img id='meatloaf'>
+
 </div>
 
 <div id='contact'>
-<button class='catname' onclick='show(contact)'>Contact</button>
-    <p>
-    You can contact Bernard at
-    </p>
+<div class='catname'>Contact</div>
+    <p>Email: bernard.h.mendez@gmail.com</p>
 </div>
 
 <div id='hidden' style='display: flex'></div>
@@ -341,7 +360,7 @@ function fillsection(section, sectionentries) {
         ent.getElementsByClassName('title')[0].innerHTML = '<span class="highlight">' + sectionentries[i].title + '</span>';
         ent.getElementsByClassName('author')[0].innerHTML = 'By ' + sectionentries[i].author;
         ent.getElementsByClassName('img')[0].style.backgroundImage = sectionentries[i].image;
-        ent.getElementsByClassName('article')[0].value = sectionentries[i].link;
+        ent.getElementsByClassName('article')[0].value = sectionentries[i].url;
         ent.getElementsByClassName('summary')[0].innerHTML = sectionentries[i].text;
         //if (i>2) ent.style.display = 'none';
         section.appendChild(ent);
@@ -362,7 +381,7 @@ function fillsection1(section, sectionentries) {
         ent.getElementsByClassName('title')[0].innerHTML = '<span class="highlight">' + sectionentries[i].title + '</span>';
         ent.getElementsByClassName('author')[0].innerHTML = 'By ' + sectionentries[i].author;
         ent.getElementsByClassName('img')[0].style.backgroundImage = sectionentries[i].image;
-        ent.getElementsByClassName('article')[0].value = sectionentries[i].link;
+        ent.getElementsByClassName('article')[0].value = sectionentries[i].url;
         section.appendChild(ent);
     }
 }
@@ -420,12 +439,29 @@ function type() {
     }
 };
 
+document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
+document.getElementById('meatloaf').addEventListener('click', function() {
+if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});
+
+var date = new Date();
+
+var daynamelist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var monthlist = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+var daynumber = date.getDate();
+//var dayname = daynamelist[daynumber];
+var month = monthlist[date.getMonth()];
+var year = date.getFullYear();
+var fulldate = month + ' ' + daynumber + ', ' + year;
+
+document.getElementById('date').innerHTML = fulldate;
+
 fillsection(science, scienceEntries);
 fillsection(national, nationalEntries);
 fillsection(campus, campusEntries);
 fillsection(projects, [walking])
 
-setTimeout(type, 3000);
+setTimeout(type, 2000);
 
 
 
