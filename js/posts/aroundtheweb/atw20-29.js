@@ -82,7 +82,3 @@ org: 'MIT Tech Review',
 author: 'Charlotte Jee',
 link: 'https://www.technologyreview.com/f/614947/new-orleans-has-declared-a-state-of-emergency-after-a-cyber-attack/'
 };
-
-document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
-document.getElementById('meatloaf').addEventListener('click', function() {
-if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});

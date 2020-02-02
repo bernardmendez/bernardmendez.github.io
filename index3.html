@@ -1,0 +1,73 @@
+<head>
+    <script src="js/default.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/posts/db1-10.js"></script>
+    <script src="js/posts/db11-20.js"></script>
+    <script src="js/posts/db21-30.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
+::selection { background: black; color: white;}
+html * {font-size: 18px; font-family: 'Buenard', serif;}
+body {margin: 0; padding: 0;}
+button {border: none; background: none; padding: none; margin: none;}
+button:focus {outline: 0;}
+* button:hover {cursor: pointer;}
+#cards, #header > div{display: flex; -webkit-flex-direction: row; justify-content: space-between; align-items: center; -webkit-flex-wrap: wrap}
+button:hover {background: black; color: white; text-decoration: underline;}
+#header {width: 100%; display: flex; justify-content: space-between; border-bottom: 1px solid grey; border-top: 1px solid grey}
+#header > div {width: 140vh; max-width: 95%; margin-left: auto; margin-right: auto; padding: 5px}
+#header button {margin: 5px;}
+#logo button {font-size: 26px; text-decoration: none; margin: 5px;}
+#body p:nth-child(1) {font-size: 35px; font-weight: 700;}
+#body p {padding: 20px; margin-top: 30px;}
+#body * {font-size: 20px; font-weight: 400;}
+#cards, #body {width: 160vh; max-width: 95%; margin-top: 12vh; border: 1px solid; margin-right: auto; margin-left: auto;}
+.card {width: 33%; height: 50vh; border: 1px solid;}
+</style>
+</head>
+<body>
+
+
+<div id='header'>
+<div>
+
+<div id='logo'>
+<button href=''>Bernard Mendez</button>
+</div>
+
+<div>
+<button onclick='newtab(github)'>Github</button>
+<button onclick='newtab(linkedin)'>LinkedIn</button>
+<button onclick='newtab(twitter)'>Twitter</button>
+<button onclick='newtab(github)'>Contact</button>
+</div>
+
+</div>
+</div>
+
+<div id='body'>
+
+<p class=''>
+Hello. My name is Bernard.<br>
+I'm a student journalist and programmer at UCLA.
+</p>
+
+<p>Here's my <button class=''>resume</button> and my <button class=''>e-mail</button></p>
+
+<p>Take a look at some of my projects and publications:</p>
+</div>
+
+
+<div id='cards'>
+<div class='card' id='publications'>publications</div>
+<div class='card' id='easy'></div>
+<div class='card' id='easy'></div>
+<div class='card' id='easy'></div>
+<div class='card' id='easy'></div>
+<div class='card' id='easy'></div>
+<div class='card' id='easy'></div>
+
+</div>
+
+
+</body>
