@@ -102,7 +102,7 @@ color: grey;
     user-select: none;
 } #logo, #typetext {margin-left: 5vw;}
 
-#header {
+#header, #meat {
 width: 140vh;
 max-width: 95%;
 padding-top: 30px;
@@ -120,7 +120,7 @@ display: flex;
 -webkit-flex-direction: row;
 justify-content: space-between;
 width: 140vh;
-max-width: 95%;
+max-width: 100%;
 margin-right: auto;
 margin-left: auto;
 }
@@ -135,10 +135,10 @@ height: 100%;
 #menu, #meat {
 padding: 18px;
 border: .5px solid lightgrey;
+max-width: 95%;
 }
-#meat {
-max-width: 90%;
-}
+
+
 #menu {margin-bottom: 20px;}
 #left *  {
 display: block;
@@ -163,14 +163,6 @@ padding: 5%;
 }
 
 
-@
-
-#meat {
-width: 100%;
-max-width: 92.5%;
-margin-bottom: 20%;
-}
-
 .img {
 height: 20vh;
 width: 30vh;
@@ -181,7 +173,6 @@ width: 30vh;
 display: flex;
 -webkit-flex-direction: column-reverse;
 justify-content: flex-end;
-
 min-width: 30vh;
 max-width: 30vh;
 margin: 10px;
@@ -428,20 +419,26 @@ function createEntries(category) {
 }
 
 // definition for a section
-function section(name, category, typeOfEntry) {
+function section(name, category, typeOfEntry, fill) {
     this.name = name;
     this.category = category;
     this.typeOfEntry = typeOfEntry;
     this.location = document.getElementById(category);
-    this.entries = createEntries(category);
-    if (category != 'latest') {this.test = fillsection(this);}
+    if (fill === true) {
+        this.entries = createEntries(category);
+        this.fill = fillsection(this);
+    }
 }
 
-var latest = new section('Latest', 'latest', entry); latest.entries = getLatestEntries(); fillsection(latest);
-var science = new section('Science&nbsp&&nbspHealth', 'science', entry);
-var national = new section('National&nbspNews', 'national', entry);
-var campus = new section('Campus&nbspNews', 'campus', entry);
-var projects = new section('Projects', 'projects', entry);
+var latest = new section('Latest', 'latest', entry, false);
+    latest.entries = getLatestEntries();
+    fillsection(latest);
+var science = new section('Science&nbsp&&nbspHealth', 'science', entry, true);
+var national = new section('National&nbspNews', 'national', entry, true);
+var campus = new section('Campus&nbspNews', 'campus', entry, true);
+var projects = new section('Projects', 'projects', entry, true);
+var projects = new section('Example of a section not shown', 'example', entry, false);
+
 
 
 
@@ -505,15 +502,14 @@ function seemore(section) {
 
 
 
-
-var typetext = "Hi. My name is Bernard. I'm a student journalist and programmer at UCLA.";
+var typetext = "Hi. My name is Bernard. This is a website.";
 var typespace = document.getElementById('typetext');
 var t=0;
 function type() {
     if (t < typetext.length) {
         typespace.innerHTML += typetext[t];
         if (typetext[t] === '.') {t++; setTimeout(type, 700)}
-        else {t++; setTimeout(type, 45)};
+        else {t++; setTimeout(type, 95)};
     }
 };
 
