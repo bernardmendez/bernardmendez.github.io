@@ -31,11 +31,12 @@ categories: ['campus', 'national'],
 text: '<p>As a lifelong basketball player, Mert Gulen said he always felt a deep connection to Kobe Bryant.</p><p>“He was my childhood hero,” said Gulen, a fourth-year business economics student. “I used to watch him play all the time and try to incorporate some of his moves and things into my life.”</p><p>The former Los Angeles Lakers guard died at age 41 in a helicopter crash Sunday in Calabasas, California. Bryant’s helicopter took off from Orange County and crashed around 10 a.m., according to the Los Angeles Times.</p><p>Bryant’s 13-year-old daughter Gianna Bryant also died in the crash, which killed all nine people on board.&nbsp;</p><img src="images/kobe1.jpg" alt="" width="620" height="414"><p>Los Angeles Mayor Eric Garcetti said in a <a href="https://www.lamayor.org/statement-mayor-garcetti-passing-kobe-bryant">statement</a> that Bryant was an inspiration on and off the court.</p><p>“He will live forever in the heart of Los Angeles, and will be remembered through the ages as one of our greatest heroes,” Garcetti said in the statement. “This is a moment that leaves us struggling to find words that express the magnitude of shock and sorrow we are all feeling right now, and I am keeping Kobe’s entire family in my prayers at this time of unimaginable grief.”</p><p>Gulen said he was devastated after hearing about Bryant’s passing from his friends in a group chat.&nbsp;</p><p>When Josh Mimura, a second-year public affairs student, heard about Bryant’s passing on Twitter, he said he didn&#8217;t think it was real. Mimura said he grew up as a Lakers fan and remembers watching Bryant in the 2008 and 2010 NBA Finals against the Boston Celtics.</p><p>“I think at first, I was sort of in denial, like this is probably some false report,” Mimura said. “As everyone started to tweet and there were more news organizations coming out, I think I started to really just kind of get upset and sad.”</p><p>Christian Parks, a second-year human biology and society student, said he was devastated when he heard about Bryant’s passing.&nbsp;</p><p>“He&#8217;s a part of my childhood. I grew up watching him with my family every day,” Parks said. “It&#8217;s crazy that life is so fragile.”</p><p>Bryant played his entire 20-year NBA career with the Lakers after being selected 13th overall in the 1996 NBA Draft out of Lower Merion High School in Pennsylvania.&nbsp;</p><p>During his time with the Lakers, Bryant was the MVP during the 2007-2008 season and won the NBA championship five times: in 2000, 2001, 2002, 2009 and 2010.</p><p>Outside of basketball, Bryant was known for his philanthropy and for starting Granity Studios, a multimedia company aimed at sports storytelling.</p><p>Bryant is succeeded by his wife Vanessa Bryant and his three other daughters.</p>',
 };
 // 24
-var TITLE = {
-title: '',
+var applications = {
+title: 'UCLA sees drop in freshman, but increase in transfer applications',
 author: 'Bernard Mendez',
-url: '',
-image: 'url("images/_____.jpg")',
+url: 'https://dailybruin.com/2020/02/07/ucla-sees-drop-in-freshman-but-increase-in-transfer-applications/',
+image: 'url("images/applications.jpg")',
+categories: ['campus'],
 text: ''
 };
 // 25
@@ -44,6 +45,7 @@ title: '',
 author: 'Bernard Mendez',
 url: '',
 image: 'url("images/_____.jpg")',
+categories: [''],
 text: ''
 };
 // 26
@@ -52,6 +54,7 @@ title: '',
 author: 'Bernard Mendez',
 url: '',
 image: 'url("images/_____.jpg")',
+categories: [''],
 text: ''
 };
 // 27
@@ -60,6 +63,7 @@ title: '',
 author: 'Bernard Mendez',
 url: '',
 image: 'url("images/_____.jpg")',
+categories: [''],
 text: ''
 };
 // 28
@@ -68,6 +72,7 @@ title: '',
 author: 'Bernard Mendez',
 url: '',
 image: 'url("images/_____.jpg")',
+categories: [''],
 text: ''
 };
 // 29
@@ -76,6 +81,7 @@ title: '',
 author: 'Bernard Mendez',
 url: '',
 image: 'url("images/_____.jpg")',
+categories: [''],
 text: ''
 };
 // 30
@@ -84,5 +90,6 @@ title: '',
 author: 'Bernard Mendez',
 url: '',
 image: 'url("images/_____.jpg")',
+categories: [''],
 text: ''
 };
