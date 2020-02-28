@@ -1,0 +1,514 @@
+<head>
+<title>Bernard Mendez</title>
+<script src="js/default.js"></script>
+<script src="js/posts/aroundtheweb/atw0-9.js"></script>
+<script src="js/posts/aroundtheweb/atw10-19.js"></script>
+<script src="js/posts/aroundtheweb/atw20-29.js"></script>
+<script src="js/posts/photography.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,400i,700,700i,900,900i&display=swap');
+
+@media only screen and (min-width: 800px) {
+    .entryHolder {-webkit-flex-wrap: wrap;}
+}
+@media only screen and (max-width: 800px) {
+    #left {display: none;}
+    .entryHolder {overflow-x: scroll;}
+    .seemorebutton {margin-top: 50px; min-width: 30vh; max-width: 30vh; height: 20vh;}
+    #latest .article {display: none;}
+    #latest .article:nth-child(1) {display: flex;}
+
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+font-family: 'Buenard', serif;
+user-select: auto;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+text-decoration: none;
+color: black;
+}
+::selection {background: yellow;}
+
+.img {
+position: relative;
+float: left;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+display: block;
+width: 12vh;
+height: 12vh;
+min-width: 12vh;
+min-height: 12vh;
+transition: all .5s ease;
+}
+
+button {
+background-color: transparent;
+border: none;
+padding: 0px;
+margin: 0px;
+text-align: left;
+width: 100%;
+} button:active * div {
+color: red;
+} button:focus {
+outline: 0;
+} button:hover {
+cursor: pointer;
+}
+
+ul {
+padding: 0;
+margin: 0;
+list-style: none;
+} li {
+margin-left: 10%;
+}
+
+h1, h2 {padding: 0; margin: 0}
+
+.summary {
+display: none;
+}
+
+#date {
+padding: 1px;
+margin: 0;
+text-align: center;
+font-size: 11px;
+color: grey;
+
+}
+
+#logo {
+    font-size: 20px;
+    font-family: 'Buenard', serif;
+    user-select: none;
+} #logo, #typetext {
+    margin-left: 5vw;
+}
+
+#header, #body {
+    width: 140vh;
+    max-width: 95%;
+
+}
+
+#header, .meat {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: .5px solid lightgrey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+}
+
+#body {
+    display: flex;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.meat {
+    padding: 18px;
+    border: .5px solid lightgrey;
+    max-width: 95%;
+    vertical-align: center;
+    background: white;
+} .meat:nth-child(2) {
+    margin-right: 30px;
+    margin-left: 30px;
+} .meat:hover {
+    background: white;
+    transition: all;
+    -webkit-animation: fadein .5s linear;
+    color: white;
+} .meat:hover .catname {
+    text-decoration: underline
+}
+
+
+.row {
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap
+    max-width: 100%;
+}
+
+#canvas {
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+.img {
+height: 27vh;
+width: 30vh;
+}
+
+
+.article {
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 30%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+} .article:hover .title {
+    border-bottom: 2px solid red;
+    color: black}
+.article:focus .highlight {
+    background: yellow;
+} .article * !important {
+    max-width: 50%;
+}
+
+
+.catname {
+    max-width: 100%;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 12px;
+    font-style: italic;
+    color: grey;
+    text-align: center;
+}
+
+
+.title {
+    font-size: 130%;
+    font-weight: bold;
+    color: grey; font-family: 'Buenard', serif;
+    border-bottom: 2px solid transparent
+}
+.author {
+    color: darkgrey;
+    font-family: 'Playfair Display SC', serif;
+    padding: .5%;
+}
+
+.photo {
+    max-width: 47%;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} .photo:nth-of-type(even) {
+    padding-top: 240px;
+} .photo img {
+    max-width: 100%;
+} .photo p {
+    color: grey;
+    font-size: 12px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.aboutmeat {
+    width: 80vh;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+} .aboutmeat p {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+#latest .highlight {background: white;padding: 0px;}
+#latest .author, #latest .text {display: none;}
+
+#meatloaf {width: 30vh; height: 20vh; margin-right: auto; margin-left: auto; border: 30px solid transparent}
+#meatloaf:hover {animation: fadein .05s linear infinite;}
+
+@-webkit-keyframes fadein {
+0% {opacity: 0}
+100% {opacity: 1}
+}
+
+
+</style>
+</head>
+<body>
+
+<div id='date'></div>
+
+<div id='header'>
+    <a id='logo' href=''>Bernard&nbspMendez</a>
+    <div id='typetext'>&nbsp</div>
+</div>
+
+
+<div id='body'>
+
+    <div class='row'>
+    
+        <button class='meat' id='photos'>
+            <div class='catname'>Photos</div>
+        </button>
+    
+        <button class='meat' id='projects'>
+            <div class='catname'>Projects</div>
+        </button>
+    
+        <button class='meat' id='publications'>
+            <div class='catname'>Publications</div>
+        </button>
+    
+    </div>
+    <div class='row'>
+
+        <button class='meat' id='about'>
+            <div class='catname'>About</div>
+        </button>
+    
+        <button class='meat' id='contact'>
+            <div class='catname'>Contact</div>
+        </button>
+    
+        <button class='meat' id='other'>
+            <div class='catname'>Other</div>
+        </button>
+    </div>
+    
+    <div class='row' id='canvas'>
+
+
+    
+</div>
+
+<!-- Article information -->
+<script src="js/posts/db1-10.js"></script>
+<script src="js/posts/db11-20.js"></script>
+<script src="js/posts/db21-30.js"></script>
+<script>
+
+// All of the entries to be shown
+var allentries = [debate, corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+var allphotos = [bouman, uaw, jewish1, jewish2, bardintheyard, coronaIMAGE, genxIMAGE, ghostpop, mvb1];
+
+/*
+function createEntries(category) {
+    var temp = [];
+    for (i=0;i<allentries.length;i++) {
+        var it = allentries[i];
+        if (it.categories.includes(category)) {temp.push(it)}
+    }
+    return temp;
+}
+
+// definition for a section
+function section(name, category, typeOfEntry, fill) {
+    this.name = name;
+    this.category = category;
+    this.typeOfEntry = typeOfEntry;
+    this.location = document.getElementById(category);
+    if (fill === true) {
+        this.entries = createEntries(category);
+        this.fill = fillsection(this);
+    }
+}
+
+var latest = new section('Latest', 'latest', entry, false);
+    latest.entries = getLatestEntries();
+    fillsection(latest);
+var science = new section('Science&nbsp&&nbspHealth', 'science', entry, true);
+var national = new section('National&nbspNews', 'national', entry, true);
+var campus = new section('Campus&nbspNews', 'campus', entry, true);
+var projects = new section('Projects', 'projects', entry, true);
+var projects = new section('Example of a section not shown', 'example', entry, false);
+*/
+var canvas = document.getElementById('canvas')
+var publish = document.getElementById('publications');
+publish.addEventListener('click', function() {
+    canvas.innerHTML = '';
+    var temp;
+    for (i=0; i<allentries.length; i++) {
+        temp = document.createElement('div');
+        temp.innerHTML = entry;
+        temp.getElementsByClassName('title')[0].innerHTML = '<span class="highlight">' + allentries[i].title + '</span>';
+        temp.getElementsByClassName('author')[0].innerHTML = 'By ' + allentries[i].author;
+        temp.getElementsByClassName('img')[0].style.backgroundImage = allentries[i].image;
+        temp.getElementsByClassName('article')[0].value = allentries[i].url;
+        canvas.innerHTML += temp.innerHTML;
+    }
+});
+
+var projects = document.getElementById('projects');
+projects.addEventListener('click', function() {
+    canvas.innerHTML = '';
+    canvas.innerHTML = 'Projects';
+})
+
+
+var photos = document.getElementById('photos');
+photos.addEventListener('click', function() {
+    canvas.innerHTML = '';
+    var temp;
+    for (i=0; i<allphotos.length; i++) {
+        temp = document.createElement('div');
+        temp.classList.add('photo');
+        var tempimg = document.createElement('img');
+        tempimg.src = allphotos[i].image;
+        temp.appendChild(tempimg);
+        var tempcap = document.createElement('p');
+        tempcap.innerHTML = allphotos[i].description;
+        temp.appendChild(tempcap);
+        canvas.appendChild(temp);
+    }
+})
+
+var about = document.getElementById('about');
+about.addEventListener('click', function() {
+    canvas.innerHTML = '';
+    var meat = document.createElement('div');
+    meat.classList.add('aboutmeat');
+    meat.innerHTML = "<h4>About Bernard</h4><p>My name is Bernard. I am currently a second-year applied mathematics student at UCLA. I am also pursuing a specialization in computing.</p><p>Outside of attending classes, I am a reporter for the <a href='https://www.dailybruin.com'>Daily Bruin</a> and contributor for the Daily Bruin's <a href='https://stack.dailybruin.com'>Stack</a> section. I contribute to several beats within the Daily Bruin, including Science & Health, National News & Higher Education and Campus Politics, mostly reporting on whatever catches my eye.</p><p>I am interested in pursing a career in fields loosely relating to computer programming, data science and journalism.</p><p>I enjoy reading about and reporting on information technology, sustainability and horology. My favorite publications include (but are not limited to) <a href='https://www.technologyreview.com'>MIT Technology Review</a> and <a href='https://hodinkee.com'>Hodinkee</a>.</p><p>I previously worked as a Lifeguard at Huntington State Beach.</p>";
+    canvas.appendChild(meat);
+});
+
+var contact = document.getElementById('contact');
+contact.addEventListener('click', function() {
+    canvas.innerHTML = '';
+    canvas.innerHTML = 'contact';
+})
+
+
+var other = document.getElementById('other');
+other.addEventListener('click', function() {
+    canvas.innerHTML = '';
+    canvas.innerHTML = 'Other';
+})
+
+
+
+function getLatestEntries() {
+    var temp = [];
+    for (i=0; i<4; i++) {
+        temp.push(allentries[i]);
+    }
+    return temp;
+};
+
+function fillsection(section) {
+    createSectionTitle(section);
+    var entryHolder = document.createElement('DIV');
+    entryHolder.classList.add('entryHolder');
+    for (i=0; i<section.entries.length; i++) {
+        entryHolder.innerHTML += section.typeOfEntry;
+        var ent = entryHolder.getElementsByClassName('article');
+        addInfo(ent[i], section);
+        if (i>5) {ent[i].style.display = 'none';}
+        //entryHolder.appendChild(ent[i]);
+    }
+    section.location.appendChild(entryHolder);
+    if (entryHolder.getElementsByClassName('article').length > 5) {entryHolder.appendChild(seemore(section));}
+}
+
+function addInfo(ent, section) {
+    ent.getElementsByClassName('title')[0].innerHTML = '<span class="highlight">' + section.entries[i].title + '</span>';
+    ent.getElementsByClassName('author')[0].innerHTML = 'By ' + section.entries[i].author;
+    ent.getElementsByClassName('img')[0].style.backgroundImage = section.entries[i].image;
+    ent.value = section.entries[i].url;
+}
+
+function createSectionTitle(section) {
+    var sectionTitle = document.createElement('DIV');
+    sectionTitle.classList.add('catname');
+    sectionTitle.innerHTML = section.name;
+    section.location.appendChild(sectionTitle);
+}
+
+function seemore(section) {
+    var ents = section.location.getElementsByClassName('article');
+    var btn = document.createElement('button');
+    btn.innerHTML = 'See More';
+    btn.classList.add('seemorebutton');
+    btn.addEventListener('click', function(section) {
+        if (ents[6].style.display === 'none') {
+            for (i=0; i<ents.length; i++) {ents[i].style.display = 'flex'};
+            this.innerHTML = 'See Less';
+        } else  {
+            for (i=6; i<ents.length; i++) {ents[i].style.display = 'none'};
+            this.innerHTML = 'See More';
+        }
+    })
+    return btn;
+}
+
+
+
+
+
+
+
+var typetext = "Hi. My name is Bernard. This is a website.";
+var typespace = document.getElementById('typetext');
+var t=0;
+function type() {
+    if (t < typetext.length) {
+        typespace.innerHTML += typetext[t];
+        if (typetext[t] === '.') {t++; setTimeout(type, 700)}
+        else {t++; setTimeout(type, 95)};
+    }
+};
+
+/*
+document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
+document.getElementById('meatloaf').addEventListener('click', function() {
+if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});
+*/
+var date = new Date();
+
+var daynamelist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var monthlist = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+var daynumber = date.getDate();
+var month = monthlist[date.getMonth()];
+var year = date.getFullYear();
+var fulldate = month + ' ' + daynumber + ', ' + year;
+
+document.getElementById('date').innerHTML = fulldate;
+
+setTimeout(type, 1200);
+
+
+</script>
+</body>

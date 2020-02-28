@@ -4,106 +4,83 @@
     <script src="js/posts/db1-10.js"></script>
     <script src="js/posts/db11-20.js"></script>
     <script src="js/posts/db21-30.js"></script>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
-::selection {
-    background: black;
-    color: white;
-}
-html * {
-    font-size: 18px;
-    font-family: 'Buenard', serif;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-button {
-    border: none;
-    background: none;
-    padding: none;
-    margin: none;
-}
-button:focus {
-    outline: 0;
-}
-button:hover {
-    cursor: pointer;
-}
-button:hover {
-    background: black;
-    color: white;
-    text-decoration: underline;
-}
-#links {
-position: absolute;
-top: 0;
-left: 0;
-z-index: 10;
-}
-.first {
-position: relative;
-top: 0;
-border: 1px solid;
-} .first .article {
-width: 100%;
-width: 100%;
-height: 23vw;
-}
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
+        
+        .img {
+            position: relative;
+            float: left;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            width: 12vh;
+            height: 12vh;
+            min-width: 12vh;
+            min-height: 12vh;
+            transition: all .5s ease;
+        }
 
-</style>
+        
+        div {
+            border: 1px solid;
+        }
+        .entry {
+            height: 50vh;
+        } .article {
+            height: 100%;
+            width: 100%;
+        }
+        
+        #meat {
+            width: 100%;
+            display: flex;
+            -webkit-flex-direction: row;
+        } #meat > div{
+            margin: 5%;
+        } #left {
+            width: 50%;
+        } #right {
+            width: 50%;
+        }
+        
+    </style>
 </head>
+
 <body>
 
 
-<div id='links'>
-<div>
-<button>Bernard Mendez</button>
-</div>
-<div>
-<button onclick='newtab(github)'>Github</button>
-<button onclick='newtab(linkedin)'>LinkedIn</button>
-<button onclick='newtab(twitter)'>Twitter</button>
-<button onclick='newtab(github)'>Contact</button>
-</div>
-</div>
-
-<div class='entry first'></div>
-
-
-<p class=''>
-Hello. My name is Bernard.<br>
-I'm a student journalist at UCLA.
-</p>
-
-<p>Here's my <button class=''>resume</button> and my <button class=''>e-mail</button></p>
-
-<p>Take a look at some of my projects and publications:</p>
-
-
-<div class='entry'></div>
-<div class='entry'></div>
-<div class='entry'></div>
-<div class='entry'></div>
-
+    <div id='meat'>
+        <div id='left'>
+            <div class='entry'></div>
+            <div class='entry'></div>
+            <div class='entry'></div>
+            <div class='entry'></div>
+        </div>
+        <div id='right'>
+            <p>
+                Hello. My Name is Bernard, I am a student journalist at UCLA.
+            </p>
+            
+        </div>
+    </div>
 
 </body>
 
-<script src="js/default.js"></script>
-<script src="js/posts/db1-10.js"></script>
-<script src="js/posts/db11-20.js"></script>
-<script src="js/posts/db21-30.js"></script>
 <script>
 
 // All of the entries to be shown
-var allentries = [corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+var list = [debate, corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
 
 
 var entries = document.getElementsByClassName('entry');
+var articles = document.getElementsByClassName('article')
 
 for (i=0;i<entries.length; i++) {
     entries[i].innerHTML = entry;
-    document.getElementsByClassName('img')[i].style.backgroundImage = allentries[i].image;
+    articles[i].style.backgroundImage = list[i].image;
+    articles[i].value = list[i].link;
 }
 
 

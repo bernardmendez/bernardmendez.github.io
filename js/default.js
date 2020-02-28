@@ -13,7 +13,7 @@ var fulldate = month + ' ' + daynumber + ', ' + year;
 var header = "<div id='topbar'><div id='home'><div id='date'></div><div id='name'><a href='index.html'>Bernard Mendez</a></div><div class='mobile2 links'><a href='#publications'>Publications</a><a href='#about'>About</a><a href='#contact'>Contact</a></div></div></div>";
 
 
-var entry = "<button class='article' onclick='newtab(this.value)'><div class='description'><div class='title'>title</div><div class='author'>author</div><div class='summary'>summary</div></div><div class='img'></div></button>";
+var entry = "<button class='article img' onclick='newtab(this.value)'><div class='description'><div class='title'>title</div><div class='author'>author</div><div class='summary'>summary</div></div><div class='img'></div></button>";
 
 var apnews = 'https://apnews.com';
 var hodinkee = 'https://www.hodinkee.com';
