@@ -4,8 +4,6 @@
 <script src="js/posts/aroundtheweb/atw0-9.js"></script>
 <script src="js/posts/aroundtheweb/atw10-19.js"></script>
 <script src="js/posts/aroundtheweb/atw20-29.js"></script>
-<script src="js/posts/photography.js"></script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
 
@@ -100,156 +98,172 @@ color: grey;
 }
 
 #logo {
-    font-size: 20px;
+    font-size: 32px;
     font-family: 'Buenard', serif;
     user-select: none;
-} #logo, #typetext {
-    margin-left: 5vw;
-}
+} #logo, #typetext {margin-left: 5vw;}
 
-#header, #body {
-    width: 140vh;
-    max-width: 95%;
-
-}
-
-#header, .meat {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: .5px solid lightgrey;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 13px;
+#header, #meat {
+width: 140vh;
+max-width: 95%;
+padding-top: 30px;
+padding-bottom: 30px;
+border: .5px solid lightgrey;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 40px;
+#margin-top: 20px;
 }
 
 #body {
-    display: flex;
-    -webkit-flex-direction: column;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
+display: flex;
+-webkit-flex-direction: row;
+justify-content: space-between;
+width: 140vh;
+max-width: 100%;
+margin-right: auto;
+margin-left: auto;
 }
 
-.meat {
-    padding: 18px;
-    border: .5px solid lightgrey;
-    max-width: 95%;
-    vertical-align: center;
-    background: white;
-} .meat:nth-child(2) {
-    margin-right: 30px;
-    margin-left: 30px;
-} .meat:hover {
-    background: white;
-    transition: all;
-    -webkit-animation: fadein .5s linear;
-    color: white;
-} .meat:hover .catname {
-    text-decoration: underline
+#left {
+min-width: 25vh;
+margin-right: 40px;
+position: sticky;
+top: 20px;
+height: 100%;
+}
+#menu, #meat {
+padding: 18px;
+border: .5px solid lightgrey;
+max-width: 95%;
 }
 
 
-.row {
-    display: flex;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: wrap
-    max-width: 100%;
+#menu {margin-bottom: 20px;}
+#left *  {
+display: block;
+font-size: 12px;
 }
 
-#canvas {
-    display: flex;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    justify-content: space-between;
+#resume {
+width: 100%;
+background: lightgreen;
+animation: fadein .4s linear;
+animation-delay: 7s;
+opacity: 0;
+border: .5px solid green;
+-webkit-animation-fill-mode:forwards;
+} #res {
+padding: 5%;
 }
 
-
-
+@-webkit-keyframes hopup {
+0% {margin-top: 300px; opacity 0;}
+100% {margin-top: 0px; opacity 1;}
+}
 
 
 .img {
-height: 27vh;
+height: 20vh;
 width: 30vh;
 }
 
 
 .article {
-    display: flex;
-    -webkit-flex-direction: column-reverse;
-    justify-content: flex-end;
-    width: 30%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
-} .article:hover .title {
-    border-bottom: 2px solid red;
-    color: black}
+display: flex;
+-webkit-flex-direction: column-reverse;
+justify-content: flex-end;
+min-width: 30vh;
+max-width: 30vh;
+margin: 10px;
+margin-bottom: 50px;
+margin-top: 50px;
+border-bottom: 2px solid transparent;
+border-top: 2px solid transparent;
+} .article:hover .title {border-bottom: 2px solid red; #border-top: 3px solid red; color: black}
 .article:focus .highlight {
-    background: yellow;
-} .article * !important {
-    max-width: 50%;
+background: yellow;
 }
 
 
-.catname {
-    max-width: 100%;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 12px;
-    font-style: italic;
-    color: grey;
-    text-align: center;
+.catname {max-width: 100%; font-family: 'Playfair Display SC', serif; font-size: 200%; font-style: italic; color: black; border-bottom: 1px solid red; border-top: none; padding-left: 5%}
+
+
+.title {font-size: 130%; font-weight: bold; color: grey; font-family: 'Buenard', serif; border-bottom: 2px solid transparent}
+.author {color: darkgrey;font-family: 'Playfair Display SC', serif;padding: .5%;}
+
+#all {display: none;}
+
+
+#meat > * {
+display: flex;
+-webkit-flex-direction: column;
+padding-top: 70px;
+margin-top: -70px;overflow-x: scroll; justify-content: flex-start;
+}
+
+#latest {
+display: flex;
+-webkit-flex-direction: column;
+align-items: flex-end;
+}
+
+#latest .catname {
+width: 100%;
+height: 20vh:
+border-bottom: 2px solid red;
+text-align: right;
+padding-left: 0;
+padding-right: 5%;
+}
+
+#latest .entryHolder {
+display: flex;
+-webkit-flex-direction: row;
+-webkit-flex-wrap: wrap;
+justify-content: center;
+align-items: flex-end;
+-webkit-flex-wrap: wrap;
+#width: 100%;
+max-width: 100%;
 }
 
 
-.title {
-    font-size: 130%;
-    font-weight: bold;
-    color: grey; font-family: 'Buenard', serif;
-    border-bottom: 2px solid transparent
+#latest .article:nth-child(1) {
+height: 45vh;
+width: 75vh;
+max-width: 90%;
+font-size: 110%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 4vh;
 }
-.author {
-    color: darkgrey;
-    font-family: 'Playfair Display SC', serif;
-    padding: .5%;
-}
-
-.photo {
-    max-width: 47%;
-    padding-top: 100px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-} .photo:nth-of-type(even) {
-    padding-top: 250px;
-} .photo img {
-    max-width: 100%;
-} .photo p {
-    color: grey;
-    font-size: 12px;
-    text-align: justify;
-    padding: 20px;
+#latest .article:nth-child(1) .img {
+height: 45vh;
+min-width: 100%;
+font-size: 100%;
 }
 
-.aboutmeat {
-    width: 80vh;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-} .aboutmeat p {
-    margin: 20px;
+#latest .article {
+height: 20vh;
+min-width: 20vh;
+font-size: 70%;
+margin-top: 0vh;
+margin-bottom: 5vh;
 }
 
-
-
-
-
-
-
-
+#latest .title {
+color: black;
+border-bottom: 4px solid transparent;
+margin-top: -10vh;
+margin-left: -2vh;
+max-width: 100%;
+z-index: 100;
+position: relative;
+} #latest .article:hover .title {
+border-bottom: 4px solid red;
+}
 
 
 #latest .highlight {background: white;padding: 0px;}
@@ -263,55 +277,128 @@ width: 30vh;
 100% {opacity: 1}
 }
 
+#about p {
+margin-right: auto;
+margin-left: auto;
+width: 70vh;
+text-align: justify;
+max-width: 100%;
+} #about a {
+color: darkblue;
+} #about a:hover {
+color: blue;
+text-decoration: underline;
+}
+
+.seemorebutton {
+padding-top: 3px;
+padding-bottom: 3px;
+margin-bottom: 100px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+font-size: 100%;
+color: rgba(0, 0, 0, 0.4);
+background-color: rgba(0, 0, 0, 0.03);
+font-style: italic;
+font-family: 'Playfair Display SC', serif;
+#border: .5px solid lightgrey;
+} .seemorebutton:hover {
+#text-decoration: underline;
+background-color: rgba(0, 0, 0, 0.08);
+#border: .5px solid grey;
+}
+
+
+.entryHolder {
+display: flex;
+-webkit-flex-direction: row;
+justify-content: flex-start;
+}
+.scroll {overflow-x: scroll; justify-content: flex-start;}
+.wrap {flex-wrap: wrap;}
 
 </style>
 </head>
 <body>
-
 <div id='date'></div>
-
 <div id='header'>
-    <a id='logo' href=''>Bernard&nbspMendez</a>
-    <div id='typetext'>&nbsp</div>
+<a id='logo' href=''>Bernard&nbspMendez</a>
+<div id='typetext'>&nbsp</div>
 </div>
-
 
 <div id='body'>
 
-    <div class='row'>
-    
-        <button class='meat' id='photos'>
-            <div class='catname'>Photos</div>
-        </button>
-    
-        <button class='meat' id='projects'>
-            <div class='catname'>Projects</div>
-        </button>
-    
-        <button class='meat' id='publications'>
-            <div class='catname'>Publications</div>
-        </button>
-    
-    </div>
-    <div class='row'>
+<!-- Left Bar -->
+<div id='left'>
 
-        <button class='meat' id='about'>
-            <div class='catname'>About</div>
-        </button>
-    
-        <button class='meat' id='contact'>
-            <div class='catname'>Contact</div>
-        </button>
-    
-        <button class='meat' id='other'>
-            <div class='catname'>Other</div>
-        </button>
-    </div>
-    
-    <div class='row' id='canvas'>
+<div id='menu'>
+<a href='#date'>Home</a>
+<a href='#about'>About</a>
+<a href='#science'>Publications</a>
+    <ul style='display:block'>
+        <li><a href='#science'>Science&nbsp&&nbspHealth</a></li>
+        <li><a href='#national'>National&nbspNews</a></li>
+        <li><a href='#campus'>Campus&nbspNews</a></li>
+    </ul>
+<a href='#projects'>Projects</a>
+<a href='#contact'>Contact</a>
+</div>
+
+<div id='resume' style='display: none'>
+<a id='res' href='resume.pdf'>Resume</a>
+</div>
+
+<div id='beatles' style='display: none'>
+Beatles Song of the Day
+</div>
+
+<div id='elo' style='display: none'>
+ELO Song of the Day
+</div>
+
+</div>
 
 
-    
+
+<div id='meat'>
+
+<!-- Sections -->
+<div id='latest'></div>
+<div id='science'></div>
+<div id='national'></div>
+<div id='campus'></div>
+<div id='projects'></div>
+
+<div class='catname'>About</div>
+<div id='about'>
+
+<h4>About Bernard</h4>
+<p>My name is Bernard. I am currently a second-year applied mathematics student at UCLA. I am also pursuing a specialization in computing.</p>
+
+<p>Outside of attending classes, I am a reporter for the <a href="https://www.dailybruin.com">Daily Bruin</a> and contributor for the Daily Bruin's <a href="https://stack.dailybruin.com">Stack</a> section. I contribute to several beats within the Daily Bruin, including Science & Health, National News & Higher Education and Campus Politics, mostly reporting on whatever catches my eye.</p>
+
+<p>I am interested in pursing a career in fields loosely relating to computer programming, data science and journalism.</p>
+
+<p>I enjoy reading about and reporting on information technology, sustainability and horology. My favorite publications include (but are not limited to) <a href="https://www.technologyreview.com">MIT Technology Review</a> and <a href="https://hodinkee.com">Hodinkee</a>.</p>
+
+<p>I previously worked as a Lifeguard at Huntington State Beach.</p>
+
+<!-- Pay no attention to this -->
+<img id='meatloaf'>
+
+</div>
+
+<div class='catname'>Contact</div>
+<div id='contact'>
+    <p>Email: bernard.h.mendez@gmail.com</p>
+</div>
+
+<div id='hidden' style='display: flex'></div>
+
+</div>
+
 </div>
 
 <!-- Article information -->
@@ -322,9 +409,8 @@ width: 30vh;
 
 // All of the entries to be shown
 var allentries = [debate, corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
-var allphotos = [coronaIMAGE, uaw, bouman, ghostpop, jewish1, jewish2, genxIMAGE, bardintheyard, mvb1];
 
-/*
+
 function createEntries(category) {
     var temp = [];
     for (i=0;i<allentries.length;i++) {
@@ -354,71 +440,10 @@ var national = new section('National&nbspNews', 'national', entry, true);
 var campus = new section('Campus&nbspNews', 'campus', entry, true);
 var projects = new section('Projects', 'projects', entry, true);
 var projects = new section('Example of a section not shown', 'example', entry, false);
-*/
-var canvas = document.getElementById('canvas')
-var publish = document.getElementById('publications');
-publish.addEventListener('click', function() {
-    canvas.innerHTML = '';
-    var temp;
-    for (i=0; i<allentries.length; i++) {
-        temp = document.createElement('div');
-        temp.innerHTML = entry;
-        temp.getElementsByClassName('title')[0].innerHTML = '<span class="highlight">' + allentries[i].title + '</span>';
-        temp.getElementsByClassName('author')[0].innerHTML = 'By ' + allentries[i].author;
-        temp.getElementsByClassName('img')[0].style.backgroundImage = allentries[i].image;
-        temp.getElementsByClassName('article')[0].value = allentries[i].url;
-        canvas.innerHTML += temp.innerHTML;
-    }
-});
-
-var projects = document.getElementById('projects');
-projects.addEventListener('click', function() {
-    canvas.innerHTML = '';
-    canvas.innerHTML = 'Projects';
-})
 
 
-var photos = document.getElementById('photos');
-photos.addEventListener('click', function() {
-    canvas.innerHTML = '';
-    var temp;
-    for (i=0; i<allphotos.length; i++) {
-        temp = document.createElement('div');
-        temp.classList.add('photo');
-        var tempimg = document.createElement('img');
-        tempimg.src = allphotos[i].image;
-        temp.appendChild(tempimg);
-        var tempcap = document.createElement('p');
-        tempcap.innerHTML = allphotos[i].description;
-        temp.appendChild(tempcap);
-        canvas.appendChild(temp);
-    }
-})
-
-var about = document.getElementById('about');
-about.addEventListener('click', function() {
-    canvas.innerHTML = '';
-    var meat = document.createElement('div');
-    meat.classList.add('aboutmeat');
-    meat.innerHTML = "<h4>About Bernard</h4><p>My name is Bernard. I am currently a second-year applied mathematics student at UCLA. I am also pursuing a specialization in computing.</p><p>Outside of attending classes, I am a reporter for the <a href='https://www.dailybruin.com'>Daily Bruin</a> and contributor for the Daily Bruin's <a href='https://stack.dailybruin.com'>Stack</a> section. I contribute to several beats within the Daily Bruin, including Science & Health, National News & Higher Education and Campus Politics, mostly reporting on whatever catches my eye.</p><p>I am interested in pursing a career in fields loosely relating to computer programming, data science and journalism.</p><p>I enjoy reading about and reporting on information technology, sustainability and horology. My favorite publications include (but are not limited to) <a href='https://www.technologyreview.com'>MIT Technology Review</a> and <a href='https://hodinkee.com'>Hodinkee</a>.</p><p>I previously worked as a Lifeguard at Huntington State Beach.</p>";
-    canvas.appendChild(meat);
-});
-
-var contact = document.getElementById('contact');
-contact.addEventListener('click', function() {
-    canvas.innerHTML = '';
-    canvas.innerHTML = 'contact';
-})
 
 
-var other = document.getElementById('other');
-other.addEventListener('click', function() {
-    canvas.innerHTML = '';
-    canvas.innerHTML = 'Other';
-})
-
-
-/*
 function getLatestEntries() {
     var temp = [];
     for (i=0; i<4; i++) {
@@ -479,13 +504,6 @@ function seemore(section) {
 
 
 
-/*
-document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
-document.getElementById('meatloaf').addEventListener('click', function() {
-if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});
-*/
-
-
 var typetext = "Hi. My name is Bernard. This is a website.";
 var typespace = document.getElementById('typetext');
 var t=0;
@@ -496,6 +514,11 @@ function type() {
         else {t++; setTimeout(type, 95)};
     }
 };
+
+document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
+document.getElementById('meatloaf').addEventListener('click', function() {
+if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});
+
 var date = new Date();
 
 var daynamelist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
