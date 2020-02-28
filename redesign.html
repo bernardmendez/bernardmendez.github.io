@@ -217,13 +217,13 @@ width: 30vh;
 
 .photo {
     max-width: 47%;
-    padding-top: 45px;
+    padding-top: 100px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 } .photo:nth-of-type(even) {
-    padding-top: 240px;
+    padding-top: 250px;
 } .photo img {
     max-width: 100%;
 } .photo p {
@@ -322,7 +322,7 @@ width: 30vh;
 
 // All of the entries to be shown
 var allentries = [debate, corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
-var allphotos = [bouman, uaw, jewish1, jewish2, bardintheyard, coronaIMAGE, genxIMAGE, ghostpop, mvb1];
+var allphotos = [coronaIMAGE, uaw, bouman, ghostpop, jewish1, jewish2, genxIMAGE, bardintheyard, mvb1];
 
 /*
 function createEntries(category) {
@@ -418,7 +418,7 @@ other.addEventListener('click', function() {
 })
 
 
-
+/*
 function getLatestEntries() {
     var temp = [];
     for (i=0; i<4; i++) {
@@ -479,6 +479,13 @@ function seemore(section) {
 
 
 
+/*
+document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
+document.getElementById('meatloaf').addEventListener('click', function() {
+if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});
+*/
+
+
 var typetext = "Hi. My name is Bernard. This is a website.";
 var typespace = document.getElementById('typetext');
 var t=0;
@@ -489,12 +496,6 @@ function type() {
         else {t++; setTimeout(type, 95)};
     }
 };
-
-/*
-document.getElementById('meatloaf').src = 'images/meatloaf.jpg';
-document.getElementById('meatloaf').addEventListener('click', function() {
-if (this.classList == 'meatloaf2') {newtab('https://www.youtube.com/watch?v=AJPMPXO4XFo')} else { alert('holographic meatloaf? my favorite!')}; this.setAttribute('class', 'meatloaf2')});
-*/
 var date = new Date();
 
 var daynamelist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
