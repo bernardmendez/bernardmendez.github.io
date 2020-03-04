@@ -10,6 +10,13 @@ var bouman = {
     description: 'Katie Bouman, an assistant professor in the computing and mathematical sciences department at the California Institute of Technology, is one of the scientists who helped take the first image of a black hole. Bouman spoke about the process Thursday at the California NanoSystems Institute at UCLA. (Bernard Mendez/Daily Bruin)',
 }
 
+// 2.5 bouman2
+var bouman2 = {
+    image: 'images/photography/bouman2.jpg',
+    description: 'Bouman speaks with a Daily Bruin reporter before giving a lecture at UCLA. (Bernard Mendez/Daily Bruin)',
+}
+
+
 // 3. corona
 var coronaIMAGE = {
     image: 'images/photography/corona.jpg',

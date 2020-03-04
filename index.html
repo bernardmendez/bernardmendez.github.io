@@ -45,7 +45,10 @@ a {
 text-decoration: none;
 color: black;
 }
-::selection {background: yellow;}
+::selection {
+    background: lightsteelblue;
+    color: black;
+}
 
 .img {
 position: relative;
@@ -284,14 +287,14 @@ width: 30vh;
             <div class='catname'>Photos</div>
         </button>
     
-        <button class='meat' id='projects'>
-            <div class='catname'>Projects</div>
-        </button>
-    
         <button class='meat' id='publications'>
             <div class='catname'>Publications</div>
         </button>
-    
+
+        <button class='meat' id='projects'>
+            <div class='catname'>Projects</div>
+        </button>
+
     </div>
     <div class='row'>
 
@@ -321,8 +324,8 @@ width: 30vh;
 <script>
 
 // All of the entries to be shown
-var allentries = [debate, corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
-var allphotos = [coronaIMAGE, uaw, bouman, ghostpop, jewish1, jewish2, genxIMAGE, bardintheyard, mvb1];
+var allentries = [coronabreaking, debate, corona, genx, applications, kobe, recap, regents, walking, vicechancellor, pregnancy, shark, biden, trumpjr, aiethics, climatestrike, planet, internet, luskin, garg, catlady, autism, vaccine, snowpower, uganda, geneediting, rat, rocket];
+var allphotos = [coronaIMAGE, uaw, bouman, ghostpop, jewish1, jewish2, bardintheyard, genxIMAGE, mvb1];
 
 /*
 function createEntries(category) {
