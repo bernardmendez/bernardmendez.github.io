@@ -85,11 +85,11 @@ categories: ['campus'],
 text: ''
 };
 // 30
-var TITLE = {
-title: '',
+var coronabreaking2 = {
+title: 'Three students being tested for COVID-19 among increased university precaution',
 author: 'Bernard Mendez',
-url: '',
-image: 'url("images/_____.jpg")',
-categories: [''],
+url: 'https://dailybruin.com/2020/03/06/three-students-being-tested-for-covid-19-among-increased-university-precaution/',
+image: 'url("images/coronabreaking.png")',
+categories: ['science', 'campus'],
 text: ''
 };
