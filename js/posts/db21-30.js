@@ -68,7 +68,7 @@ text: '<p>Representatives from the Bruin Republicans and Bruin Democrats debated
 };
 // 28
 var coronabreaking = {
-title: 'Public health emergency declared in LA following confirmation of 6 new COVID-19 cases',
+title: 'Public health emergency declared statewide, 11 new COVID-19 cases confirmed',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2020/03/04/public-health-emergency-declared-in-la-following-confirmation-of-6-new-covid-19-cases/',
 image: 'url("images/coronabreaking.png")',
@@ -76,12 +76,12 @@ categories: ['science', 'campus'],
 text: ''
 };
 // 29
-var TITLE = {
-title: '',
+var wildcat = {
+title: 'UCLA graduate students vote to strike for COLA, pending approval from 10 departments',
 author: 'Bernard Mendez',
-url: '',
-image: 'url("images/_____.jpg")',
-categories: [''],
+url: 'https://dailybruin.com/2020/03/05/ucla-graduate-students-vote-to-strike-for-cola-pending-approval-from-10-departments/',
+image: 'url("images/wildcat.jpg")',
+categories: ['campus'],
 text: ''
 };
 // 30
