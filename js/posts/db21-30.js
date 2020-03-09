@@ -78,7 +78,7 @@ text: ''
 // 29
 var wildcat = {
 title: 'UCLA graduate students vote to strike for COLA, pending approval from 10 departments',
-author: 'Bernard Mendez',
+author: 'Marilyn Chavez-Martinez, Bernard Mendez, David Gray',
 url: 'https://dailybruin.com/2020/03/05/ucla-graduate-students-vote-to-strike-for-cola-pending-approval-from-10-departments/',
 image: 'url("images/wildcat.jpg")',
 categories: ['campus'],
@@ -93,3 +93,12 @@ image: 'url("images/coronabreaking.png")',
 categories: ['science', 'campus'],
 text: ''
 };
+// 31
+var plos = {
+title: 'UC makes open-access deal with PLOS to reform academic journal publishing',
+author: 'Bernard Mendez',
+url: 'https://dailybruin.com/2020/03/08/uc-makes-open-access-deal-with-plos-to-reform-academic-journal-publishing/',
+image: 'url("images/plos.jpg")',
+categories: ['science'],
+text: ''
+}
