@@ -102,3 +102,12 @@ image: 'url("images/plos.jpg")',
 categories: ['science'],
 text: ''
 }
+// 32
+var onlineclasses = {
+title: 'UCLA to suspend in-person classes until April 10 to limit spread of coronavirus',
+author: 'Sameera Pant, Julia Shapero, Bernard Mendez, Kate Nucci',
+url: 'https://dailybruin.com/2020/03/10/ucla-to-suspend-in-person-classes-until-april-10-to-limit-spread-of-coronavirus/',
+image: 'url("images/onlineclasses.jpg")',
+catgories: ['science', 'campus'],
+text: '',
+}
