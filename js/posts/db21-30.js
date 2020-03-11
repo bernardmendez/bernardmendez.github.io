@@ -111,3 +111,13 @@ image: 'url("images/onlineclasses.jpg")',
 catgories: ['science', 'campus'],
 text: '',
 }
+// 33
+var springbreak = {
+title: 'UCLA students reassess finals week, spring break plans in light of COVID-19',
+author: 'Bernard Mendez, Celia Janes, Maanas Oruganti', // BY BERNARD MENDEZ, CELIA JANES AND MAANAS ORUGANTI
+url: 'https://dailybruin.com/2020/03/11/ucla-students-reassess-finals-week-spring-break-plans-in-light-of-covid-19/',
+image: 'url("images/springbreak.jpg")',
+catgories: ['science', 'campus'],
+text: '',
+}
+
