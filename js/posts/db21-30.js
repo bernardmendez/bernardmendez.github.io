@@ -120,4 +120,66 @@ image: 'url("images/springbreak.jpg")',
 catgories: ['science', 'campus'],
 text: '',
 }
+https://dailybruin.com/2020/04/08/report-looks-into-covid-19s-impacts-on-people-experiencing-homelessness-in-us/
+// 33
+var coronahomeless = {
+title: 'Report looks into COVID-19\'s impacts on people experiencing homelessness in US',
+author: 'Pheobe Chen, Bernard Mendez',
+url: 'https://dailybruin.com/2020/04/08/report-looks-into-covid-19s-impacts-on-people-experiencing-homelessness-in-us/',
+image: 'url("images/coronahomeless.jpg")',
+catgories: ['science'],
+text: '',
+}
+
+// 33
+var zoomin = {
+title: 'School\'s Out, Zoom\'s In.',
+author: 'Keri Chen, Kelly Chen, Bernard Mendez, Madeline Blasingame, Radhika Ahuja, Andrew Kan',
+url: 'https://stack.dailybruin.com/2020/04/15/covid-collegecompare/',
+image: 'url("images/zoomin.png")',
+catgories: ['science'],
+text: '',
+}
+
+// 33
+var TITLE = {
+title: '',
+author: 'Bernard Mendez',
+url: '',
+image: 'url("images/______.jpg")',
+catgories: ['science'],
+text: '',
+}
+
+// 33
+var TITLE = {
+title: '',
+author: 'Bernard Mendez',
+url: '',
+image: 'url("images/______.jpg")',
+catgories: ['science'],
+text: '',
+}
+
+// 33
+var TITLE = {
+title: '',
+author: 'Bernard Mendez',
+url: '',
+image: 'url("images/______.jpg")',
+catgories: ['science'],
+text: '',
+}
+
+// 33
+var TITLE = {
+title: '',
+author: 'Bernard Mendez',
+url: '',
+image: 'url("images/______.jpg")',
+catgories: ['science'],
+text: '',
+}
+
+
 
