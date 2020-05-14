@@ -142,6 +142,46 @@ text: '',
 }
 
 // 33
+var lawsuit = {
+title: 'Students sue UC and CSU systems, demand refunds amid COVID-19 campus closures',
+author: 'Marilyn Chavez-Martinez, Bernard Mendez',
+url: 'https://dailybruin.com/2020/04/28/students-sue-uc-and-csu-systems-demand-refunds-amid-covid-19-campus-closures/',
+image: 'url("images/lawsuit.jpg")',
+catgories: ['campus'],
+text: '',
+}
+
+// 33
+var usacfees = {
+title: 'The history of referendums on USAC ballots, what students are paying',
+author: 'Samantha Fredberg',
+url: 'https://dailybruin.com/2020/05/04/the-history-of-referendums-on-usac-ballots-what-students-are-paying/',
+image: 'url("images/usacfees.jpg")',
+catgories: ['campus'],
+text: '',
+}
+
+// 33
+var summersession = {
+title: 'UCLA to hold summer session C online, considering selective in-person instruction',
+author: 'Bernard Mendez',
+url: 'https://dailybruin.com/2020/05/11/ucla-to-hold-summer-session-c-online-considering-selective-in-person-instruction/',
+image: 'url("images/summersession.jpg")',
+catgories: ['campus'],
+text: '',
+}
+
+// 3X
+var fallquarter = {
+title: 'https://dailybruin.com/2020/05/13/ucla-tells-faculty-to-prepare-for-remote-fall-quarter-official-plans-unannounced/',
+author: 'Bernard Mendez',
+url: 'https://dailybruin.com/2020/05/13/ucla-tells-faculty-to-prepare-for-remote-fall-quarter-official-plans-unannounced/',
+image: 'url("images/fallquarter.jpg")',
+catgories: ['campus'],
+text: '',
+}
+
+// 3X
 var TITLE = {
 title: '',
 author: 'Bernard Mendez',
@@ -151,7 +191,7 @@ catgories: ['science'],
 text: '',
 }
 
-// 33
+// 3X
 var TITLE = {
 title: '',
 author: 'Bernard Mendez',
@@ -161,25 +201,6 @@ catgories: ['science'],
 text: '',
 }
 
-// 33
-var TITLE = {
-title: '',
-author: 'Bernard Mendez',
-url: '',
-image: 'url("images/______.jpg")',
-catgories: ['science'],
-text: '',
-}
-
-// 33
-var TITLE = {
-title: '',
-author: 'Bernard Mendez',
-url: '',
-image: 'url("images/______.jpg")',
-catgories: ['science'],
-text: '',
-}
 
 
 

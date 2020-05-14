@@ -1,0 +1,217 @@
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
+        
+        * {
+            font-family: 'Buenard', serif;
+            text-align: center;
+            margin: none;
+            background: #fdfdfd;
+        }
+        
+        div {
+            font-size: 12px;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        body {
+            #border: 1px solid lightgrey;
+            width: 160vh;
+            max-width: 95%;
+            margin: none;
+            padding: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #date {
+            font-size: 9px;
+            #color: grey;
+        }
+        
+        
+        #name {
+            font-size: 37px;
+            font-weight: bold;
+            margin: 2.8%;
+        }
+        
+        #links {
+            width: 90%;
+            border-top: 1px solid #DCDCDC;
+            border-bottom: 1px solid #DCDCDC;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 1%;
+        } #links a {
+            padding: 1%;
+        }
+        
+        #body {
+            display: flex;
+            -webkit-flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        .row {
+            width: 120vh;
+            max-width: 95%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        
+        .entry {
+            width: 37vh;
+            height: 22vh;
+            border: 1px solid;
+        }
+        
+        #about {
+            width: 110vh;
+            max-width: 100%;
+            height: 40vh;
+            border: 1px solid;
+            margin-top: 8%;
+            margin-bottom: 8%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div id='date'></div>
+    
+    <div id='top_bar'>
+    
+        <div id='name'>Bernard&nbspMendez</div>
+    
+        <div id='links'>
+            <a href=''>Publications</a>
+            <a href=''>Section1</a>
+            <a href=''>Section2</a>
+            |
+            <a href=''>About</a>
+            <a href=''>Contact</a>
+        </div>
+    
+    </div>
+    
+    <div id='body'>
+    
+        <div style='width: 100vh; max-width: 100%; border: 0px solid red; height: 65vh; margin: 2%; cursor: pointer; max-width: 100%;'>
+            <div style='border: 1px solid; margin: 2%; height: 70%; '></div>
+            <div style='border: 0px solid; width: 100%; height: 20%;'>
+                <h1>Headline title is an important thing to include</h1>
+            </div>
+        </div>
+        
+        
+
+        <h1>Latest Publications</h1>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+        
+
+
+        <div id='about'>
+        
+        <p style='font-size: 200%;'>About Bernard</p>
+
+        </div>
+
+        
+        
+
+
+        <h1 style='margin-top: 17%;'>— Science & Health —</h1>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+        
+        <h1 style='margin-top: 17%;'>— Campus Politics —</h1>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+        
+        <h1 style='margin-top: 17%;'>— Data Journalism —</h1>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+        
+        <h1 style='margin-top: 17%;'>— Tech Projects —</h1>
+        
+        <div class='row'>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        <div class='entry'></div>
+        </div>
+
+        
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Article information -->
+            
+    <script>
+    
+    
+        var date = new Date();
+
+        var daynamelist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var monthlist = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        
+        var daynumber = date.getDate();
+        var dayname = date.getDay();
+        var month = monthlist[date.getMonth()];
+        var year = date.getFullYear();
+        var fulldate = month + ' ' + daynumber + ', ' + year;
+
+        document.getElementById('date').innerHTML = fulldate;
+
+    </script>
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <script src='js/App.js'></script>
+
+</body>
