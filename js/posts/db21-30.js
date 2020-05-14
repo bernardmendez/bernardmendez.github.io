@@ -173,7 +173,7 @@ text: '',
 
 // 3X
 var fallquarter = {
-title: 'https://dailybruin.com/2020/05/13/ucla-tells-faculty-to-prepare-for-remote-fall-quarter-official-plans-unannounced/',
+title: 'UCLA tells faculty to prepare for remote fall quarter, official plans unannounced',
 author: 'Bernard Mendez',
 url: 'https://dailybruin.com/2020/05/13/ucla-tells-faculty-to-prepare-for-remote-fall-quarter-official-plans-unannounced/',
 image: 'url("images/fallquarter.jpg")',
