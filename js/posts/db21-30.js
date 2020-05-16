@@ -182,12 +182,12 @@ text: '',
 }
 
 // 3X
-var TITLE = {
-title: '',
-author: 'Bernard Mendez',
-url: '',
-image: 'url("images/______.jpg")',
-catgories: ['science'],
+var revoked = {
+title: 'UCLA cardiologist accused of sexual assault to have medical license revoked',
+author: 'Kari Lau, Bernard Mendez',
+url: 'https://dailybruin.com/2020/05/15/ucla-cardiologist-accused-of-sexual-assault-has-medical-license-revoked/',
+image: 'url("images/revoked.jpg")',
+catgories: ['campus','science'],
 text: '',
 }
 
