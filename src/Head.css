@@ -1,0 +1,36 @@
+.Head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Head .Article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Head .img {
+  border: 1px solid;
+  height: 39vh;
+  width: 56vh;
+}
+
+#description {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  text-align: justify;
+  border-radius: 1px;
+}
+
+.Head .headline {
+  margin: 5px;
+  font-size: 120%;
+  margin-right: 10px;
+}

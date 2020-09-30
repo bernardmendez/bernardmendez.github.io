@@ -1,0 +1,37 @@
+.Featured {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Featured {
+  display: flex;
+  flex-direction: row;
+}
+
+.Featured .Article {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.Featured .headline {
+  margin: 5px;
+}
+
+.Featured .img {
+  height: 80px;
+  width: 100px;
+  border: 1px solid;
+}
+
+.Featured h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.Featured h4 {
+  margin: 0;
+  font-size: 11px;
+}
+

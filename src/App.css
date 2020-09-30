@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css?family=Buenard:400,700&display=swap');
+
+* {
+  font-family: 'Buenard', serif;
+  #background-color: #fff0f2;
+}
+
+.App {
+  width: 110vh;
+  max-width: 100%;
+  #border: 1px solid lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#line {
+  border-top: 1px solid lightgray;
+  width: 110vh;
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#head {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#paral {
+  height: 50vh;
+  width: 110vh;
+  margin-left: auto;
+  margin-right: auto;
+  background: pink;
+
+}
+
+.Article:hover {
+  cursor: pointer;
+}
+.Article .headline a {
+  color: black;
+  text-decoration: none;
+}
+.Article .headline a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.Article .headline h4 {
+  color: gray;
+}
+
+button {
+  margin: 0;
+  background: none;
+  border: none;
+}

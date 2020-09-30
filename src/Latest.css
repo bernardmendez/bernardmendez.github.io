@@ -1,0 +1,29 @@
+
+.Latest {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Latest .Article {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.Latest .img {
+  width: 25vh;
+  height: 18vh;
+  border: 1px solid;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Latest h3 {
+  margin: 0;
+}
+.Latest h4 {
+  margin: 0;
+}

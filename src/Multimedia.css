@@ -1,0 +1,26 @@
+.Multimedia {
+  max-width: 110vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Multimedia #img_container {
+  height: 40vh;
+  width: 60vh;
+  border: 1px solid;
+}
+
+.Multimedia #img_description {
+  width: 25vh;
+}
+.Multimedia #img_description * {
+  margin: 3px;
+}
+
+.Multimedia h2 {
+  margin: 0;
+}
