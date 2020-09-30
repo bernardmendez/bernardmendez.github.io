@@ -41,10 +41,6 @@ function App() {
       <Latest />
 
       <div id='line'></div>
-
-
-
-      <div id='line'></div>
       
       <p><i>Created by Bernard Mendez, 2020, using React</i></p>
             

@@ -17,7 +17,8 @@ function About() {
        <ul>
         <li><a href='https://twitter.com/bernardhmendez'>Twitter &#10063;</a></li>
         <li><a href='https://www.linkedin.com/in/bernard-mendez/'>LinkedIn &#10063;</a></li>
-        <li><a href=''>Resume &#10063;</a></li>
+        <li><a href='https://github.com/bernardmendez'>Github &#10063;</a></li>
+        <li><a href='/Resume.pdf'>Resume &#10063;</a></li>
        </ul>
 
        <h2>Experience</h2>
