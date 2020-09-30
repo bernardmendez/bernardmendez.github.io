@@ -25,6 +25,6 @@
   "background_color": "#ffffff",
   "scripts": {
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
-  },
+    "deploy": "gh-pages -d build"
+  }
 }
