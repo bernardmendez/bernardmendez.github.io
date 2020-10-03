@@ -407,6 +407,18 @@ export const stories = [
     url: 'https://dailybruin.com/2020/09/22/state-audit-finds-64-students-inappropriately-admitted-to-uc-between-2013-and-2019',
     image: 'images/stateaudit.jpg',
   },
+  {//68
+    title: 'Gov. Newsom signs AB 3092, allowing Heaps survivors more time to file civil charges',
+    author: 'Genesis Qu, Bernard Mendez',
+    url: 'https://dailybruin.com/2020/09/30/gov-newsom-signs-ab-3092-allowing-heaps-survivors-more-time-to-file-civil-charges',
+    image: 'images/heapsab.jpg',
+  },
+  {//68
+    title: 'Protesters march down Westwood Boulevard, call for removal of police from campuses',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2020/10/01/protesters-march-down-westwood-boulevard-call-for-removal-of-police-from-campuses',
+    image: 'images/copsoffcampus.jpg',
+  }
 ];
 
 /*

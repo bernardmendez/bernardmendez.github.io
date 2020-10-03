@@ -3,6 +3,7 @@ import './Article.css';
 import { stories } from './Stories.js';
 
 class Article extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -13,12 +14,16 @@ class Article extends React.Component {
   newTab = () => {
     window.open(stories[this.props.index-1].url);
   }
+  
+  fixImage = (string) => {
+    return "haha";
+  }
 
   render () {
     return (
       <div className='Article' onClick={this.newTab}>
         <div>
-          <img className='img' src={this.state.article.image} alt={"../Images" + this.state.article.image.substring(6)}></img>
+          <img className='img' src={this.state.article.image} onError={"/Images" + this.state.article.image.substring(6)}></img>
         </div>
         
         <div className='headline'>

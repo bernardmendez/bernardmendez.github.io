@@ -30,18 +30,16 @@ function App() {
             
       <Featured />
 
+      <Multimedia />
+
+      <Latest />
+      
         <div id='line'></div>
       
       <About />
       
         <div id='line'></div>
-      
-      <Multimedia />
-
-      <Latest />
-
-        <div id='line'></div>
-      
+            
       <p><i>Created by Bernard Mendez using React</i></p>
             
     </div>
