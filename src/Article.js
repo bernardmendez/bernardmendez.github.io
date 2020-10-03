@@ -18,7 +18,7 @@ class Article extends React.Component {
     return (
       <div className='Article' onClick={this.newTab}>
         <div>
-          <img className='img' src={this.state.article.image}></img>
+          <img className='img' src={this.state.article.image} alt={"../Images" + this.state.article.image.substring(6)}></img>
         </div>
         
         <div className='headline'>
