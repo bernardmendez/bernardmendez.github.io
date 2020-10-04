@@ -7,9 +7,8 @@
   text-decoration: none;
 }
 
-.Article .headline a:hover {
-  color: darkblue;
-  text-decoration: underline;
+.Article .headline:hover {
+  color: pink;
 }
 
 .Article .headline h4 {

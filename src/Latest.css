@@ -26,3 +26,22 @@
 .Latest h4 {
   margin: 0;
 }
+
+#seeMoreButton {
+  border: 1px solid gray;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+  color: gray;
+}
+
+#button_container {
+  width: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+}

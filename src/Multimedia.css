@@ -1,11 +1,9 @@
 .Multimedia {
-  max-width: 110vh;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .Multimedia #img_container {
@@ -14,13 +12,16 @@
   border: 1px solid;
 }
 
-.Multimedia #img_description {
-  width: 25vh;
-}
 .Multimedia #img_description * {
   margin: 3px;
 }
 
-.Multimedia h2 {
-  margin: 0;
+#multimedia_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#multimedia_text {
+  min-width: 25vh;
+  border: 1px solid;
 }

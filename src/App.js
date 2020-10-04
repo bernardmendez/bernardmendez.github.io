@@ -29,9 +29,9 @@ function App() {
       <Head />
             
       <Featured />
-
-      <Multimedia />
-
+      
+        <div id='line'></div>
+      
       <Latest />
       
         <div id='line'></div>

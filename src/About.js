@@ -31,7 +31,7 @@ function About() {
 
        <h2>Freelance Reporting</h2>
        <ul>
-        <li>N/A - Contact Bernard at <a href=''>bernard.h.mendez@gmail.com &#10063;</a></li>
+        <li>Contact Bernard at bernardhmendez@protonmail.com</li>
        </ul>
 
        <h2>Coding</h2>
@@ -42,9 +42,9 @@ function About() {
        
        <h2>Contact</h2>
        <ul>
-        <li>Email: contact@bernardmendez.com</li>
+        <li>Email: bernardhmendez@protonmail.com</li>
         <li>PGP: [Numbers]</li>
-        <li>Signal: [Numbers]</li>
+        <li>Signal: 562 277 4954</li>
        </ul>
        
      </div>

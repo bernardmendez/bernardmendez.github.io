@@ -1,26 +1,24 @@
 import React from 'react';
 import './Multimedia.css';
+import Slideshow from './Slideshow.js';
 
 const headline = 'Rats Orchestrate Takeover of New York City';
 
 function Multimedia() {
   return (
     <div className='Multimedia'>
-      <div id='img_container'>
-        <div id='img'>
-        <div className='next'>&#9655;</div>
-        <div className='next'>&#9655;</div>
-        </div>
-        <img></img>
+      <div>
+        <h2><i>Multimedia</i></h2>
       </div>
       
-      <div id='img_description'>
-        <div>
+      <div id='multimedia_container'>
+        <Slideshow />
+        
+        <div id='multimedia_text'>
           <h4>{headline}</h4>
-          <p>Rats Orchestrate Takeover of New York City. Rats Orchestrate Takeover of New York City. Rats Orchestrate Takeover of New York City.</p>
+          <p>Text</p>
         </div>
       </div>
-      
     </div>
   );
 }
