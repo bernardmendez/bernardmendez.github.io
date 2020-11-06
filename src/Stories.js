@@ -418,7 +418,61 @@ export const stories = [
     author: 'Bernard Mendez',
     url: 'https://dailybruin.com/2020/10/01/protesters-march-down-westwood-boulevard-call-for-removal-of-police-from-campuses',
     image: 'images/copsoffcampus.jpg',
-  }
+  },
+  {//71
+    title: 'At least three cases of COVID-19 reported in students living on the Hill',
+    author: 'Saumya Gupta, Bernard Mendez',
+    url: 'https://dailybruin.com/2020/10/09/at-least-three-cases-of-covid-19-reported-in-students-living-on-the-hill',
+    image: 'images/threecovidhill.jpg',
+  },
+  {//72
+    title: 'UCLA to offer free COVID-19 tests to all students at Ashe Center',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2020/10/09/ucla-to-offer-free-covid-19-tests-to-all-students-at-ashe-center',
+    image: 'images/freetest.jpg',
+  },
+  {//73
+    title: 'UCLA extends work from home period for faculty, staff through winter quarter',
+    author: 'Genesis Qu, Bernard Mendez',
+    url: 'https://dailybruin.com/2020/10/09/ucla-extends-work-from-home-period-for-faculty-staff-through-winter-quarter',
+    image: 'images/winterwfh.jpg',
+  },
+  {//74
+    title: 'Student dies after falling from Westwood apartment building',
+    author: 'Ellie Sherwood, Bernard Mendez',
+    url: 'https://dailybruin.com/2020/10/24/student-dies-after-falling-from-westwood-apartment-building',
+    image: 'images/midvale.jpg',
+  },
+  {//75
+    title: 'UCLA announces winter quarter will continue with remote instruction',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2020/10/26/ucla-announces-winter-quarter-will-continue-with-remote-instruction',
+    image: 'images/winterquarter.jpg',
+  },
+  {//76
+    title: 'Activists gather at Jackie Robinson Stadium to protest UCPD, LAPD',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2020/11/01/activists-gather-at-jackie-robinson-stadium-to-protest-ucpd-lapd',
+    image: 'images/jrstadium.jpg',
+  },
+  {//77
+    title: 'Gallery: Activists hold remembrance event at Jackie Robinson Stadium',
+    author: 'Jason Zhu, Bernard Mendez, Anika Chakrabarti',
+    url: 'https://dailybruin.com/2020/11/01/gallery-activists-hold-remembrance-event-at-jackie-robinson-stadium',
+    image: 'images/galleryjrstadium.jpg',
+  },
+  {
+    title: '2020 Election Results in California and Los Angeles County',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2020/11/03/2020-election-results-in-california-and-los-angeles-county',
+    image: 'images/electionresults.jpg',
+  },
+  {
+    title: 'Proposition 16 fails in California, ending move to reinstate affirmative action',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2020/11/04/proposition-16-fails-in-california-ending-move-to-reinstate-affirmative-action',
+    image: 'images/prop16rejected.jpg',
+  },
 ];
 
 /*

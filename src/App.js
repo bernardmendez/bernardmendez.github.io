@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import Head from './Head.js';
-import Featured from './Featured.js';
-import Latest from './Latest.js';
-import Multimedia from './Multimedia.js';
-import About from './About.js';
-
+import Head from './homepage/Head.js';
+import Featured from './homepage/Featured.js';
+import Latest from './homepage/Latest.js';
+import Multimedia from './homepage/Multimedia.js';
+import About from './homepage/About.js';
 
 
 function App() {
@@ -26,12 +25,12 @@ function App() {
       
         <div id='line'></div>
 
-      <Head />
+      <Head head={78}/>
             
-      <Featured />
+      <Featured left={79} middle={75} right={72}/>
       
         <div id='line'></div>
-      
+            
       <Latest />
       
         <div id='line'></div>
