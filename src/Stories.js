@@ -461,13 +461,14 @@ export const stories = [
     url: 'https://dailybruin.com/2020/11/01/gallery-activists-hold-remembrance-event-at-jackie-robinson-stadium',
     image: 'images/galleryjrstadium.jpg',
   },
-  {
+  {//78
     title: '2020 Election Results in California and Los Angeles County',
     author: 'Bernard Mendez',
     url: 'https://dailybruin.com/2020/11/03/2020-election-results-in-california-and-los-angeles-county',
     image: 'images/electionresults.jpg',
+    description: 'Follow along here for the latest updates on election results in LA County and California for five races that may affect UCLA students: the president of the United States, Proposition 14, Proposition 16, the 33rd District U.S. House representative and the LA County district attorney.',
   },
-  {
+  {//79
     title: 'Proposition 16 fails in California, ending move to reinstate affirmative action',
     author: 'Bernard Mendez',
     url: 'https://dailybruin.com/2020/11/04/proposition-16-fails-in-california-ending-move-to-reinstate-affirmative-action',

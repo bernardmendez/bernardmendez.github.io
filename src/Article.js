@@ -8,7 +8,9 @@ class Article extends React.Component {
     super(props);
     this.state = {
       article: stories[this.props.index-1],
+      show: 'none',
     }
+
   }
   
   newTab = () => {
@@ -29,6 +31,7 @@ class Article extends React.Component {
         <div className='headline'>
           <h3>{this.state.article.title}</h3>
           <h4>By {this.state.article.author}</h4>
+          <p style={{display: this.show,}}>{this.state.article.description} Read more here &#10063;</p>
         </div>
       </div>
     );

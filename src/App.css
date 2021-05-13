@@ -7,8 +7,6 @@
 }
 
 .App {
-  width: 110vh;
-  max-width: 100%;
   #border: 1px solid lightgray;
   margin-left: auto;
   margin-right: auto;
@@ -18,28 +16,27 @@
 #line {
   border-top: 1px solid lightgray;
   width: 110vh;
+  width: 100%;
   max-width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-
-#head {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#paral {
-  height: 50vh;
-  width: 110vh;
-  margin-left: auto;
-  margin-right: auto;
-  background: pink;
-
 }
 
 button {
   margin: 0;
   background: none;
   border: none;
+}
+
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
