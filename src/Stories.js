@@ -84,7 +84,7 @@ export const stories = [
     image: 'images/aiethics.jpg',
   },
   {//15
-    title: 'Donald Trump Jr.&#39s book promotion attended by over 400, marked by protests',
+    title: 'Donald Trump Jr.\'s book promotion attended by over 400, marked by protests',
     author: 'Bernard Mendez, Emily MacInnis, Tiffany Zha, Jintak Han',
     url: 'https://dailybruin.com/2019/11/10/donald-trump-jr-s-book-promotion-attended-by-over-400-marked-by-protests/',
     image: 'images/trumpjr.jpg',
@@ -466,7 +466,6 @@ export const stories = [
     author: 'Bernard Mendez',
     url: 'https://dailybruin.com/2020/11/03/2020-election-results-in-california-and-los-angeles-county',
     image: 'images/electionresults.jpg',
-    description: 'Follow along here for the latest updates on election results in LA County and California for five races that may affect UCLA students: the president of the United States, Proposition 14, Proposition 16, the 33rd District U.S. House representative and the LA County district attorney.',
   },
   {//79
     title: 'Proposition 16 fails in California, ending move to reinstate affirmative action',
@@ -474,6 +473,133 @@ export const stories = [
     url: 'https://dailybruin.com/2020/11/04/proposition-16-fails-in-california-ending-move-to-reinstate-affirmative-action',
     image: 'images/prop16rejected.jpg',
   },
+  {//80
+    title: 'UCLA student arrested for alleged participation in US Capitol riots',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2021/02/17/ucla-student-arrested-for-alleged-participation-in-us-capitol-riots',
+    image: 'images/secorarrest.jpg',
+  },
+  {//81
+    title: 'Christian Secor to appear in court, argue for release from federal custody Wednesday',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2021/03/19/christian-secor-to-appear-in-court-argue-for-release-from-federal-custody-wednesday',
+    image: 'images/secorcourt.png',
+  },
+  {//82
+    title: 'UCLA student allegedly involved in Capitol riots to be released from custody',
+    author: 'Bernard Mendez',
+    url: 'https://dailybruin.com/2021/03/24/ucla-student-allegedly-involved-in-capitol-riots-to-be-released-from-custody',
+    image: 'images/secorrelease.png',
+  },
+  {//83
+    title: 'Examining the rise of Christian Secor and the ‘alt-right’ movement at UCLA',
+    author: 'Christine Tran, Julia Shapero',
+    url: 'https://dailybruin.com/2021/04/26/examining-the-rise-of-christian-secor-and-the-alt-right-movement-at-ucla',
+    image: 'images/secorenterprise.png',
+  },
+  {//84
+    title: 'Evaluating the Decade\'s Demographic Trends Among Faculty at UCLA',
+    author: 'Bernard Mendez, Annie Zhang, Charlotte Huang, Jeanette Lin, Juan C. Rios',
+    url: 'https://stack.dailybruin.com/2020/05/18/professor-demographics/',
+    image: 'images/profdem.jpg',
+  },
+  {//85
+    title: 'California to expand COVID-19 vaccine eligibility to all adults starting April 15',
+    author: 'Bernard Mendez, Saumya Gupta',
+    url: 'https://dailybruin.com/2021/03/25/california-to-expand-covid-19-vaccine-eligibility-to-all-adults-starting-april-15',
+    image: 'images/vaccineexpansion.jpg',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+  {
+    title: '',
+    author: 'Bernard Mendez',
+    url: '',
+    image: 'images/',
+  },
+
 ];
 
 /*

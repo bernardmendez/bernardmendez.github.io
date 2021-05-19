@@ -1,0 +1,78 @@
+.outer {
+
+    width: 100vh;
+    max-width: 95%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+  
+}
+
+.content-holder {
+    display: flex;
+    flex-direction: row;
+    #align-items: center;
+    width: 100%;
+}
+
+#topBar {
+    padding: 20px;
+}
+
+.content-holder div {
+    #border: 1px solid;
+}
+
+#descriptions {
+    width: 320%;
+    #padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.descr {
+    border: 1px solid;
+    padding: 10px;
+}
+
+
+#stories {
+    width: 680%;
+    padding: 10px;
+}
+
+.Article {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    height: 8vw;
+}
+
+.Article .img {
+    width: 140px;
+    height: 90px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.Article h3 {
+    margin: 0;
+}
+
+.Article h5 {
+    margin-top: 5px;
+    color: gray;
+    border-top: 1px solid lightgray;
+}
+
+  
+#portfolio {
+    margin-top: 150px;
+    padding: 20px;
+}

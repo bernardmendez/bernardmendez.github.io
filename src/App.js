@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import About from './homepage/About.js';
-import Section from './homepage/Section.js';
+import Portfolio from './homepage/Section.js';
 
 function App() {
 
@@ -13,22 +13,15 @@ function App() {
 
   return (
     <div className="App">
-      
-      <div id='header'>
-        <h2>Bernard Mendez</h2>
-        <b>{month} {day_of_the_month}, {year}</b>
-      </div>
-
-
-            
+                  
       <About />
       
-        <div id='line'></div>
-
 
       <div id='header'>  
         <p><i>Created by Bernard Mendez using React</i></p>
       </div>
+
+      <p id='go_to_top'><a href=''><b>Go to top</b></a></p>
 
     </div>
   );

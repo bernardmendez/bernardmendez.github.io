@@ -17,9 +17,6 @@ class Article extends React.Component {
     window.open(stories[this.props.index-1].url);
   }
   
-  fixImage = (string) => {
-    return "haha";
-  }
 
   render () {
     return (
@@ -30,8 +27,10 @@ class Article extends React.Component {
         
         <div className='headline'>
           <h3>{this.state.article.title}</h3>
-          <h4>By {this.state.article.author}</h4>
+          <h5>By {this.state.article.author}</h5>
+          {/*
           <p style={{display: this.show,}}>{this.state.article.description} Read more here &#10063;</p>
+          */}
         </div>
       </div>
     );

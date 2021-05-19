@@ -13,15 +13,6 @@
 }
 
 
-#line {
-  border-top: 1px solid lightgray;
-  width: 110vh;
-  width: 100%;
-  max-width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 button {
   margin: 0;
   background: none;
@@ -39,4 +30,18 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+a:visited {
+  color: blue;
+}
+
+#go_to_top {
+  position: fixed;
+  background: lightblue;
+  right: 20px;
+  bottom: 20px;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid;
 }
