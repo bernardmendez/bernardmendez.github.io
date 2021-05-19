@@ -16,6 +16,7 @@ function App() {
                   
       <About />
       
+      <Portfolio />
 
       <div id='header'>  
         <p><i>Created by Bernard Mendez using React</i></p>
