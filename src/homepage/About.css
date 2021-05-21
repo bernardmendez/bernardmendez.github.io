@@ -12,3 +12,15 @@
 .About #meat {
   padding: 20px;
 }
+
+.About a:hover {
+  background: blue;
+  color: white;
+}
+
+.About li {
+  margin: 2px 0;
+}
+.About ul {
+  list-style-type: circle;
+}

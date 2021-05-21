@@ -6,6 +6,11 @@
   #background-color: #fff0f2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .App {
   #border: 1px solid lightgray;
   margin-left: auto;

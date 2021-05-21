@@ -26,3 +26,12 @@
 .Article p {
   font-size: 11px;
 }
+
+.Article img {
+  border: 1px solid lightgray;
+}
+
+.Article {
+  display: flex;
+  flex-direction: column;
+}

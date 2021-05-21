@@ -49,15 +49,64 @@ class Section extends React.Component {
   }
 }
 
+const Otherlinks = () => {
+    return (
+        <div id='other_ex'>
+        <div id='other_ex_2'>
+          <h2>Other examples:</h2>
+          <ul>
+            <li><a href='#0'>Reporting on UCLA student at the U.S. Capitol riots &#10063;</a></li>
+            <li><a href='#1'>Data reporting &#10063;</a></li>
+            <li><a href='#2'>Reporting on the COVID-19 pandemic &#10063;</a></li>
+            <li><a href='#3'>Other daily reporting &#10063;</a></li>
+          </ul>
+        </div>
+      </div>
+    )
+}
+
 const Portfolio = () => {
+
+
     return (
         <div id='portfolio'>
             <Section title='Reporting on UCLA student at the U.S. Capitol riots' index={0}/>
+            <Otherlinks />
             <Section title='Data reporting' index={1}/>
+            <Otherlinks />
             <Section title='COVID-19 reporting' index={2}/>
+            <Otherlinks />
             <Section title='Other daily reporting' index={3}/>
+            <Otherlinks />
         </div>
     );
 }
+
+function fadeOutOnScroll(element) {
+	if (!element) {
+		return;
+	}
+	
+	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+	var elementHeight = element.offsetHeight;
+	var scrollTop = document.documentElement.scrollTop;
+	
+	var opacity = 1;
+	
+	if (scrollTop > distanceToTop) {
+		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+	}
+	
+	if (opacity >= 0) {
+		element.style.opacity = opacity;
+    }
+}
+
+function scrollHandler() {
+    fadeOutOnScroll(document.getElementById('descr'));
+}
+
+window.addEventListener('scroll', scrollHandler);
+
 
 export default Portfolio;

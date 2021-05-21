@@ -509,22 +509,22 @@ export const stories = [
     url: 'https://dailybruin.com/2021/03/25/california-to-expand-covid-19-vaccine-eligibility-to-all-adults-starting-april-15',
     image: 'images/vaccineexpansion.jpg',
   },
-  {
-    title: '',
-    author: 'Bernard Mendez',
-    url: '',
-    image: 'images/',
+  {//86
+    url: 'https://dailybruin.com/2021/04/13/daily-bruin-receives-15-honors-in-regional-collegiate-journalism-competition',
+    author: 'Hyeyoon (Alyssa) Choi',
+    title: 'Daily Bruin receives 15 honors in regional collegiate journalism competition',
+    image: 'images/dbmoe.jpg',
   },
-  {
-    title: '',
+  {//87
+    title: 'Southern California to enter stay-at-home order after ICU capacity falls below 15%',
     author: 'Bernard Mendez',
-    url: '',
-    image: 'images/',
+    url: 'https://dailybruin.com/2020/12/05/southern-california-to-enter-stay-at-home-order-after-icu-capacity-falls-below-15',
+    image: 'images/icu.jpg',
   },
-  {
-    title: '',
-    author: 'Bernard Mendez',
-    url: '',
+  {//88
+    title: 'LA County to reopen indoor dining, gyms on Monday after moving into red tier',
+    author: 'Bernard Mendez, Hyeyoon (Alyssa) Choi',
+    url: 'https://dailybruin.com/2021/03/12/la-county-to-reopen-indoor-dining-gyms-on-sunday-after-moving-into-red-tier',
     image: 'images/',
   },
   {
