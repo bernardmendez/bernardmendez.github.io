@@ -6,7 +6,7 @@ export const ArticleChoices = [
         },
         {
             story: 81,
-            descr: "As __, I , regularly obtaining and reviewing court documents as well as keeping track of court dates and changes."
+            descr: "I kept up with Secor's (ongoing) trial, regularly obtaining and reviewing court documents as well as keeping track of court dates and other changes."
         },
         {
             story: 82,
