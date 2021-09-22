@@ -31,6 +31,7 @@ function About() {
 
       <h2>Reporting Experience</h2>
        <ul>
+        <li>College Journalism Network Fellow, <a href='https://calmatters.org'>CalMatters &#10063;</a> - <i>Fall 2021</i></li>
         <li>Editorial Intern, <a href='https://dot.LA'>dot.LA &#10063;</a> - <i>Summer 2021</i></li>
         <li>News editor, <a href='https://dailybruin.com'>Daily Bruin &#10063;</a> - <i>2020 to 2021</i></li>
         <li>Reporter/Photographer, <a href='https://dailybruin.com'>Daily Bruin &#10063;</a> - <i>2019 to 2020</i></li>
